@@ -7,7 +7,9 @@
   <meta name="theme-color" content="#f1f5f4">
   <title>Figure Skate Database 3D</title>
   <link rel="stylesheet" href="./library.css">
-  <script type="module" src="./library.js"></script>
+  <script type="module">
+    await import(`./library.js?reload=${Date.now()}`);
+  </script>
 </head>
 <body>
   <header class="topbar">

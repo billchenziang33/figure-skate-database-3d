@@ -62,8 +62,10 @@ function render(motions) {
 }
 
 try {
+  const cacheKey = `v=${Date.now()}`;
   const [motionResponse, progressResponse] = await Promise.all([
-    fetch('./motions.json'), fetch('./production-progress.json'),
+    fetch(`./motions.json?${cacheKey}`, { cache: 'no-store' }),
+    fetch(`./production-progress.json?${cacheKey}`, { cache: 'no-store' }),
   ]);
   if (!motionResponse.ok) throw new Error(`Action catalog returned ${motionResponse.status}`);
   const all = await motionResponse.json();
