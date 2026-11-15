@@ -545,5 +545,33 @@
     "occurrences": 11,
     "archived_rounds": 3,
     "rounds_total": 3
+  },
+  {
+    "id": "FCSp",
+    "name": "FCSp · 跳接燕式旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "FCSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "434566e7c3e808375e5415c6859c67308f65139dcab0962be19aaef82eec5fa2",
+        "blend_sha256": "bb971cdfe019de6518302b03c0aa95c45519421b08d0e01890807859cc3f0845"
+      }
+    ],
+    "file": "FCSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "434566e7c3e808375e5415c6859c67308f65139dcab0962be19aaef82eec5fa2",
+    "blend_sha256": "bb971cdfe019de6518302b03c0aa95c45519421b08d0e01890807859cc3f0845",
+    "poster": "FCSp-r3-camel-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；跳接腾空后右脚燕式旋转约八周；刀刃起跳与落冰、网格和旋转采样通过，公开播放待验收。",
+    "occurrences": 11,
+    "archived_rounds": 3,
+    "rounds_total": 3
   }
 ]

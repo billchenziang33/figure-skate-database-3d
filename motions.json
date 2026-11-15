@@ -1054,12 +1054,44 @@
   },
   {
     "id": "FCSp",
-    "name": "跳接燕式旋转",
+    "name": "FCSp · 跳接燕式旋转",
     "kind": "spin",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "FCSp-r1-web.glb",
+        "frames": 401,
+        "sha256": "e2104cf3dac911731d508118b4644cc519e3b10750a16d761559404c4f5eb621",
+        "blend_sha256": "2320d3095b3ecb93e1ad44a4ecb2e330610570a282aafa76ae5c60d3053440e7"
+      },
+      {
+        "number": 2,
+        "file": "FCSp-r2-web.glb",
+        "frames": 401,
+        "sha256": "b0ab02c4314ba8110851372094fdea3cecbdd94dbe104203a7be8dbd6f8822b7",
+        "blend_sha256": "bd93a21cde6ddc07bc11feb8a55cf7434d20df1f1bd2bd4bddfa9881c3328438"
+      },
+      {
+        "number": 3,
+        "file": "FCSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "434566e7c3e808375e5415c6859c67308f65139dcab0962be19aaef82eec5fa2",
+        "blend_sha256": "bb971cdfe019de6518302b03c0aa95c45519421b08d0e01890807859cc3f0845"
+      }
+    ],
+    "file": "FCSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "434566e7c3e808375e5415c6859c67308f65139dcab0962be19aaef82eec5fa2",
+    "blend_sha256": "bb971cdfe019de6518302b03c0aa95c45519421b08d0e01890807859cc3f0845",
+    "poster": "FCSp-r3-camel-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；跳接腾空后右脚燕式旋转约八周；刀刃起跳与落冰、网格和旋转采样通过，公开播放待验收。",
     "occurrences": 11,
-    "archived_rounds": 0,
+    "archived_rounds": 3,
     "rounds_total": 3
   },
   {
