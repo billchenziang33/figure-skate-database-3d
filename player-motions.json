@@ -677,6 +677,47 @@
     "note": "三轮 Blender/GLB 已归档；全程燕式、左右脚各六周，几何与换足轨迹采样通过；公开全段播放待复核。"
   },
   {
+    "id": "FSSp",
+    "name": "FSSp · 跳接蹲踞旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "FSSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "3bbb0a0ab7292f92134b796876f04fc3e8a726980550651f16285b29edbb49a3",
+        "blend_sha256": "6f07a45bc781ebca90b98da386f6c06a47c4df99aeeedcacebc46d75e5f68cce"
+      }
+    ],
+    "occurrences": 4,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "FSSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "3bbb0a0ab7292f92134b796876f04fc3e8a726980550651f16285b29edbb49a3",
+    "blend_sha256": "6f07a45bc781ebca90b98da386f6c06a47c4df99aeeedcacebc46d75e5f68cce",
+    "poster": "FSSp-r3-sit-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "support_foot": "Right",
+    "measured_turns": 8.000000161335818,
+    "basic_positions": [
+      "sit"
+    ],
+    "event_frames": {
+      "APPROACH": 35,
+      "TAKEOFF": 42,
+      "APEX": 51,
+      "LANDING": 60,
+      "SIT": 110,
+      "EXIT": 370
+    },
+    "note": "三轮 Blender/GLB 已归档；右脚飞入蹲踞旋转约八周并滑出；四分之一帧几何与技术检查通过，公开侧视播放仍待验收。"
+  },
+  {
     "id": "StSq",
     "name": "StSq · 接续步",
     "kind": "sequence",

@@ -1268,13 +1268,58 @@
   },
   {
     "id": "FSSp",
-    "name": "跳接蹲踞旋转",
+    "name": "FSSp · 跳接蹲踞旋转",
     "kind": "spin",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "FSSp-r1-web.glb",
+        "frames": 401,
+        "sha256": "546a376801a55d504fec083a93755ecc2549318cc7407947cbb981096a8d52ef",
+        "blend_sha256": "8bca87bc5cb7cfcbb8b05f39041faaf0d1e09fbfaae14c86abb86aba7fb1bdcd"
+      },
+      {
+        "number": 2,
+        "file": "FSSp-r2-web.glb",
+        "frames": 401,
+        "sha256": "4f7578c33139fc6132ee417d330e32867c3aec04fefbe16680f8d90b50ee43a4",
+        "blend_sha256": "9fcb1c02d6017ee60330b0d5b7dba14202d3928d8d408f8cca77a82a455e57b3"
+      },
+      {
+        "number": 3,
+        "file": "FSSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "3bbb0a0ab7292f92134b796876f04fc3e8a726980550651f16285b29edbb49a3",
+        "blend_sha256": "6f07a45bc781ebca90b98da386f6c06a47c4df99aeeedcacebc46d75e5f68cce"
+      }
+    ],
     "occurrences": 4,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "FSSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "3bbb0a0ab7292f92134b796876f04fc3e8a726980550651f16285b29edbb49a3",
+    "blend_sha256": "6f07a45bc781ebca90b98da386f6c06a47c4df99aeeedcacebc46d75e5f68cce",
+    "poster": "FSSp-r3-sit-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "support_foot": "Right",
+    "measured_turns": 8.000000161335818,
+    "basic_positions": [
+      "sit"
+    ],
+    "event_frames": {
+      "APPROACH": 35,
+      "TAKEOFF": 42,
+      "APEX": 51,
+      "LANDING": 60,
+      "SIT": 110,
+      "EXIT": 370
+    },
+    "note": "三轮 Blender/GLB 已归档；右脚飞入蹲踞旋转约八周并滑出；四分之一帧几何与技术检查通过，公开侧视播放仍待验收。"
   },
   {
     "id": "FCSSp",
