@@ -309,14 +309,14 @@
         "number": 3,
         "file": "4Lz-r3-web.glb",
         "frames": 370,
-        "sha256": "684247fc3e97f74de8ba42b3ee2c928f9e09984541c2b84c5cdbda20ee9701b1",
-        "blend_sha256": "fd63e8b7bc92f68dfe12d1f770926e3f74ebe973e07f259c2f44d2e86f8e461e"
+        "sha256": "eb4686b5843330d9bd1dabf2ff3a93886f0e0da776aa253a7ccfcd459ac43ffd",
+        "blend_sha256": "86292a49065a0518647028025bcadf14f7fed18d84bece23e5f5668503d954fa"
       }
     ],
     "file": "4Lz-r3-web.glb",
     "frames": 370,
-    "sha256": "684247fc3e97f74de8ba42b3ee2c928f9e09984541c2b84c5cdbda20ee9701b1",
-    "blend_sha256": "fd63e8b7bc92f68dfe12d1f770926e3f74ebe973e07f259c2f44d2e86f8e461e",
+    "sha256": "eb4686b5843330d9bd1dabf2ff3a93886f0e0da776aa253a7ccfcd459ac43ffd",
+    "blend_sha256": "86292a49065a0518647028025bcadf14f7fed18d84bece23e5f5668503d954fa",
     "poster": "4Lz-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
