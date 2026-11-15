@@ -1,0 +1,353 @@
+[
+  {
+    "id": "3A",
+    "name": "3A · Axel（阿克塞尔）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3A-r3-web.glb",
+        "frames": 367,
+        "sha256": "8a687d6c592f7d96587df3b527c3da9eec2b25e8cd1b4f17b84571f73f507a09"
+      }
+    ],
+    "file": "3A-r3-web.glb",
+    "frames": 367,
+    "sha256": "8a687d6c592f7d96587df3b527c3da9eec2b25e8cd1b4f17b84571f73f507a09",
+    "blend_sha256": null,
+    "note": "三轮 Blender 几何与技术审计通过；公开默认侧视和全段播放仍待验收。",
+    "poster": "3A-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "occurrences": 27,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "4T",
+    "name": "4T · Toe loop（后外点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4T-r3-web.glb",
+        "frames": 369,
+        "sha256": "7b10d8624e4745c5bed8b4d939a6ac9a4829c7c3008b797bf562ecfa6aa7bb90",
+        "blend_sha256": "e844678998318379d098e7bd6970636748800d94cf2daa7aba72820af554862a"
+      }
+    ],
+    "file": "4T-r3-web.glb",
+    "frames": 369,
+    "sha256": "7b10d8624e4745c5bed8b4d939a6ac9a4829c7c3008b797bf562ecfa6aa7bb90",
+    "blend_sha256": "e844678998318379d098e7bd6970636748800d94cf2daa7aba72820af554862a",
+    "poster": "4T-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 20,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "3T",
+    "name": "3T · Toe loop（后外点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3T-r3-web.glb",
+        "frames": 363,
+        "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
+        "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d"
+      }
+    ],
+    "file": "3T-r3-web.glb",
+    "frames": 363,
+    "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
+    "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d",
+    "poster": "3T-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 17,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "4S",
+    "name": "4S · Salchow（萨霍夫）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4S-r3-web.glb",
+        "frames": 369,
+        "sha256": "670852fb6cd9c257dd2c62e3e05569feecf45afc426856dd9bf30ae08cd25013",
+        "blend_sha256": "3513ec4a0fc6f11e193fff9ff62e4c5bb4b9d69ffd1d0821eb132b87fdb19271"
+      }
+    ],
+    "file": "4S-r3-web.glb",
+    "frames": 369,
+    "sha256": "670852fb6cd9c257dd2c62e3e05569feecf45afc426856dd9bf30ae08cd25013",
+    "blend_sha256": "3513ec4a0fc6f11e193fff9ff62e4c5bb4b9d69ffd1d0821eb132b87fdb19271",
+    "poster": "4S-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 11,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "3F",
+    "name": "3F · Flip（后内点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3F-r3-web.glb",
+        "frames": 363,
+        "sha256": "ba0fa3ea71222872a34a6f91dd0842185fbf320f4a1e1b605f88ef86968f6716",
+        "blend_sha256": "94973e9fd83d5088ddc633e5892eb802979fbe944a87dba418dbd316c7e542a9"
+      }
+    ],
+    "file": "3F-r3-web.glb",
+    "frames": 363,
+    "sha256": "ba0fa3ea71222872a34a6f91dd0842185fbf320f4a1e1b605f88ef86968f6716",
+    "blend_sha256": "94973e9fd83d5088ddc633e5892eb802979fbe944a87dba418dbd316c7e542a9",
+    "poster": "3F-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender/GLB 已归档；左后内刃起跳、右脚点冰、右后外刃落冰和三周网格审计通过。公开默认侧视全段播放待验收。",
+    "occurrences": 10,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "3Lz",
+    "name": "3Lz · Lutz（勾手）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3Lz-r3-web.glb",
+        "frames": 363,
+        "sha256": "a7f9f4eab0857ab1beb4602c1de2fbb492c868a03765a848a1276be11b8055ed",
+        "blend_sha256": "fd34c60776e5e8915eaedb59cbb2949d776db4657bd358f578b44ac2be22fe41"
+      }
+    ],
+    "file": "3Lz-r3-web.glb",
+    "frames": 363,
+    "sha256": "a7f9f4eab0857ab1beb4602c1de2fbb492c868a03765a848a1276be11b8055ed",
+    "blend_sha256": "fd34c60776e5e8915eaedb59cbb2949d776db4657bd358f578b44ac2be22fe41",
+    "poster": "3Lz-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "3Lz Lutz / left backward outside-edge takeoff, right toe-pick assist, right backward outside-edge landing. Geometry and technique sampled; public default-side full-play review pending.",
+    "motion_label": "illustrative / simulated",
+    "occurrences": 10,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "2T",
+    "name": "2T · Toe loop（后外点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2T-r3-web.glb",
+        "frames": 355,
+        "sha256": "ebe35bedba7f8686ac30d97094e18d42ff12f3f3956080cbf903c50380345cdd",
+        "blend_sha256": "9c06369026ec9cc119e9b4cbcb83182b304b9024119692338b8368ccddb3bb62"
+      }
+    ],
+    "file": "2T-r3-web.glb",
+    "frames": 355,
+    "sha256": "ebe35bedba7f8686ac30d97094e18d42ff12f3f3956080cbf903c50380345cdd",
+    "blend_sha256": "9c06369026ec9cc119e9b4cbcb83182b304b9024119692338b8368ccddb3bb62",
+    "poster": "2T-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 9,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "3S",
+    "name": "3S · Salchow（萨霍夫）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3S-r3-web.glb",
+        "frames": 363,
+        "sha256": "3c1da6bca191bc24e19c1b3be81c29abc7d46cc90c796b89955de47e28b8909a",
+        "blend_sha256": "55b2d6c29f8c67c7190ccd60dd4c04b935690bb759896819751b5ee666f0707d"
+      }
+    ],
+    "file": "3S-r3-web.glb",
+    "frames": 363,
+    "sha256": "3c1da6bca191bc24e19c1b3be81c29abc7d46cc90c796b89955de47e28b8909a",
+    "blend_sha256": "55b2d6c29f8c67c7190ccd60dd4c04b935690bb759896819751b5ee666f0707d",
+    "poster": "3S-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 6,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "4F",
+    "name": "4F · Flip（后内点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4F-r3-web.glb",
+        "frames": 369,
+        "sha256": "3786fbb9ade591f4d63921cb78d578780bd44ed827630ece43b86b26bff5db4b",
+        "blend_sha256": "96778d93dc68135546a44e50fc9a602cc93749bbf5de50dc330d425ae09c4516"
+      }
+    ],
+    "file": "4F-r3-web.glb",
+    "frames": 369,
+    "sha256": "3786fbb9ade591f4d63921cb78d578780bd44ed827630ece43b86b26bff5db4b",
+    "blend_sha256": "96778d93dc68135546a44e50fc9a602cc93749bbf5de50dc330d425ae09c4516",
+    "poster": "4F-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "4F Flip / left backward inside-edge takeoff, right toe-pick assist, right backward outside-edge landing. Geometry and technique sampled; public default-side full-play review pending.",
+    "motion_label": "illustrative / simulated",
+    "occurrences": 6,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "2S",
+    "name": "2S · Salchow（萨霍夫）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2S-r3-web.glb",
+        "frames": 356,
+        "sha256": "a11e885938063b430c23d621fbd7ad868b54e4fe39755e3d2317aaf7a8314368",
+        "blend_sha256": "eb5f4a497ddc0a746d07a8d709019c91c2cfee6ea4805448ea09bb2ce3007c7b"
+      }
+    ],
+    "file": "2S-r3-web.glb",
+    "frames": 356,
+    "sha256": "a11e885938063b430c23d621fbd7ad868b54e4fe39755e3d2317aaf7a8314368",
+    "blend_sha256": "eb5f4a497ddc0a746d07a8d709019c91c2cfee6ea4805448ea09bb2ce3007c7b",
+    "poster": "2S-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 2,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "1S",
+    "name": "1S · Salchow（萨霍夫）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "1S-r3-web.glb",
+        "frames": 351,
+        "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
+        "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4"
+      }
+    ],
+    "file": "1S-r3-web.glb",
+    "frames": 351,
+    "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
+    "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4",
+    "poster": "1S-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "2A",
+    "name": "2A · Axel（阿克塞尔）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2A-r3-web.glb",
+        "frames": 361,
+        "sha256": "0c23e0474fd7178bf17d8bde98c0a1d339e18d7ccf99a4ce11fc55e67246b35d"
+      }
+    ],
+    "file": "2A-r3-web.glb",
+    "frames": 361,
+    "sha256": "0c23e0474fd7178bf17d8bde98c0a1d339e18d7ccf99a4ce11fc55e67246b35d",
+    "blend_sha256": null,
+    "note": "三轮 Blender 几何与技术审计通过；公开默认侧视和全段播放仍待验收。",
+    "poster": "2A-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "2F",
+    "name": "2F · Flip（后内点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2F-r3-web.glb",
+        "frames": 358,
+        "sha256": "28df2ec97937f6f84fe8e8c6545287179157b33d43b33b34dc056a02bb5feda6",
+        "blend_sha256": "2ec63416201502c96d348817079fc47ff7f0cdf652439e9ef97a41b80dd67767"
+      }
+    ],
+    "file": "2F-r3-web.glb",
+    "frames": 358,
+    "sha256": "28df2ec97937f6f84fe8e8c6545287179157b33d43b33b34dc056a02bb5feda6",
+    "blend_sha256": "2ec63416201502c96d348817079fc47ff7f0cdf652439e9ef97a41b80dd67767",
+    "poster": "2F-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "三轮 Blender / GLB 已归档；Flip 后内刃起跳、右脚点冰、后外刃落地及几何检查通过，公开默认侧视和全段播放待验收。",
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  }
+]

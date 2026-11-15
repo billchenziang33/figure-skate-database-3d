@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="北京 2022 冬奥会男单花样滑冰 3D 动作制作进度与 Blender 预览。">
+  <meta name="theme-color" content="#f1f5f4">
+  <title>Figure Skate Database 3D</title>
+  <link rel="stylesheet" href="./library.css">
+  <script type="module" src="./library.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="Figure Skate Database 3D 首页"><span class="brand-mark">FS</span><span>FIGURE SKATE<br><b>DATABASE 3D</b></span></a>
+    <span class="season">BEIJING 2022 · MEN'S SINGLES</span>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CSC316 · MOTION ARCHIVE</p>
+        <h1>动作制作进度</h1>
+        <p class="lede">十位选手 · 20 套节目 · 190 条裁判表元素<br>追踪 50 项可复用动作的 Blender 迭代与网页验收。</p>
+      </div>
+      <div class="hero-stamp"><span>SIMULATED</span><b>3D</b><span>MOTION</span></div>
+      <div class="progress-card">
+        <div class="progress-head"><span>基础动作建模</span><strong id="model-count">— / 50</strong></div>
+        <progress id="model-progress" max="50" value="0" aria-label="已有模型的动作数量"></progress>
+        <div class="progress-meta"><span id="round-count">制作轮次 — / 150</span><span id="web-count">公开验收 — / 50</span></div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="总体进度">
+      <article class="metric"><span>已归档动作</span><strong id="metric-actions">—</strong><small>每项最多三轮 Blender / GLB</small></article>
+      <article class="metric"><span>Blender 几何与技术复核</span><strong id="metric-review">—</strong><small>离散网格采样及动作要点</small></article>
+      <article class="metric"><span>公开侧视验收</span><strong id="metric-web">—</strong><small>Edge 全段播放与可读性</small></article>
+      <article class="metric metric-update"><span>最近归档</span><strong id="latest-actions">读取中</strong><small id="latest-detail">动作资产同步后自动更新</small></article>
+    </section>
+
+    <section class="catalog-section">
+      <div class="section-heading"><div><p class="eyebrow">PRODUCTION BOARD</p><h2>50 项动作库</h2></div><div class="filters"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索代码或动作" aria-label="搜索动作"></label><select id="filter" aria-label="按类别筛选"><option value="all">全部类别</option><option value="jump">单跳</option><option value="combination">连跳</option><option value="spin">旋转</option><option value="sequence">步法序列</option></select></div></div>
+      <div id="status-line" class="status-line" role="status">正在读取动作目录…</div>
+      <div id="cards" class="cards"></div>
+    </section>
+    <footer><p>动作、姿态、阶段与轨迹均为 <i>illustrative / simulated</i>。未使用北京冬奥会运动员的比赛捕捉数据。</p><a href="./THIRD_PARTY_NOTICES.md">来源与许可</a><span id="updated-at"></span></footer>
+  </main>
+</body>
+</html>
