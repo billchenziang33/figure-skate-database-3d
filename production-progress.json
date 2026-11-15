@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-11-15 06:28 UTC",
+  "last_updated": "2026-11-15 06:44 UTC",
   "latest_batch": {
     "assets": [
-      "1Eu"
+      "3Lo"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 42,
+    "cumulative_rounds_archived": 45,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 14,
+    "assets_modeled": 15,
     "assets_total": 50,
     "stage": "Latest round previews bundled; 1/50 actions passed public default-side review; remaining actions await review.",
     "all_rounds_playable": false,
     "public_side_view_passed": 1,
-    "playable_rounds_on_site": 14,
+    "playable_rounds_on_site": 15,
     "playable_rounds_scope": "Only the latest archived round of each modeled action is bundled as a browser preview; all three Blender/GLB rounds remain in the action archive."
   }
 }

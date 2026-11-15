@@ -330,10 +330,42 @@
     "id": "3Lo",
     "name": "3Lo · Loop（后外结环）",
     "kind": "jump",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "3Lo-r1-web.glb",
+        "frames": 363,
+        "sha256": "b8028e9c42b88271f7a091cf8c52d6de4fe9ed5992e6f729cca7927bea6edd7b",
+        "blend_sha256": "568d224129d5539ac894a2813464793ffb94f93328c5685cf3c77f87854364d4"
+      },
+      {
+        "number": 2,
+        "file": "3Lo-r2-web.glb",
+        "frames": 363,
+        "sha256": "f45c869f429a6ef07c72f1ddccdb13d7a8493cb47cbff7e1353f4df1dcb33f07",
+        "blend_sha256": "58b7c6ec36858d96c2a9bc89d783eced9ab49aebeb7aeddc3d75195056c281ee"
+      },
+      {
+        "number": 3,
+        "file": "3Lo-r3-web.glb",
+        "frames": 363,
+        "sha256": "4820ec3ac01d61a7253af761339b9a0ec9667dd43b0706d20870483599b387e1",
+        "blend_sha256": "1b4d1d0b24919e2512e7fb11ac4a76fba1463feaec88aa27a14935d17173cf3c"
+      }
+    ],
+    "file": "3Lo-r3-web.glb",
+    "frames": 363,
+    "sha256": "4820ec3ac01d61a7253af761339b9a0ec9667dd43b0706d20870483599b387e1",
+    "blend_sha256": "1b4d1d0b24919e2512e7fb11ac4a76fba1463feaec88aa27a14935d17173cf3c",
+    "poster": "3Lo-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "Loop / right backward outside-edge takeoff and same-foot landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
+    "motion_label": "illustrative / simulated",
     "occurrences": 6,
-    "archived_rounds": 0,
+    "archived_rounds": 3,
     "rounds_total": 3
   },
   {
