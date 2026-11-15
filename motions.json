@@ -1184,13 +1184,42 @@
   },
   {
     "id": "FCCoSp",
-    "name": "跳接进入的换足联合旋转",
+    "name": "FCCoSp · 跳接换足联合旋转",
     "kind": "spin",
-    "status": "pending",
-    "rounds": [],
-    "occurrences": 7,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "FCCoSp-r1-web.glb",
+        "frames": 541,
+        "sha256": "53e8166c5a086edceda3cfb4b09cdbb41fe03753695add0b17f5860be8bdeae4",
+        "blend_sha256": "fb9bce6dae681eda5ca6c5502368321e47c288c77c5522bd45d3b5f9c4de50ca"
+      },
+      {
+        "number": 2,
+        "file": "FCCoSp-r2-web.glb",
+        "frames": 541,
+        "sha256": "ed1600367c1bcc063fa73741a975006a55bc9161b049c33be7b4c9d2a2c1ffc9",
+        "blend_sha256": "a8a4b83a9462cc95d8fa4e78a09e7f6e7c479826f25e5c03d9a1bee185cbc37c"
+      },
+      {
+        "number": 3,
+        "file": "FCCoSp-r3-web.glb",
+        "frames": 541,
+        "sha256": "a57911d7545fe2248200bd0027ed7f50dd4168f44b38fa91e51c5117e367b366",
+        "blend_sha256": "e923a2f086ef88dc6bbc8900a4b94bc036c3d36b8a6fd12212f507912afa3740"
+      }
+    ],
+    "file": "FCCoSp-r3-web.glb",
+    "frames": 541,
+    "sha256": "a57911d7545fe2248200bd0027ed7f50dd4168f44b38fa91e51c5117e367b366",
+    "blend_sha256": "e923a2f086ef88dc6bbc8900a4b94bc036c3d36b8a6fd12212f507912afa3740",
+    "poster": "FCCoSp-r3-flight_apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；短暂腾空后右脚六周、换至左脚六周，含 Camel/Sit/Upright。关节和冰刀采样通过；具体选手编排及公开全段播放待复核。"
   },
   {
     "id": "CCSp",

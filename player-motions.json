@@ -621,6 +621,31 @@
     "rounds_total": 3
   },
   {
+    "id": "FCCoSp",
+    "name": "FCCoSp · 跳接换足联合旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "FCCoSp-r3-web.glb",
+        "frames": 541,
+        "sha256": "a57911d7545fe2248200bd0027ed7f50dd4168f44b38fa91e51c5117e367b366",
+        "blend_sha256": "e923a2f086ef88dc6bbc8900a4b94bc036c3d36b8a6fd12212f507912afa3740"
+      }
+    ],
+    "file": "FCCoSp-r3-web.glb",
+    "frames": 541,
+    "sha256": "a57911d7545fe2248200bd0027ed7f50dd4168f44b38fa91e51c5117e367b366",
+    "blend_sha256": "e923a2f086ef88dc6bbc8900a4b94bc036c3d36b8a6fd12212f507912afa3740",
+    "poster": "FCCoSp-r3-flight_apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；短暂腾空后右脚六周、换至左脚六周，含 Camel/Sit/Upright。关节和冰刀采样通过；具体选手编排及公开全段播放待复核。"
+  },
+  {
     "id": "StSq",
     "name": "StSq · 接续步",
     "kind": "sequence",
