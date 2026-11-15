@@ -489,5 +489,33 @@
     "occurrences": 1,
     "archived_rounds": 3,
     "rounds_total": 3
+  },
+  {
+    "id": "CCoSp",
+    "name": "CCoSp · 换足联合旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "CCoSp-r3-web.glb",
+        "frames": 541,
+        "sha256": "cf5a43d02bdf21c42859497c7146dd39e212f0b54be655f987f8fa0e60900f50",
+        "blend_sha256": "2f8c9350c811d2013130ad041d265e110f6cb0e20c905d17f8d90347cacfae7c"
+      }
+    ],
+    "file": "CCoSp-r3-web.glb",
+    "frames": 541,
+    "sha256": "cf5a43d02bdf21c42859497c7146dd39e212f0b54be655f987f8fa0e60900f50",
+    "blend_sha256": "2f8c9350c811d2013130ad041d265e110f6cb0e20c905d17f8d90347cacfae7c",
+    "poster": "CCoSp-r3-camel-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档，12 周（每脚 6 周），三种基本姿势及换足轨迹均经采样；具体选手编排和公开全段播放待复核。",
+    "occurrences": 20,
+    "archived_rounds": 3,
+    "rounds_total": 3
   }
 ]

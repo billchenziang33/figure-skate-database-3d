@@ -1,24 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 18,
-  "archived_rounds": 54,
-  "blender_reviewed": 18,
+  "modeled_actions": 19,
+  "archived_rounds": 57,
+  "blender_reviewed": 19,
   "public_side_view_passed": 3,
-  "playable_latest_rounds": 18,
+  "playable_latest_rounds": 19,
   "latest_batch": {
     "assets": [
-      "1F"
+      "CCoSp"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 54,
+    "cumulative_rounds_archived": 57,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 18,
+    "assets_modeled": 19,
     "assets_total": 50,
     "stage": "Latest round previews bundled; 3/50 actions passed public default-side review; remaining actions await review.",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 18,
+    "playable_rounds_on_site": 19,
     "playable_rounds_scope": "Only the latest archived round of each modeled action is bundled as a browser preview; all three Blender/GLB rounds remain in the action archive."
   },
-  "last_updated": "2026-11-15 17:11 UTC"
+  "last_updated": "2026-11-15 17:57 UTC"
 }
