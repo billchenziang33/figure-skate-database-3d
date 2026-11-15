@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-11-15 21:00 UTC",
+  "last_updated": "2026-11-15 21:14 UTC",
   "latest_batch": {
     "assets": [
-      "FCCoSp"
+      "CCSp"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 75,
+    "cumulative_rounds_archived": 78,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 25,
+    "assets_modeled": 26,
     "assets_total": 50,
-    "stage": "FCCoSp 三轮 Blender / GLB 已归档；跳接、换足及 12 周旋转通过四分之一帧几何与技术检查；公开侧视待验收。",
+    "stage": "CCSp 三轮 Blender / GLB 已归档；左右脚各六周、全程燕式姿势通过四分之一帧几何与技术检查；公开侧视待验收。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 25,
+    "playable_rounds_on_site": 26,
     "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。"
   }
 }

@@ -1226,13 +1226,45 @@
   },
   {
     "id": "CCSp",
-    "name": "换足燕式旋转",
+    "name": "CCSp · 换足燕式旋转",
     "kind": "spin",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "CCSp-r1-web.glb",
+        "frames": 541,
+        "sha256": "90327987fdf9f5fbaa71c1e43d0c8ea57c9864a2bb495414b7e490ac529a5dd0",
+        "blend_sha256": "3af34c02e8d5deb0d89af638c1d2f2dc900d3ab38d9092db5b800c3236818b05"
+      },
+      {
+        "number": 2,
+        "file": "CCSp-r2-web.glb",
+        "frames": 541,
+        "sha256": "05f38a3324982209acd20f11513b660412c02a604edf62098e69575ff466755b",
+        "blend_sha256": "3fcccae9ec9d7aa36758d4360c9b085ba4807ce49ed464c26c7f29a27f3e1dcc"
+      },
+      {
+        "number": 3,
+        "file": "CCSp-r3-web.glb",
+        "frames": 541,
+        "sha256": "3e17c7e93ced6297bd93aacf190891bc2dd149aeac37ff613b311039fcecf241",
+        "blend_sha256": "41ce7f0863515dff10d035e6ce8c4294b8182b22aae4e1ab1e2863f5c81895d6"
+      }
+    ],
+    "file": "CCSp-r3-web.glb",
+    "frames": 541,
+    "sha256": "3e17c7e93ced6297bd93aacf190891bc2dd149aeac37ff613b311039fcecf241",
+    "blend_sha256": "41ce7f0863515dff10d035e6ce8c4294b8182b22aae4e1ab1e2863f5c81895d6",
+    "poster": "CCSp-r3-camel-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
     "occurrences": 6,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "note": "三轮 Blender/GLB 已归档；全程燕式、左右脚各六周，几何与换足轨迹采样通过；公开全段播放待复核。"
   },
   {
     "id": "FSSp",
