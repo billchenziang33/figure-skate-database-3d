@@ -328,6 +328,62 @@
     "rounds_total": 3
   },
   {
+    "id": "4Lo",
+    "name": "4Lo · Loop（后外结环）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4Lo-r3-web.glb",
+        "frames": 369,
+        "sha256": "2048e11298659962f8d8e0dbc4c230ced640471ceec627edb9865e2a4bb2c571",
+        "blend_sha256": "b5507cb8d468ce471fea4de5365adafbc90eced456946270c073d90b710d1957"
+      }
+    ],
+    "file": "4Lo-r3-web.glb",
+    "frames": 369,
+    "sha256": "2048e11298659962f8d8e0dbc4c230ced640471ceec627edb9865e2a4bb2c571",
+    "blend_sha256": "b5507cb8d468ce471fea4de5365adafbc90eced456946270c073d90b710d1957",
+    "poster": "4Lo-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "Loop / right backward outside-edge takeoff and same-foot landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
+    "motion_label": "illustrative / simulated",
+    "occurrences": 3,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
+    "id": "1F",
+    "name": "1F · Flip（后内点冰）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "1F-r3-web.glb",
+        "frames": 351,
+        "sha256": "83813fbc0fe990255ecf57975632e2481d9f575d9258d0d8ca55e71352583191",
+        "blend_sha256": "6e7eb9b533e9b6a1dcc652779646e15ebf99d14a3616d2edac3cfdae9929b0f4"
+      }
+    ],
+    "file": "1F-r3-web.glb",
+    "frames": 351,
+    "sha256": "83813fbc0fe990255ecf57975632e2481d9f575d9258d0d8ca55e71352583191",
+    "blend_sha256": "6e7eb9b533e9b6a1dcc652779646e15ebf99d14a3616d2edac3cfdae9929b0f4",
+    "poster": "1F-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；左后内刃起跳、右脚点冰、右后外刃落冰及一周网格审计通过。模拟轨迹；公开全段播放待验收。",
+    "occurrences": 2,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
     "id": "2S",
     "name": "2S · Salchow（萨霍夫）",
     "kind": "jump",

@@ -497,20 +497,84 @@
     "id": "4Lo",
     "name": "4Lo · Loop（后外结环）",
     "kind": "jump",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "4Lo-r1-web.glb",
+        "frames": 369,
+        "sha256": "836a70b801ee69086d1db4e1f56eafc1af248c8c12dc213066d12ff3e4139cc6",
+        "blend_sha256": "e63dbe3532378b8fe2d89af73ab0b4c592a17874f64413d0b7f462448d441659"
+      },
+      {
+        "number": 2,
+        "file": "4Lo-r2-web.glb",
+        "frames": 369,
+        "sha256": "d5671a2dcb8aedd00013d3bd9030d3c374d91305747f97a61e70a8e70369eabb",
+        "blend_sha256": "ce400a5a1d0045bcc41105a8a1a99cb853b85c77812072081b90db6f2998aa3c"
+      },
+      {
+        "number": 3,
+        "file": "4Lo-r3-web.glb",
+        "frames": 369,
+        "sha256": "2048e11298659962f8d8e0dbc4c230ced640471ceec627edb9865e2a4bb2c571",
+        "blend_sha256": "b5507cb8d468ce471fea4de5365adafbc90eced456946270c073d90b710d1957"
+      }
+    ],
+    "file": "4Lo-r3-web.glb",
+    "frames": 369,
+    "sha256": "2048e11298659962f8d8e0dbc4c230ced640471ceec627edb9865e2a4bb2c571",
+    "blend_sha256": "b5507cb8d468ce471fea4de5365adafbc90eced456946270c073d90b710d1957",
+    "poster": "4Lo-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "Loop / right backward outside-edge takeoff and same-foot landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
+    "motion_label": "illustrative / simulated",
     "occurrences": 3,
-    "archived_rounds": 0,
+    "archived_rounds": 3,
     "rounds_total": 3
   },
   {
     "id": "1F",
     "name": "1F · Flip（后内点冰）",
     "kind": "jump",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "1F-r1-web.glb",
+        "frames": 351,
+        "sha256": "f04da01c1684d43ee96f91a2b79683a1770e2202f192b1f5f6317452d692a0de",
+        "blend_sha256": "52ab43f2723c35ea90026c0f8a91f14008d34cb421e424229ff4d7668a08de8b"
+      },
+      {
+        "number": 2,
+        "file": "1F-r2-web.glb",
+        "frames": 351,
+        "sha256": "d55419a924dcaed3859fc93d7e1b2701b84bf0ef7a94b3a5693d7fae02bc5b2c",
+        "blend_sha256": "9b935e90695b71169ea17c943b819bb7aac0e447a3090dfbf14a11a0bef54f62"
+      },
+      {
+        "number": 3,
+        "file": "1F-r3-web.glb",
+        "frames": 351,
+        "sha256": "83813fbc0fe990255ecf57975632e2481d9f575d9258d0d8ca55e71352583191",
+        "blend_sha256": "6e7eb9b533e9b6a1dcc652779646e15ebf99d14a3616d2edac3cfdae9929b0f4"
+      }
+    ],
+    "file": "1F-r3-web.glb",
+    "frames": 351,
+    "sha256": "83813fbc0fe990255ecf57975632e2481d9f575d9258d0d8ca55e71352583191",
+    "blend_sha256": "6e7eb9b533e9b6a1dcc652779646e15ebf99d14a3616d2edac3cfdae9929b0f4",
+    "poster": "1F-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；左后内刃起跳、右脚点冰、右后外刃落冰及一周网格审计通过。模拟轨迹；公开全段播放待验收。",
     "occurrences": 2,
-    "archived_rounds": 0,
+    "archived_rounds": 3,
     "rounds_total": 3
   },
   {
