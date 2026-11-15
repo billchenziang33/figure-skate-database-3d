@@ -937,13 +937,120 @@
   },
   {
     "id": "3A+2T",
-    "name": "3A+2T",
+    "name": "3A+2T · 三周半阿克塞尔接两周后外点冰",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "3A+2T-r1-web.glb",
+        "frames": 440,
+        "sha256": "2833caa5b0031efc98c8354dc67bce06446227bd539672b1be98e3d1eb8ee856",
+        "blend_sha256": "4632501b346399c43f1c495032fb33b55edf8dbb1a9b26393bbc22807117ce82",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "2T": [
+            251,
+            280
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_2T": 251,
+          "APEX_2T": 266,
+          "LANDING_2T": 280,
+          "EXIT": 440
+        }
+      },
+      {
+        "number": 2,
+        "file": "3A+2T-r2-web.glb",
+        "frames": 440,
+        "sha256": "6536958f72a9a7d267dc4175100add0f00ef2637c0ad741e6fda0fb9a1db7986",
+        "blend_sha256": "f1d114e996ed16a03402da759741f3fa79ccca0b245f3e8aef96c7ffb823377e",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "2T": [
+            251,
+            280
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_2T": 251,
+          "APEX_2T": 266,
+          "LANDING_2T": 280,
+          "EXIT": 440
+        }
+      },
+      {
+        "number": 3,
+        "file": "3A+2T-r3-web.glb",
+        "frames": 440,
+        "sha256": "3fdb07c989b14c41e3a312312f43d133abb548a0c5d5b27707eaee062b8b0566",
+        "blend_sha256": "c78c8bc89e0c3857432d0423fe9af927b3fd43eddbcb18174f1870b55c3bd5d5",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "2T": [
+            251,
+            280
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_2T": 251,
+          "APEX_2T": 266,
+          "LANDING_2T": 280,
+          "EXIT": 440
+        }
+      }
+    ],
     "occurrences": 4,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3A+2T-r3-web.glb",
+    "frames": 440,
+    "sha256": "3fdb07c989b14c41e3a312312f43d133abb548a0c5d5b27707eaee062b8b0566",
+    "blend_sha256": "c78c8bc89e0c3857432d0423fe9af927b3fd43eddbcb18174f1870b55c3bd5d5",
+    "poster": "3A+2T-r3-landing-2t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "3A 落冰后短过渡接右脚 2T；两个跳跃段分别完成三周半和两周。Illustrative / simulated，无北京冬奥运动员比赛捕捉数据。",
+    "event_frames": {
+      "TAKEOFF_3A": 166,
+      "APEX_3A": 187,
+      "LANDING_3A": 207,
+      "TAKEOFF_2T": 251,
+      "APEX_2T": 266,
+      "LANDING_2T": 280,
+      "EXIT": 440
+    },
+    "segment_frames": {
+      "3A": [
+        166,
+        207
+      ],
+      "2T": [
+        251,
+        280
+      ]
+    }
   },
   {
     "id": "3Lz+3T",

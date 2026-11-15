@@ -1,24 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 27,
-  "archived_rounds": 81,
-  "blender_reviewed": 27,
+  "modeled_actions": 28,
+  "archived_rounds": 84,
+  "blender_reviewed": 28,
   "public_side_view_passed": 3,
-  "playable_latest_rounds": 27,
+  "playable_latest_rounds": 28,
   "latest_batch": {
     "assets": [
-      "FSSp"
+      "3A+2T"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 81,
+    "cumulative_rounds_archived": 84,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 27,
+    "assets_modeled": 28,
     "assets_total": 50,
-    "stage": "FSSp 三轮 Blender / GLB 已归档；右脚飞入蹲踞旋转约八周；四分之一帧几何与技术检查通过；公开侧视播放待验收。",
+    "stage": "3A+2T 三轮 Blender / GLB 已归档；转换段关节重建、两次跳跃段的几何与技术检查通过；公开 Edge 侧视待验收。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 27,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在本地与 Final Project 归档。"
+    "playable_rounds_on_site": 28,
+    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender / GLB 全部保存在动作库归档。"
   },
-  "last_updated": "2026-11-15 21:41 UTC"
+  "last_updated": "2026-11-15 23:44 UTC"
 }
