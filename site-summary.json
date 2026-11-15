@@ -1,24 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 21,
-  "archived_rounds": 63,
-  "blender_reviewed": 21,
+  "modeled_actions": 22,
+  "archived_rounds": 66,
+  "blender_reviewed": 22,
   "public_side_view_passed": 3,
-  "playable_latest_rounds": 21,
+  "playable_latest_rounds": 22,
   "latest_batch": {
     "assets": [
-      "FCSp"
+      "StSq"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 63,
+    "cumulative_rounds_archived": 66,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 21,
+    "assets_modeled": 22,
     "assets_total": 50,
-    "stage": "Latest round previews bundled; 3/50 actions passed public default-side review; remaining actions await review.",
+    "stage": "StSq three Blender / GLB rounds archived; geometry, technique and side-projection sampling passed; public default-side playback review pending.",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 21,
+    "playable_rounds_on_site": 22,
     "playable_rounds_scope": "Only the latest archived round of each modeled action is bundled as a browser preview; all three Blender/GLB rounds remain in the action archive."
   },
-  "last_updated": "2026-11-15 18:27 UTC"
+  "last_updated": "2026-11-15 19:08 UTC"
 }

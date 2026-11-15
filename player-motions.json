@@ -573,5 +573,37 @@
     "occurrences": 11,
     "archived_rounds": 3,
     "rounds_total": 3
+  },
+  {
+    "id": "StSq",
+    "name": "StSq · 接续步",
+    "kind": "sequence",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "StSq-r3-web.glb",
+        "frames": 401,
+        "sha256": "fed6208fac62cdd60912c89746aac424a4283f9c1a4bab3730d912c7f5fd9a6e",
+        "blend_sha256": "101ff7b83911aa020cdf3e7144a38ad981bfd15a0a98dd9c2563c34a21a307ee",
+        "events": {
+          "START_GLIDE": 1,
+          "DIRECTION_TURN_A": 112,
+          "BACKWARD_GLIDE": 162,
+          "ALTERNATING_STEP": 205,
+          "DIRECTION_TURN_B": 284,
+          "EXIT_GLIDE": 370
+        }
+      }
+    ],
+    "file": "StSq-r3-web.glb",
+    "frames": 401,
+    "sha256": "fed6208fac62cdd60912c89746aac424a4283f9c1a4bab3730d912c7f5fd9a6e",
+    "blend_sha256": "101ff7b83911aa020cdf3e7144a38ad981bfd15a0a98dd9c2563c34a21a307ee",
+    "poster": "StSq-r3-alternating_step-side.png",
+    "note": "三轮 Blender 几何和动作采样通过；公开默认侧视播放仍待 Edge 验收。动作 illustrative / simulated，无北京运动员捕捉数据。",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending"
   }
 ]
