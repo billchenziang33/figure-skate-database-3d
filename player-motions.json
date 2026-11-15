@@ -517,5 +517,33 @@
     "occurrences": 20,
     "archived_rounds": 3,
     "rounds_total": 3
+  },
+  {
+    "id": "CSSp",
+    "name": "CSSp · 换足蹲踞旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "CSSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "8d2b4b5c003bd527ba44b5ffbf7624a5d5fef503cac31c9f3a3ab537392f2741",
+        "blend_sha256": "e31164a044799c88ab14c1a03139c84224a8b722b1426e0cde0fa99ece682f94"
+      }
+    ],
+    "file": "CSSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "8d2b4b5c003bd527ba44b5ffbf7624a5d5fef503cac31c9f3a3ab537392f2741",
+    "blend_sha256": "e31164a044799c88ab14c1a03139c84224a8b722b1426e0cde0fa99ece682f94",
+    "poster": "CSSp-r3-sit_second_foot-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "motion_label": "illustrative / simulated",
+    "note": "三轮 Blender/GLB 已归档；换足蹲踞旋转约 8 周、每脚约 4 周；网格与技术采样通过，公开全段播放待复核。",
+    "occurrences": 11,
+    "archived_rounds": 3,
+    "rounds_total": 3
   }
 ]
