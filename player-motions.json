@@ -50,7 +50,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 20,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 188,
+      "LANDING": 209
+    }
   },
   {
     "id": "3T",
@@ -77,7 +82,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 17,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 185,
+      "LANDING": 203
+    }
   },
   {
     "id": "4S",
@@ -104,7 +114,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 11,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 187,
+      "LANDING": 209
+    }
   },
   {
     "id": "1Eu",
@@ -132,7 +147,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 10,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 179,
+      "LANDING": 191
+    }
   },
   {
     "id": "3F",
@@ -159,7 +179,12 @@
     "note": "三轮 Blender/GLB 已归档；左后内刃起跳、右脚点冰、右后外刃落冰和三周网格审计通过。公开默认侧视全段播放待验收。",
     "occurrences": 10,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 185,
+      "LANDING": 203
+    }
   },
   {
     "id": "3Lz",
@@ -187,7 +212,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 10,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 185,
+      "LANDING": 203
+    }
   },
   {
     "id": "2T",
@@ -214,7 +244,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 9,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 181,
+      "LANDING": 195
+    }
   },
   {
     "id": "3Lo",
@@ -242,7 +277,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 6,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 185,
+      "LANDING": 203
+    }
   },
   {
     "id": "3S",
@@ -269,7 +309,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 6,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 184,
+      "LANDING": 203
+    }
   },
   {
     "id": "4F",
@@ -297,7 +342,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 6,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 188,
+      "LANDING": 209
+    }
   },
   {
     "id": "4Lz",
@@ -325,7 +375,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 6,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 188,
+      "LANDING": 210
+    }
   },
   {
     "id": "4Lo",
@@ -353,7 +408,12 @@
     "motion_label": "illustrative / simulated",
     "occurrences": 3,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 188,
+      "LANDING": 209
+    }
   },
   {
     "id": "1F",
@@ -381,7 +441,12 @@
     "note": "三轮 Blender/GLB 已归档；左后内刃起跳、右脚点冰、右后外刃落冰及一周网格审计通过。模拟轨迹；公开全段播放待验收。",
     "occurrences": 2,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 179,
+      "LANDING": 191
+    }
   },
   {
     "id": "2S",
@@ -408,7 +473,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 2,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 180,
+      "LANDING": 196
+    }
   },
   {
     "id": "1S",
@@ -435,7 +505,12 @@
     "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 1,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 178,
+      "LANDING": 191
+    }
   },
   {
     "id": "2A",
@@ -488,7 +563,12 @@
     "note": "三轮 Blender / GLB 已归档；Flip 后内刃起跳、右脚点冰、后外刃落地及几何检查通过，公开默认侧视和全段播放待验收。",
     "occurrences": 1,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 182,
+      "LANDING": 198
+    }
   },
   {
     "id": "4T+3T",
@@ -534,7 +614,16 @@
     "occurrences": 7,
     "archived_rounds": 3,
     "rounds_total": 3,
-    "note": "4T 落冰后 29 帧内接右脚 3T Toe loop；两个跳跃段分别完成 4 周和 3 周。Illustrative / simulated，无运动员比赛捕捉数据。"
+    "note": "4T 落冰后 29 帧内接右脚 3T Toe loop；两个跳跃段分别完成 4 周和 3 周。Illustrative / simulated，无运动员比赛捕捉数据。",
+    "event_frames": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_3T": 238,
+      "APEX_3T": 257,
+      "LANDING_3T": 275,
+      "EXIT": 435
+    }
   },
   {
     "id": "CCoSp",
@@ -562,7 +651,15 @@
     "note": "三轮 Blender/GLB 已归档，12 周（每脚 6 周），三种基本姿势及换足轨迹均经采样；具体选手编排和公开全段播放待复核。",
     "occurrences": 20,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "ENTRY": 45,
+      "CAMEL": 95,
+      "SIT": 160,
+      "FOOT_CHANGE": 271,
+      "UPRIGHT": 235,
+      "EXIT": 510
+    }
   },
   {
     "id": "CSSp",
@@ -590,7 +687,14 @@
     "note": "三轮 Blender/GLB 已归档；换足蹲踞旋转约 8 周、每脚约 4 周；网格与技术采样通过，公开全段播放待复核。",
     "occurrences": 11,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "ENTRY": 45,
+      "SIT_FIRST_FOOT": 110,
+      "FOOT_CHANGE": 201,
+      "SIT_SECOND_FOOT": 290,
+      "EXIT": 370
+    }
   },
   {
     "id": "FCSp",
@@ -618,7 +722,15 @@
     "note": "三轮 Blender/GLB 已归档；跳接腾空后右脚燕式旋转约八周；刀刃起跳与落冰、网格和旋转采样通过，公开播放待验收。",
     "occurrences": 11,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "APPROACH": 35,
+      "TAKEOFF": 42,
+      "APEX": 51,
+      "LANDING": 60,
+      "CAMEL": 110,
+      "EXIT": 370
+    }
   },
   {
     "id": "FCCoSp",
@@ -646,7 +758,17 @@
     "note": "三轮 Blender/GLB 已归档；短暂腾空后右脚六周、换至左脚六周，含 Camel/Sit/Upright。关节和冰刀采样通过；具体选手编排及公开全段播放待复核。",
     "occurrences": 7,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 42,
+      "FLIGHT_APEX": 51,
+      "LANDING": 60,
+      "CAMEL": 95,
+      "SIT": 160,
+      "UPRIGHT": 235,
+      "FOOT_CHANGE": 271,
+      "EXIT": 510
+    }
   },
   {
     "id": "CCSp",
@@ -674,7 +796,14 @@
     "occurrences": 6,
     "archived_rounds": 3,
     "rounds_total": 3,
-    "note": "三轮 Blender/GLB 已归档；全程燕式、左右脚各六周，几何与换足轨迹采样通过；公开全段播放待复核。"
+    "note": "三轮 Blender/GLB 已归档；全程燕式、左右脚各六周，几何与换足轨迹采样通过；公开全段播放待复核。",
+    "event_frames": {
+      "ENTRY": 45,
+      "CAMEL": 95,
+      "FOOT_CHANGE": 271,
+      "CAMEL_SECOND_FOOT": 350,
+      "EXIT": 510
+    }
   },
   {
     "id": "FSSp",

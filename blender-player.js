@@ -2,13 +2,13 @@ import { findExportedNameMatch, findExportedNamesByPrefix } from './camera-name.
 import { fitBoundingSphereDistance, fitOrbitCameraDistance } from './camera-fit.mjs';
 import { toggleFullscreen } from './fullscreen-control.js';
 import { advancePlaybackTime, elapsedPlaybackSeconds, playbackSpeedFromControl, seekAnimationActions } from './playback-clock.mjs?v=100';
-import { formatMeters, measureFlightMetrics, phaseAt, readAxelEventFrames, timeAtAnimationFrame } from './trajectory-hud.mjs?v=102';
+import { formatMeters, measureFlightMetrics, phaseAt, readAxelEventFrames, timeAtAnimationFrame } from './trajectory-hud.mjs?v=103';
 
 const THREE = globalThis.THREE;
 const GLTFLoader = THREE?.GLTFLoader;
 
 const query = new URLSearchParams(location.search);
-const response = await fetch('./player-motions.json');
+const response = await fetch(`./player-motions.json?v=${Date.now()}`, { cache: 'no-store' });
 const motions = response.ok ? await response.json() : [];
 const asset = motions.find(motion => motion.id === query.get('id') && motion.file);
 const round = asset?.rounds.find(entry => String(entry.number) === query.get('round'));
@@ -46,6 +46,7 @@ const counter = document.querySelector('#blender-counter');
 const speedSelect = document.querySelector('#blender-speed');
 const fullscreenButton = document.querySelector('#blender-fullscreen');
 const cameraResetButton = document.querySelector('#blender-camera-reset');
+const flightHud = document.querySelector('#flight-hud');
 const cameraButtons = [...document.querySelectorAll('[data-camera]')];
 const phaseHud = document.querySelector('#flight-phase');
 const heightHud = document.querySelector('#flight-height');
@@ -212,9 +213,44 @@ function resize() {
 }
 
 function phaseLabel(frame) {
-	if (frame + 1 === trajectoryEventFrames.takeoff) return 'Take-off · skater’s left foot';
-	if (frame + 1 === trajectoryEventFrames.landing) return 'Landing · skater’s right foot';
-	return phaseAt(frame, trajectoryEventFrames);
+	if (trajectoryEventFrames) return phaseAt(frame, trajectoryEventFrames);
+	const frameNumber = frame + 1;
+	const event = Object.entries(asset?.event_frames ?? {})
+		.filter(([, value]) => Number.isSafeInteger(Number(value)) && Number(value) <= frameNumber)
+		.sort((a, b) => Number(a[1]) - Number(b[1])).at(-1);
+	const label = event?.[0]?.replaceAll('_', ' ') ?? 'Action';
+	return `${label.toLowerCase().replace(/\b\w/g, (letter) => letter.toUpperCase())} · simulated`;
+}
+
+function resolveTrajectoryEvents(objects) {
+	try {
+		return readAxelEventFrames(objects);
+	} catch (markerError) {
+		const events = asset?.event_frames ?? {};
+		const direct = {
+			takeoff: Number(events.TAKEOFF),
+			apex: Number(events.APEX ?? events.FLIGHT_APEX),
+			landing: Number(events.LANDING),
+		};
+		if (Number.isSafeInteger(direct.takeoff) && Number.isSafeInteger(direct.apex) &&
+			Number.isSafeInteger(direct.landing) && direct.takeoff < direct.apex && direct.apex < direct.landing) {
+			return direct;
+		}
+		const takeoffs = Object.entries(events)
+			.filter(([name, frame]) => /^TAKEOFF_.+/.test(name) && Number.isSafeInteger(Number(frame)))
+			.sort((a, b) => Number(a[1]) - Number(b[1]));
+		for (const [name, takeoffFrame] of takeoffs) {
+			const suffix = name.slice('TAKEOFF_'.length);
+			const apexFrame = Number(events[`APEX_${suffix}`]);
+			const landingFrame = Number(events[`LANDING_${suffix}`]);
+			if (Number.isSafeInteger(apexFrame) && Number.isSafeInteger(landingFrame) &&
+				Number(takeoffFrame) < apexFrame && apexFrame < landingFrame) {
+				return { takeoff: Number(takeoffFrame), apex: apexFrame, landing: landingFrame };
+			}
+		}
+		console.info(`Flight HUD hidden for ${asset?.id ?? 'motion'}: no take-off/apex/landing triplet.`, markerError);
+		return null;
+	}
 }
 
 function setPlaybackTime(time, updateSlider = true) {
@@ -417,9 +453,8 @@ async function start() {
 		createSkateShadows();
 		const clips = gltf.animations;
 		animationTrackCount = clips.reduce((count, clip) => count + clip.tracks.length, 0);
-		if (!clips.length || animationTrackCount < 80) {
-			throw new Error('The v178 GLB did not contain the expected articulated 3D action.');
-		}
+		if (!clips.length || animationTrackCount === 0) throw new Error('The GLB does not contain an animation.');
+		if (!trajectoryRoot) throw new Error('The GLB is missing its animated skater root.');
 		const rootPositionTrack = clips.flatMap((clip) => clip.tracks).find((track) =>
 			track.name.startsWith(trajectoryRoot.name) && track.name.endsWith('.position'));
 		if (!rootPositionTrack || rootPositionTrack.times.length !== frameCount) {
@@ -436,12 +471,12 @@ async function start() {
 			action.play();
 			return action;
 		});
-		if (!trajectoryRoot) throw new Error('The v178 GLB is missing its animated skater root track.');
-		trajectoryEventFrames = readAxelEventFrames(sceneObjects);
-		if (Object.values(trajectoryEventFrames).some((frame) => frame > frameCount)) {
+		trajectoryEventFrames = resolveTrajectoryEvents(sceneObjects);
+		flightHud.hidden = !trajectoryEventFrames;
+		if (trajectoryEventFrames && Object.values(trajectoryEventFrames).some((frame) => frame > frameCount)) {
 			throw new Error('A V102 inherited trajectory event is outside the exported animation frame range.');
 		}
-		sampleTrajectoryEvents();
+		if (trajectoryEventFrames) sampleTrajectoryEvents();
 		inspectionCamera.zoom = 1.0;
 		inspectionCamera.near = 0.01;
 		inspectionCamera.updateProjectionMatrix();

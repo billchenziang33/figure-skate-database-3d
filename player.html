@@ -14,7 +14,7 @@
 		.player-head strong{font-size:.92rem}.badge{font-size:.65rem;font-weight:750;letter-spacing:.08em;color:#ffd38c;border:1px solid #916d3e;border-radius:999px;padding:.25rem .5rem;white-space:nowrap}
 		.stage-shell{position:relative;flex:1;min-height:160px;overflow:hidden;background:#c9dce1}
 		#blender-stage{display:block;width:100%;height:100%;background:#c9dce1}
-		.flight-hud{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem;padding:.45rem .65rem;background:#193846;color:#eaf3f4}
+		.flight-hud[hidden]{display:none}.flight-hud{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.35rem;padding:.45rem .65rem;background:#193846;color:#eaf3f4}
 		.flight-hud div{min-width:0;border-left:2px solid #547482;padding-left:.45rem}.flight-hud b{display:block;font-size:.65rem;color:#a8c0c7;font-weight:500}.flight-hud strong{display:block;font-size:.82rem;font-variant-numeric:tabular-nums}.flight-reference{grid-column:1/-1;margin:0;color:#a8c0c7;font-size:.62rem}
 		.stage-message{align-self:flex-start;max-width:calc(100% - 1.3rem);margin:.3rem .65rem 0;padding:.3rem .5rem;border-radius:5px;background:#102734;color:#edf4f7;font-size:.72rem}
 		.camera-picks{display:flex;justify-content:center;flex-wrap:wrap;gap:.45rem;padding:.5rem .65rem .15rem}
@@ -55,6 +55,6 @@
 	<p class="note">Every pose, phase and trajectory is illustrative / simulated; this is not Beijing 2022 athlete capture. The bundled Three.js player works without an external CDN request.</p>
 	<script src="./vendor/three.umd.js"></script>
 	<script src="./vendor/GLTFLoader.js"></script>
-	<script type="module" src="./blender-player.js"></script>
+	<script type="module" src="./blender-player.js?v=103"></script>
 </body>
 </html>
