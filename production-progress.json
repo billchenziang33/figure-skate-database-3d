@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-11-15 19:53 UTC",
+  "last_updated": "2026-11-15 20:27 UTC",
   "latest_batch": {
     "assets": [
-      "ChSq"
+      "4T+3T"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 69,
+    "cumulative_rounds_archived": 72,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 23,
+    "assets_modeled": 24,
     "assets_total": 50,
-    "stage": "ChSq three Blender / GLB rounds archived; quarter-frame geometry and motion-structure sampling passed; public default-side review pending.",
+    "stage": "4T+3T 三轮 Blender / GLB 已归档；两段四分之一帧几何与技术检查通过；公开侧视待验收。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 23,
-    "playable_rounds_scope": "Only the latest archived round of each modeled action is bundled as a browser preview; all three Blender/GLB rounds remain in the action archive."
+    "playable_rounds_on_site": 24,
+    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。"
   }
 }

@@ -750,13 +750,101 @@
   },
   {
     "id": "4T+3T",
-    "name": "4T+3T",
+    "name": "4T+3T · 四周 Toe loop 接三周 Toe loop",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "4T+3T-r1-web.glb",
+        "frames": 435,
+        "sha256": "7fb0881dbe8b53de2e6ab2dd50cd510d87ddf82da5009fdb6e20cfeb795164ff",
+        "blend_sha256": "a57196a87c7ee5e553c19d1777689ea844b1004f9df5c39e6efef81f249b6329",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
+      },
+      {
+        "number": 2,
+        "file": "4T+3T-r2-web.glb",
+        "frames": 435,
+        "sha256": "48efe6babf6d008d4ac0be9793c3b67f31720f58bdd1cf60e8ca467b0bed4392",
+        "blend_sha256": "5937bede4b8e5dff57daf1620cdfb91727668d6bf0dfda1aab778899175b1c95",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
+      },
+      {
+        "number": 3,
+        "file": "4T+3T-r3-web.glb",
+        "frames": 435,
+        "sha256": "6648cd236df7aadc00fa13a9aa8f0d2fb5ceea86c8dffc4955d02541b45360a6",
+        "blend_sha256": "fdc13ff0648a3295b89bb2cb2fd857ee0bc2b225324a2933ded7cc72509224e4",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
+      }
+    ],
+    "file": "4T+3T-r3-web.glb",
+    "frames": 435,
+    "sha256": "6648cd236df7aadc00fa13a9aa8f0d2fb5ceea86c8dffc4955d02541b45360a6",
+    "blend_sha256": "fdc13ff0648a3295b89bb2cb2fd857ee0bc2b225324a2933ded7cc72509224e4",
+    "poster": "4T+3T-r3-landing-3t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
     "occurrences": 7,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "note": "4T 落冰后 29 帧内接右脚 3T Toe loop；两个跳跃段分别完成 4 周和 3 周。Illustrative / simulated，无运动员比赛捕捉数据。"
   },
   {
     "id": "3A+2T",
