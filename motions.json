@@ -195,7 +195,7 @@
     "poster": "1Eu-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
-    "public_side_view": "pending",
+    "public_side_view": "passed",
     "note": "Euler / right backward outside-edge takeoff, left backward inside-edge landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
     "motion_label": "illustrative / simulated",
     "occurrences": 10,
