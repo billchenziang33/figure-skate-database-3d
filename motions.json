@@ -164,10 +164,42 @@
     "id": "1Eu",
     "name": "1Eu · Euler（连接跳）",
     "kind": "jump",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "1Eu-r1-web.glb",
+        "frames": 351,
+        "sha256": "dfe6c04578c40b690ad2b5e1d21db20698bd99cd01bf06be29543424a079cabe",
+        "blend_sha256": "586a72425d94817bf3f2f93ecd85eed5b3f425226275fc19aa64274e37de8c5b"
+      },
+      {
+        "number": 2,
+        "file": "1Eu-r2-web.glb",
+        "frames": 351,
+        "sha256": "2263225d1255606910e844edb084009f0098c2db10cb348ef3a0db05c6c58ca3",
+        "blend_sha256": "4989707f27b7d17258e895693c5f1677f4da2df3bf45ce6734e0de154e6be01a"
+      },
+      {
+        "number": 3,
+        "file": "1Eu-r3-web.glb",
+        "frames": 351,
+        "sha256": "98c74010d097ec0beaf8b9de49a5155bf973d8cf21f4dc2667af47d75c2886de",
+        "blend_sha256": "a2c9b60c72b59ecb956bbbf70acd4331f48e7d2538c3cad04e00499214f9abda"
+      }
+    ],
+    "file": "1Eu-r3-web.glb",
+    "frames": 351,
+    "sha256": "98c74010d097ec0beaf8b9de49a5155bf973d8cf21f4dc2667af47d75c2886de",
+    "blend_sha256": "a2c9b60c72b59ecb956bbbf70acd4331f48e7d2538c3cad04e00499214f9abda",
+    "poster": "1Eu-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "Euler / right backward outside-edge takeoff, left backward inside-edge landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
+    "motion_label": "illustrative / simulated",
     "occurrences": 10,
-    "archived_rounds": 0,
+    "archived_rounds": 3,
     "rounds_total": 3
   },
   {

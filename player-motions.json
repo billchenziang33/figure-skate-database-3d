@@ -107,6 +107,34 @@
     "rounds_total": 3
   },
   {
+    "id": "1Eu",
+    "name": "1Eu · Euler（连接跳）",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "1Eu-r3-web.glb",
+        "frames": 351,
+        "sha256": "98c74010d097ec0beaf8b9de49a5155bf973d8cf21f4dc2667af47d75c2886de",
+        "blend_sha256": "a2c9b60c72b59ecb956bbbf70acd4331f48e7d2538c3cad04e00499214f9abda"
+      }
+    ],
+    "file": "1Eu-r3-web.glb",
+    "frames": 351,
+    "sha256": "98c74010d097ec0beaf8b9de49a5155bf973d8cf21f4dc2667af47d75c2886de",
+    "blend_sha256": "a2c9b60c72b59ecb956bbbf70acd4331f48e7d2538c3cad04e00499214f9abda",
+    "poster": "1Eu-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "note": "Euler / right backward outside-edge takeoff, left backward inside-edge landing; no toe-pick assist. Illustrative / simulated; no Beijing 2022 athlete capture data.",
+    "motion_label": "illustrative / simulated",
+    "occurrences": 10,
+    "archived_rounds": 3,
+    "rounds_total": 3
+  },
+  {
     "id": "3F",
     "name": "3F · Flip（后内点冰）",
     "kind": "jump",
