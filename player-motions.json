@@ -643,7 +643,10 @@
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
     "motion_label": "illustrative / simulated",
-    "note": "三轮 Blender/GLB 已归档；短暂腾空后右脚六周、换至左脚六周，含 Camel/Sit/Upright。关节和冰刀采样通过；具体选手编排及公开全段播放待复核。"
+    "note": "三轮 Blender/GLB 已归档；短暂腾空后右脚六周、换至左脚六周，含 Camel/Sit/Upright。关节和冰刀采样通过；具体选手编排及公开全段播放待复核。",
+    "occurrences": 7,
+    "archived_rounds": 3,
+    "rounds_total": 3
   },
   {
     "id": "StSq",
