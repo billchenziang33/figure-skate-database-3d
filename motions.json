@@ -461,28 +461,28 @@
         "number": 1,
         "file": "4Lz-r1-web.glb",
         "frames": 370,
-        "sha256": "eda5558bb8d89aec9abd54e7e6dec52f8ad3a3fba1aed80cc514991114a6bca6",
-        "blend_sha256": "8f6538864e340ed737d287e64f50fd43ce2e292bbd43604a7bafbe4f983f04e1"
+        "sha256": "8bbfb67fe50980b87968dcc824c0c76f3f76325e687c331ab875b60e0e5b3381",
+        "blend_sha256": "efebe326fd30f8fc562381da84aacea05f06ef2bf55f4938bbf7b91e70163fd3"
       },
       {
         "number": 2,
         "file": "4Lz-r2-web.glb",
         "frames": 370,
-        "sha256": "b36ffdc40e77636e9a419093a291ffe279a78a185f5f247d34bc1217fa91116b",
-        "blend_sha256": "864e2db42f29eedb42acbb75d8ec4293565bd74e6a6a6c6bd6c68d20a07a5eca"
+        "sha256": "03db43b31566391d68f0310a614a98d2abf07a7f1518294774f875a7a0ff5c6e",
+        "blend_sha256": "70c9da23d97ce7412b120e991d1478f33d9ec139f3d22eac7a76615868d66e72"
       },
       {
         "number": 3,
         "file": "4Lz-r3-web.glb",
         "frames": 370,
-        "sha256": "eb4686b5843330d9bd1dabf2ff3a93886f0e0da776aa253a7ccfcd459ac43ffd",
-        "blend_sha256": "86292a49065a0518647028025bcadf14f7fed18d84bece23e5f5668503d954fa"
+        "sha256": "90490a5a096a2973ab9bdbbd306c809438b0dbe2487648091227ffdd907bc481",
+        "blend_sha256": "2b39b0e914ac8408c7f800fc45e6a23a1a5d4d49ce4899d2f1f5dd83eab41218"
       }
     ],
     "file": "4Lz-r3-web.glb",
     "frames": 370,
-    "sha256": "eb4686b5843330d9bd1dabf2ff3a93886f0e0da776aa253a7ccfcd459ac43ffd",
-    "blend_sha256": "86292a49065a0518647028025bcadf14f7fed18d84bece23e5f5668503d954fa",
+    "sha256": "90490a5a096a2973ab9bdbbd306c809438b0dbe2487648091227ffdd907bc481",
+    "blend_sha256": "2b39b0e914ac8408c7f800fc45e6a23a1a5d4d49ce4899d2f1f5dd83eab41218",
     "poster": "4Lz-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
