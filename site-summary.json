@@ -1,24 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 22,
-  "archived_rounds": 66,
-  "blender_reviewed": 22,
+  "modeled_actions": 23,
+  "archived_rounds": 69,
+  "blender_reviewed": 23,
   "public_side_view_passed": 3,
-  "playable_latest_rounds": 22,
+  "playable_latest_rounds": 23,
   "latest_batch": {
     "assets": [
-      "StSq"
+      "ChSq"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 66,
+    "cumulative_rounds_archived": 69,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 22,
+    "assets_modeled": 23,
     "assets_total": 50,
-    "stage": "StSq three Blender / GLB rounds archived; geometry, technique and side-projection sampling passed; public default-side playback review pending.",
+    "stage": "ChSq three Blender / GLB rounds archived; quarter-frame geometry and motion-structure sampling passed; public default-side review pending.",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 22,
+    "playable_rounds_on_site": 23,
     "playable_rounds_scope": "Only the latest archived round of each modeled action is bundled as a browser preview; all three Blender/GLB rounds remain in the action archive."
   },
-  "last_updated": "2026-11-15 19:08 UTC"
+  "last_updated": "2026-11-15 19:53 UTC"
 }

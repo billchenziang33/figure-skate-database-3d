@@ -1198,12 +1198,64 @@
   },
   {
     "id": "ChSq",
-    "name": "编排步法序列",
+    "name": "ChSq · 编排序列",
     "kind": "sequence",
-    "status": "pending",
-    "rounds": [],
-    "occurrences": 10,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "ChSq-r1-web.glb",
+        "frames": 401,
+        "sha256": "d8039afcefa432526e5d06eb0f2e6aaee05eb44b33e189a9360dc908878613ad",
+        "blend_sha256": "ea76d0b71f58657abc5bf5efcfeec66dbb39fad415bccf2a09eec26e3aae30f8",
+        "events": {
+          "GLIDE_IN": 1,
+          "SPIRAL_LINE_A": 104,
+          "LOW_EDGE_SWEEP": 196,
+          "SPIRAL_LINE_B": 264,
+          "EXPRESSIVE_EXIT": 340,
+          "EXIT_GLIDE": 370
+        }
+      },
+      {
+        "number": 2,
+        "file": "ChSq-r2-web.glb",
+        "frames": 401,
+        "sha256": "48e63adeed8b91af7b46bb9f1c66bd86bcfb3548d1cff8b6f9cab2a4b82ec8cf",
+        "blend_sha256": "9062af1bef21fc0bd03b870db694550f900c113aa80a62182d42d3902287a47f",
+        "events": {
+          "GLIDE_IN": 1,
+          "SPIRAL_LINE_A": 104,
+          "LOW_EDGE_SWEEP": 196,
+          "SPIRAL_LINE_B": 264,
+          "EXPRESSIVE_EXIT": 340,
+          "EXIT_GLIDE": 370
+        }
+      },
+      {
+        "number": 3,
+        "file": "ChSq-r3-web.glb",
+        "frames": 401,
+        "sha256": "06339922d7cfcbcc46e8bc2d8f16c3b0bdfd6ee98e0f64724e1a874a5ea717f8",
+        "blend_sha256": "2ced7d89b53998f96d64d1a172a7bb16bbed6cac72e59b5e9137aa978ed57bb1",
+        "events": {
+          "GLIDE_IN": 1,
+          "SPIRAL_LINE_A": 104,
+          "LOW_EDGE_SWEEP": 196,
+          "SPIRAL_LINE_B": 264,
+          "EXPRESSIVE_EXIT": 340,
+          "EXIT_GLIDE": 370
+        }
+      }
+    ],
+    "file": "ChSq-r3-web.glb",
+    "frames": 401,
+    "sha256": "06339922d7cfcbcc46e8bc2d8f16c3b0bdfd6ee98e0f64724e1a874a5ea717f8",
+    "blend_sha256": "2ced7d89b53998f96d64d1a172a7bb16bbed6cac72e59b5e9137aa978ed57bb1",
+    "poster": "ChSq-r3-spiral_line_b-side.png",
+    "note": "三轮 Blender 几何与动作结构采样通过；公开默认侧视播放仍待 Edge 验收。Illustrative / simulated，无北京运动员比赛捕捉数据。",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending"
   }
 ]
