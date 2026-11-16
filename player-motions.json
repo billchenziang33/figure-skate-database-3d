@@ -1378,5 +1378,86 @@
         291
       ]
     }
+  },
+  {
+    "id": "3A+1Eu+3S",
+    "name": "3A+1Eu+3S · 三周 Axel 接 Euler 再接三周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "file": "3A+1Eu+3S-r3-web.glb",
+    "frames": 465,
+    "sha256": "b96563dc2591bddac3c4ef0b9c766f4606ce04afdec1a972b3b0c9a4d14b1623",
+    "blend_sha256": "8dddd6548b119a44e9a2f03b68041d39f6580bc45f4f3d2c5dd0cea1a66ffef9",
+    "poster": "3A+1Eu+3S-r3-transition-219-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "occurrences": 2,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF_3A": 166,
+      "APEX_3A": 187,
+      "LANDING_3A": 207,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 268,
+      "APEX_3S": 286,
+      "LANDING_3S": 305,
+      "EXIT": 465
+    },
+    "segment_frames": {
+      "3A": [
+        166,
+        207
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        268,
+        305
+      ]
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "note": "左脚前外刃 3A → 右脚后外刃落冰 → 右脚后外刃 Euler → 左脚后内刃落冰 → 左脚后内刃 3S。Illustrative / simulated，无北京运动员比赛捕捉数据。",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3A+1Eu+3S-r3-web.glb",
+        "frames": 465,
+        "sha256": "b96563dc2591bddac3c4ef0b9c766f4606ce04afdec1a972b3b0c9a4d14b1623",
+        "blend_sha256": "8dddd6548b119a44e9a2f03b68041d39f6580bc45f4f3d2c5dd0cea1a66ffef9",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            268,
+            305
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 268,
+          "APEX_3S": 286,
+          "LANDING_3S": 305,
+          "EXIT": 465
+        }
+      }
+    ]
   }
 ]

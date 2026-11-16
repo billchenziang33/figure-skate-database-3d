@@ -1171,13 +1171,150 @@
   },
   {
     "id": "3A+1Eu+3S",
-    "name": "3A+1Eu+3S",
+    "name": "3A+1Eu+3S · 三周 Axel 接 Euler 再接三周 Salchow",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "3A+1Eu+3S-r1-web.glb",
+        "frames": 454,
+        "sha256": "c8ecaac1a78596e9f792ec1fbeac16adc973a2de55c659cb4b700727c1edd08f",
+        "blend_sha256": "dbb56c0369f89a5e9a54742552d7bd4876e5442327a4f4bdbe6a243e3a84d6e1",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            257,
+            294
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 257,
+          "APEX_3S": 275,
+          "LANDING_3S": 294,
+          "EXIT": 454
+        }
+      },
+      {
+        "number": 2,
+        "file": "3A+1Eu+3S-r2-web.glb",
+        "frames": 465,
+        "sha256": "16895778090b770b46bb9943c9c06343e0a44f21132f113055e133649617e80d",
+        "blend_sha256": "61e03ab98d0340eda70aa2bba7b091b0870e1b5c8b5d2672b46c47cf5e43f05b",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            268,
+            305
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 268,
+          "APEX_3S": 286,
+          "LANDING_3S": 305,
+          "EXIT": 465
+        }
+      },
+      {
+        "number": 3,
+        "file": "3A+1Eu+3S-r3-web.glb",
+        "frames": 465,
+        "sha256": "b96563dc2591bddac3c4ef0b9c766f4606ce04afdec1a972b3b0c9a4d14b1623",
+        "blend_sha256": "8dddd6548b119a44e9a2f03b68041d39f6580bc45f4f3d2c5dd0cea1a66ffef9",
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            268,
+            305
+          ]
+        },
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 268,
+          "APEX_3S": 286,
+          "LANDING_3S": 305,
+          "EXIT": 465
+        }
+      }
+    ],
     "occurrences": 2,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3A+1Eu+3S-r3-web.glb",
+    "frames": 465,
+    "sha256": "b96563dc2591bddac3c4ef0b9c766f4606ce04afdec1a972b3b0c9a4d14b1623",
+    "blend_sha256": "8dddd6548b119a44e9a2f03b68041d39f6580bc45f4f3d2c5dd0cea1a66ffef9",
+    "poster": "3A+1Eu+3S-r3-transition-219-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3A": 166,
+      "APEX_3A": 187,
+      "LANDING_3A": 207,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 268,
+      "APEX_3S": 286,
+      "LANDING_3S": 305,
+      "EXIT": 465
+    },
+    "segment_frames": {
+      "3A": [
+        166,
+        207
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        268,
+        305
+      ]
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "note": "左脚前外刃 3A → 右脚后外刃落冰 → 右脚后外刃 Euler → 左脚后内刃落冰 → 左脚后内刃 3S。Illustrative / simulated，无北京运动员比赛捕捉数据。"
   },
   {
     "id": "3F+3T",

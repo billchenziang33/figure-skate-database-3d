@@ -1,18 +1,18 @@
 {
-  "last_updated": "2026-11-16 15:06 UTC",
+  "last_updated": "2026-11-16 16:41 UTC",
   "latest_batch": {
     "assets": [
-      "4Lz+3T"
+      "3A+1Eu+3S"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 99,
+    "cumulative_rounds_archived": 102,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 33,
+    "assets_modeled": 34,
     "assets_total": 50,
-    "stage": "4Lz+3T 已通过 Edge 默认侧视全段验收；Normal 1× 播至 451/451，暂停保持与时间轴定位通过。",
+    "stage": "3A+1Eu+3S 三轮已归档；Blender 几何/技术复核通过；第 219–222 帧侧视分腿修复完成，公开 Edge 播放待验收。",
     "all_rounds_playable": false,
     "public_side_view_passed": 6,
-    "playable_rounds_on_site": 33,
+    "playable_rounds_on_site": 34,
     "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
     "rounds_updated": 0
   }
