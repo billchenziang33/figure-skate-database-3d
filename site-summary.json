@@ -3,7 +3,7 @@
   "modeled_actions": 31,
   "archived_rounds": 93,
   "blender_reviewed": 31,
-  "public_side_view_passed": 3,
+  "public_side_view_passed": 4,
   "playable_latest_rounds": 31,
   "latest_batch": {
     "assets": [
@@ -14,12 +14,12 @@
     "cumulative_rounds_total": 150,
     "assets_modeled": 31,
     "assets_total": 50,
-    "stage": "3F+3T 三轮 Blender / GLB 已归档并加入网页预览，几何与技术审计通过；公开默认侧视完整播放待 Edge 验收。",
+    "stage": "3F+3T 三轮 Blender / GLB 已更新归档；Edge 默认侧视 1× 全程播放、暂停与拖动已验收。",
     "all_rounds_playable": false,
-    "public_side_view_passed": 3,
+    "public_side_view_passed": 4,
     "playable_rounds_on_site": 31,
     "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
     "rounds_updated": 3
   },
-  "last_updated": "2026-11-16 06:28 UTC"
+  "last_updated": "2026-11-16 06:35 UTC"
 }

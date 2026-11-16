@@ -1240,7 +1240,7 @@
     "poster": "3F+3T-r3-landing-3f-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
-    "public_side_view": "pending",
+    "public_side_view": "passed",
     "event_frames": {
       "TAKEOFF_3F": 166,
       "APEX_3F": 185,
@@ -1250,6 +1250,6 @@
       "LANDING_3T": 284,
       "EXIT": 444
     },
-    "note": "3F 落冰接 3T 点冰准备增加平滑短弧抬脚以分开鞋靴轮廓；三轮 Blender 几何与技术审计通过，公开 Edge 全段播放待验收。Illustrative / simulated，无北京运动员比赛捕捉数据。"
+    "note": "3F 落冰接 3T 点冰准备以 0.24 m 平滑短弧抬脚改善侧视鞋靴分离；Blender 几何与技术审计通过。Edge 默认侧视 1× 全程播放、暂停与时间轴拖动已验收。Illustrative / simulated，无北京运动员比赛捕捉数据。"
   }
 ]
