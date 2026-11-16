@@ -1288,13 +1288,120 @@
   },
   {
     "id": "3Lz+3Lo",
-    "name": "3Lz+3Lo",
+    "name": "3Lz+3Lo · 三周 Lutz 接三周 Loop",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "3Lz+3Lo-r1-transition12-v1-web.glb",
+        "frames": 438,
+        "sha256": "2d14a63a79513d10af362bfe543ac0a545412f6dd910766bc42f9988c56d1cfa",
+        "blend_sha256": "bf540243b6adbe0af0f620e24911f2c88ff0ba929c63c6361ce859e5fa38de0d",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3Lo": [
+            241,
+            278
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3LO": 241,
+          "APEX_3LO": 260,
+          "LANDING_3LO": 278,
+          "EXIT": 438
+        }
+      },
+      {
+        "number": 2,
+        "file": "3Lz+3Lo-r2-transition12-v1-web.glb",
+        "frames": 438,
+        "sha256": "b8f7eadd67902950b6dfe8b279faacd1ebcf7a49b50b99b61966898acb17de93",
+        "blend_sha256": "ccde2f0843b490f151053c7f6ff76dd5aa61df138c140d7bfbb1decfecd3af75",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3Lo": [
+            241,
+            278
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3LO": 241,
+          "APEX_3LO": 260,
+          "LANDING_3LO": 278,
+          "EXIT": 438
+        }
+      },
+      {
+        "number": 3,
+        "file": "3Lz+3Lo-r3-transition12-v1-web.glb",
+        "frames": 438,
+        "sha256": "b51e911ddcac5c7202c99c592750ffe4904ede95b506fbf94cd98498013ec068",
+        "blend_sha256": "a889ed1b6b721b830d359c8ed52d46620407ed9ab00d25c659ce1acccb65cdab",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3Lo": [
+            241,
+            278
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3LO": 241,
+          "APEX_3LO": 260,
+          "LANDING_3LO": 278,
+          "EXIT": 438
+        }
+      }
+    ],
     "occurrences": 2,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3Lz+3Lo-r3-transition12-v1-web.glb",
+    "frames": 438,
+    "sha256": "b51e911ddcac5c7202c99c592750ffe4904ede95b506fbf94cd98498013ec068",
+    "blend_sha256": "a889ed1b6b721b830d359c8ed52d46620407ed9ab00d25c659ce1acccb65cdab",
+    "poster": "3Lz+3Lo-r3-landing-3lo-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3LZ": 166,
+      "APEX_3LZ": 185,
+      "LANDING_3LZ": 203,
+      "TAKEOFF_3LO": 241,
+      "APEX_3LO": 260,
+      "LANDING_3LO": 278,
+      "EXIT": 438
+    },
+    "segment_frames": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "3Lo": [
+        241,
+        278
+      ]
+    },
+    "note": "左后外刃 3Lz 落冰后连续进入右后外刃 3Lo；三轮 Blender 几何与技术审计通过，Edge 公开默认侧视验收待做。Illustrative / simulated，无北京冬奥选手捕捉数据。"
   },
   {
     "id": "4Lz+3T",

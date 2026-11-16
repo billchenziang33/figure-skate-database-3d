@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-11-16 06:35 UTC",
+  "last_updated": "2026-11-16 07:10 UTC",
   "latest_batch": {
     "assets": [
-      "3F+3T"
+      "3Lz+3Lo"
     ],
-    "rounds_archived": 0,
-    "cumulative_rounds_archived": 93,
+    "rounds_archived": 3,
+    "cumulative_rounds_archived": 96,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 31,
+    "assets_modeled": 32,
     "assets_total": 50,
-    "stage": "3F+3T 三轮 Blender / GLB 已更新归档；Edge 默认侧视 1× 全程播放、暂停与拖动已验收。",
+    "stage": "3Lz+3Lo 三轮 Blender / GLB 已归档；两跳分别通过几何与技术采样；Edge 默认侧视验收待做。",
     "all_rounds_playable": false,
     "public_side_view_passed": 4,
-    "playable_rounds_on_site": 31,
+    "playable_rounds_on_site": 32,
     "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
-    "rounds_updated": 3
+    "rounds_updated": 0
   }
 }
