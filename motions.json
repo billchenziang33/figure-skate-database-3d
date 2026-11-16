@@ -1112,10 +1112,10 @@
       },
       {
         "number": 3,
-        "file": "3Lz+3T-r3-web.glb",
+        "file": "3Lz+3T-r3-v6-web.glb",
         "frames": 444,
-        "sha256": "a6843b80dd83d019ce6f9515bdea97e206f36f33cdc18255ff787cdba4252283",
-        "blend_sha256": "0e5b03a775dad32e967beb5ddc3d31d3878c9e2e2f8e86a3d852fe8a9d1a7f4f",
+        "sha256": "3005c4cd6ad222f76c6047c148cafbcfd3c706ffa10463ecaaa9013bd829bf46",
+        "blend_sha256": "db4f25e4c42b5b89a0781083e18ac26c2802a0547e64df32b25516c0fcd59560",
         "segments": {
           "3Lz": [
             166,
@@ -1140,10 +1140,10 @@
     "occurrences": 4,
     "archived_rounds": 3,
     "rounds_total": 3,
-    "file": "3Lz+3T-r3-web.glb",
+    "file": "3Lz+3T-r3-v6-web.glb",
     "frames": 444,
-    "sha256": "a6843b80dd83d019ce6f9515bdea97e206f36f33cdc18255ff787cdba4252283",
-    "blend_sha256": "0e5b03a775dad32e967beb5ddc3d31d3878c9e2e2f8e86a3d852fe8a9d1a7f4f",
+    "sha256": "3005c4cd6ad222f76c6047c148cafbcfd3c706ffa10463ecaaa9013bd829bf46",
+    "blend_sha256": "db4f25e4c42b5b89a0781083e18ac26c2802a0547e64df32b25516c0fcd59560",
     "poster": "3Lz+3T-r3-landing-3t-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
@@ -1167,7 +1167,7 @@
         284
       ]
     },
-    "note": "两个三周跳之间为短衔接；illustrative / simulated，无北京冬奥比赛捕捉数据。"
+    "note": "r3 v6 修正 3Lz→3T 点冰过渡的侧视鞋靴重叠；Blender 几何/技术检查通过，Edge 公开全段播放验收待做。Illustrative / simulated，无北京冬奥运动员比赛捕捉数据。"
   },
   {
     "id": "3A+1Eu+3S",
