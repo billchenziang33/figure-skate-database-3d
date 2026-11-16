@@ -1381,7 +1381,7 @@
     "poster": "3Lz+3Lo-r3-landing-3lo-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
-    "public_side_view": "pending",
+    "public_side_view": "passed",
     "event_frames": {
       "TAKEOFF_3LZ": 166,
       "APEX_3LZ": 185,
@@ -1401,7 +1401,7 @@
         278
       ]
     },
-    "note": "左后外刃 3Lz 落冰后连续进入右后外刃 3Lo；三轮 Blender 几何与技术审计通过，Edge 公开默认侧视验收待做。Illustrative / simulated，无北京冬奥选手捕捉数据。"
+    "note": "Edge 默认 Side profile 已验收：1× 从第 1 帧完整播放至 438/438 并正常结束；在第 260 帧暂停后等待 0.5 秒仍保持该帧；时间轴可定位到 3Lz 最高点/落冰 185/203 与 3Lo 最高点/落冰 260/278。默认画幅下全身和双冰鞋可见，关键帧鞋靴可分辨。Illustrative / simulated，无北京冬奥选手比赛捕捉数据。"
   },
   {
     "id": "4Lz+3T",
