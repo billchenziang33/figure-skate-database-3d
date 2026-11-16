@@ -2,7 +2,7 @@ import { findExportedNameMatch, findExportedNamesByPrefix } from './camera-name.
 import { fitBoundingSphereDistance, fitOrbitCameraDistance } from './camera-fit.mjs';
 import { toggleFullscreen } from './fullscreen-control.js';
 import { advancePlaybackTime, elapsedPlaybackSeconds, playbackSpeedFromControl, seekAnimationActions } from './playback-clock.mjs?v=100';
-import { formatMeters, measureFlightMetrics, phaseAt, readAxelEventFrames, timeAtAnimationFrame } from './trajectory-hud.mjs?v=103';
+import { formatMeters, measureFlightMetrics, phaseAt, readAxelEventFrames, readEventSegments, selectEventSegment, timeAtAnimationFrame } from './trajectory-hud.mjs?v=105';
 
 const THREE = globalThis.THREE;
 const GLTFLoader = THREE?.GLTFLoader;
@@ -86,7 +86,7 @@ let lastPointerX = 0;
 let lastPointerY = 0;
 let trajectoryRoot;
 let trajectoryEventFrames;
-let trajectoryPoints;
+let trajectoryPointSegments = [];
 let trajectoryGuides = [];
 const inspectionDirection = new THREE.Vector3();
 const inspectionOrientation = new THREE.Quaternion();
@@ -223,6 +223,8 @@ function phaseLabel(frame) {
 }
 
 function resolveTrajectoryEvents(objects) {
+	const segments = readEventSegments(asset?.event_frames);
+	if (segments.length) return { ...segments[0], segments };
 	try {
 		return readAxelEventFrames(objects);
 	} catch (markerError) {
@@ -269,10 +271,14 @@ function setPlaybackTime(time, updateSlider = true) {
 }
 
 function updateFlightHud(frame) {
-	if (!trajectoryRoot || !trajectoryPoints) return;
+	if (!trajectoryRoot || trajectoryPointSegments.length === 0) return;
 	trajectoryRoot.getWorldPosition(trajectoryPosition);
 	const current = { x: trajectoryPosition.x, y: trajectoryPosition.y, z: trajectoryPosition.z };
-	const { takeoff, apex, landing } = trajectoryPoints;
+	const eventSegments = trajectoryEventFrames.segments ?? [trajectoryEventFrames];
+	const eventSegment = selectEventSegment(frame, eventSegments);
+	const points = trajectoryPointSegments.find((segment) => segment.takeoffFrame === eventSegment.takeoff);
+	if (!points) return;
+	const { takeoff, apex, landing } = points;
 	const metrics = measureFlightMetrics(current, takeoff, apex, landing);
 	phaseHud.textContent = phaseLabel(frame);
 	heightHud.textContent = formatMeters(metrics.heightFromTakeoff, true);
@@ -290,11 +296,13 @@ function sampleTrajectoryEvents() {
 		trajectoryRoot.getWorldPosition(trajectoryPosition);
 		return { x: trajectoryPosition.x, y: trajectoryPosition.y, z: trajectoryPosition.z };
 	};
-	trajectoryPoints = {
-		takeoff: sample(trajectoryEventFrames.takeoff),
-		apex: sample(trajectoryEventFrames.apex),
-		landing: sample(trajectoryEventFrames.landing),
-	};
+	const eventSegments = trajectoryEventFrames.segments ?? [trajectoryEventFrames];
+	trajectoryPointSegments = eventSegments.map((segment) => ({
+		takeoffFrame: segment.takeoff,
+		takeoff: sample(segment.takeoff),
+		apex: sample(segment.apex),
+		landing: sample(segment.landing),
+	}));
 	seekAnimationActions(mixer, clipActions, animationStartTime + restoreTime);
 	modelScene.updateMatrixWorld(true);
 }
@@ -473,7 +481,10 @@ async function start() {
 		});
 		trajectoryEventFrames = resolveTrajectoryEvents(sceneObjects);
 		flightHud.hidden = !trajectoryEventFrames;
-		if (trajectoryEventFrames && Object.values(trajectoryEventFrames).some((frame) => frame > frameCount)) {
+		const eventFrames = trajectoryEventFrames?.segments
+			? trajectoryEventFrames.segments.flatMap(({ takeoff, apex, landing }) => [takeoff, apex, landing])
+			: trajectoryEventFrames && [trajectoryEventFrames.takeoff, trajectoryEventFrames.apex, trajectoryEventFrames.landing];
+		if (eventFrames?.some((frame) => frame > frameCount)) {
 			throw new Error('A V102 inherited trajectory event is outside the exported animation frame range.');
 		}
 		if (trajectoryEventFrames) sampleTrajectoryEvents();

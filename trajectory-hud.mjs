@@ -20,8 +20,52 @@ export function readAxelEventFrames(objects) {
 	return events;
 }
 
+export function readEventSegments(eventFrames) {
+	const takeoffs = Object.entries(eventFrames ?? {})
+		.filter(([name, frame]) => /^TAKEOFF_.+/.test(name) && Number.isSafeInteger(Number(frame)))
+		.map(([name, takeoff]) => {
+			const suffix = name.slice('TAKEOFF_'.length);
+			const apex = Number(eventFrames[`APEX_${suffix}`]);
+			const landing = Number(eventFrames[`LANDING_${suffix}`]);
+			if (!Number.isSafeInteger(apex) || !Number.isSafeInteger(landing) ||
+				!(Number(takeoff) < apex && apex < landing)) {
+				throw new Error(`Invalid event triplet for ${suffix}.`);
+			}
+			return { name: suffix, takeoff: Number(takeoff), apex, landing };
+		})
+		.sort((a, b) => a.takeoff - b.takeoff);
+
+	for (let index = 1; index < takeoffs.length; index++) {
+		if (takeoffs[index - 1].landing >= takeoffs[index].takeoff) {
+			throw new Error('Jump event segments must be ordered without overlapping flight intervals.');
+		}
+	}
+	return takeoffs;
+}
+
+export function selectEventSegment(frame, segments) {
+	if (!Array.isArray(segments) || segments.length === 0) return null;
+	const blenderFrame = frame + 1;
+	const active = segments.find((segment) =>
+		blenderFrame >= segment.takeoff && blenderFrame <= segment.landing);
+	if (active) return active;
+	const previous = segments.filter((segment) => segment.takeoff < blenderFrame).at(-1);
+	return previous ?? segments[0];
+}
+
 export function phaseAt(frame, events) {
 	const blenderFrame = frame + 1;
+	const segments = Array.isArray(events?.segments) ? events.segments : null;
+	if (segments?.length) {
+		if (blenderFrame < segments[0].takeoff) return 'Approach · simulated';
+		const active = segments.find((segment) => blenderFrame >= segment.takeoff && blenderFrame <= segment.landing);
+		if (active) return `${active.name} · ${phaseAt(frame, active)}`;
+		const afterAnyJump = segments.some((segment) => blenderFrame > segment.landing);
+		const beforeAnotherJump = segments.some((segment) => blenderFrame < segment.takeoff);
+		if (afterAnyJump && beforeAnotherJump) return 'Transition · simulated';
+		if (blenderFrame > segments.at(-1).landing) return 'Exit glide · simulated';
+		return 'Approach · simulated';
+	}
 	if (blenderFrame < events.takeoff) return 'Approach · simulated';
 	if (blenderFrame === events.takeoff) return 'Take-off · simulated';
 	if (blenderFrame < events.apex) return 'Ascent · simulated';
