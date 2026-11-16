@@ -86,7 +86,7 @@ try {
   const batch = production?.latest_batch;
   $('#latest-actions').textContent = batch?.assets?.join('、') || '—';
   $('#latest-detail').textContent = batch
-    ? `${production.last_updated} · 新归档 ${batch.rounds_archived} 轮`
+    ? `${production.last_updated} · ${batch.rounds_updated ? `修订更新 ${batch.rounds_updated} 轮` : `新归档 ${batch.rounds_archived} 轮`}`
     : '动作资产同步后自动更新';
   $('#updated-at').textContent = production?.last_updated ? `Updated ${production.last_updated}` : '';
   filter.addEventListener('change', () => render(motions));
