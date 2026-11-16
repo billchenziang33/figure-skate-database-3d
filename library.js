@@ -1,3 +1,5 @@
+import { scheduleLibraryRefresh } from './library-refresh.mjs';
+
 const $ = (selector) => document.querySelector(selector);
 const cards = $('#cards');
 const filter = $('#filter');
@@ -61,38 +63,52 @@ function render(motions) {
   statusLine.textContent = `显示 ${visible.length} / ${motions.length} 项 · ${motions.filter((motion) => motion.file).length} 项已有可播放模型`;
 }
 
-try {
-  const cacheKey = `v=${Date.now()}`;
-  const [motionResponse, progressResponse] = await Promise.all([
-    fetch(`./motions.json?${cacheKey}`, { cache: 'no-store' }),
-    fetch(`./production-progress.json?${cacheKey}`, { cache: 'no-store' }),
-  ]);
-  if (!motionResponse.ok) throw new Error(`Action catalog returned ${motionResponse.status}`);
-  const all = await motionResponse.json();
-  const motions = all.filter((motion) => motion.kind !== 'baseline');
-  const production = progressResponse.ok ? await progressResponse.json() : null;
-  const generated = motions.filter((motion) => motion.file).length;
-  const rounds = motions.reduce((sum, motion) => sum + motion.rounds.length, 0);
-  const reviewed = motions.filter((motion) => motion.blender_geometry_reviewed && motion.blender_technique_reviewed).length;
-  const accepted = motions.filter((motion) => motion.public_side_view === 'passed').length;
+let motions = [];
+let refreshing = false;
+let loaded = false;
+filter.addEventListener('change', () => render(motions));
+search.addEventListener('input', () => render(motions));
 
-  $('#model-count').textContent = `${generated} / ${motions.length}`;
-  Object.assign($('#model-progress'), {max:motions.length, value:generated});
-  $('#round-count').textContent = `制作轮次 ${rounds} / ${motions.length * 3}`;
-  $('#web-count').textContent = `公开验收 ${accepted} / ${motions.length}`;
-  $('#metric-actions').textContent = `${generated} / ${motions.length}`;
-  $('#metric-review').textContent = `${reviewed} / ${motions.length}`;
-  $('#metric-web').textContent = `${accepted} / ${motions.length}`;
-  const batch = production?.latest_batch;
-  $('#latest-actions').textContent = batch?.assets?.join('、') || '—';
-  $('#latest-detail').textContent = batch
-    ? `${production.last_updated} · ${batch.rounds_updated ? `修订更新 ${batch.rounds_updated} 轮` : `新归档 ${batch.rounds_archived} 轮`}`
-    : '动作资产同步后自动更新';
-  $('#updated-at').textContent = production?.last_updated ? `Updated ${production.last_updated}` : '';
-  filter.addEventListener('change', () => render(motions));
-  search.addEventListener('input', () => render(motions));
-  render(motions);
-} catch (error) {
-  statusLine.textContent = '动作目录暂时无法读取，请刷新页面后重试。';
-  console.error(error);
+async function refreshLibrary() {
+  if (refreshing) return;
+  refreshing = true;
+  try {
+    const cacheKey = `v=${Date.now()}`;
+    const [motionResponse, progressResponse] = await Promise.all([
+      fetch(`./motions.json?${cacheKey}`, { cache: 'no-store' }),
+      fetch(`./production-progress.json?${cacheKey}`, { cache: 'no-store' }),
+    ]);
+    if (!motionResponse.ok) throw new Error(`Action catalog returned ${motionResponse.status}`);
+    const all = await motionResponse.json();
+    motions = all.filter((motion) => motion.kind !== 'baseline');
+    const production = progressResponse.ok ? await progressResponse.json() : null;
+    const generated = motions.filter((motion) => motion.file).length;
+    const rounds = motions.reduce((sum, motion) => sum + motion.rounds.length, 0);
+    const reviewed = motions.filter((motion) => motion.blender_geometry_reviewed && motion.blender_technique_reviewed).length;
+    const accepted = motions.filter((motion) => motion.public_side_view === 'passed').length;
+
+    $('#model-count').textContent = `${generated} / ${motions.length}`;
+    Object.assign($('#model-progress'), {max:motions.length, value:generated});
+    $('#round-count').textContent = `制作轮次 ${rounds} / ${motions.length * 3}`;
+    $('#web-count').textContent = `公开验收 ${accepted} / ${motions.length}`;
+    $('#metric-actions').textContent = `${generated} / ${motions.length}`;
+    $('#metric-review').textContent = `${reviewed} / ${motions.length}`;
+    $('#metric-web').textContent = `${accepted} / ${motions.length}`;
+    const batch = production?.latest_batch;
+    $('#latest-actions').textContent = batch?.assets?.join('、') || '—';
+    $('#latest-detail').textContent = batch
+      ? `${production.last_updated} · ${batch.rounds_updated ? `修订更新 ${batch.rounds_updated} 轮` : `新归档 ${batch.rounds_archived} 轮`}`
+      : '动作资产同步后自动更新';
+    $('#updated-at').textContent = production?.last_updated ? `Updated ${production.last_updated}` : '';
+    render(motions);
+    loaded = true;
+  } catch (error) {
+    if (!loaded) statusLine.textContent = '动作目录暂时无法读取，请刷新页面后重试。';
+    console.error(error);
+  } finally {
+    refreshing = false;
+  }
 }
+
+await refreshLibrary();
+scheduleLibraryRefresh(refreshLibrary, { intervalMs: 30000 });
