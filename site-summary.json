@@ -9,7 +9,7 @@
     "assets": [
       "3F+3T"
     ],
-    "rounds_archived": 3,
+    "rounds_archived": 0,
     "cumulative_rounds_archived": 93,
     "cumulative_rounds_total": 150,
     "assets_modeled": 31,
@@ -19,7 +19,7 @@
     "public_side_view_passed": 3,
     "playable_rounds_on_site": 31,
     "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
-    "rounds_updated": 0
+    "rounds_updated": 3
   },
-  "last_updated": "2026-11-16 06:03 UTC"
+  "last_updated": "2026-11-16 06:28 UTC"
 }

@@ -1187,10 +1187,10 @@
     "rounds": [
       {
         "number": 1,
-        "file": "3F+3T-r1-web.glb",
+        "file": "3F+3T-r1-crossing-v6-web.glb",
         "frames": 444,
-        "sha256": "8a59cfe3d8983c046f1fc48a0466a52e44771dc6258f2f19778fe676d765523b",
-        "blend_sha256": "7c71178ab9db981cbf422d46111197568124b8a6ff44750caddd305738212fe5",
+        "sha256": "276c1f21da7569c00575056d9925a63f1366ff93a74c384164e824f7694c634c",
+        "blend_sha256": "27554c260839c357022e44024bfc0b95eefc4b7994fe943e43c44ba39e4d853a",
         "segments": {
           "3F": [
             166,
@@ -1213,10 +1213,10 @@
       },
       {
         "number": 2,
-        "file": "3F+3T-r2-web.glb",
+        "file": "3F+3T-r2-crossing-v6-web.glb",
         "frames": 444,
-        "sha256": "c4be9926031a969275719e2efc0479567802f5bff2f52ecf217ac3024df51d5d",
-        "blend_sha256": "1cfd9ff240edf6a90f5bcf23a820a34bf1904f9028e5f066b2d629f876dbf7f4",
+        "sha256": "d54811f5f56bfbf6844a8f8c34b7696939ed63021ad557439d1f32be5149f94e",
+        "blend_sha256": "6851837a39534efcd06f21bd67cc39fd828c506f369be36c59b2f1bb5f32b129",
         "segments": {
           "3F": [
             166,
@@ -1239,10 +1239,10 @@
       },
       {
         "number": 3,
-        "file": "3F+3T-r3-web.glb",
+        "file": "3F+3T-r3-crossing-v6-web.glb",
         "frames": 444,
-        "sha256": "1c5f736f2890c79532f739e87ffefea62c3fea7aa453866e3b2b1db10a5cde64",
-        "blend_sha256": "ffb6dc1aee9420845b07b3257f2008cbc57d0cd418168ab7c0c711e40a3b616e",
+        "sha256": "dc399d3f9b97c278d8f122ab2852354e0fcb47e9633f1e974e572e451fe01c35",
+        "blend_sha256": "a8d41d890d22118049d83059d1c63a920ae4e9e7b3ecd436a4ab4522e8321117",
         "segments": {
           "3F": [
             166,
@@ -1267,10 +1267,10 @@
     "occurrences": 2,
     "archived_rounds": 3,
     "rounds_total": 3,
-    "file": "3F+3T-r3-web.glb",
+    "file": "3F+3T-r3-crossing-v6-web.glb",
     "frames": 444,
-    "sha256": "1c5f736f2890c79532f739e87ffefea62c3fea7aa453866e3b2b1db10a5cde64",
-    "blend_sha256": "ffb6dc1aee9420845b07b3257f2008cbc57d0cd418168ab7c0c711e40a3b616e",
+    "sha256": "dc399d3f9b97c278d8f122ab2852354e0fcb47e9633f1e974e572e451fe01c35",
+    "blend_sha256": "a8d41d890d22118049d83059d1c63a920ae4e9e7b3ecd436a4ab4522e8321117",
     "poster": "3F+3T-r3-landing-3f-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
