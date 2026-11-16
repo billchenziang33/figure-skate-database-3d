@@ -822,11 +822,60 @@
     "id": "4A",
     "name": "4A · Axel（阿克塞尔）",
     "kind": "jump",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "4A-r1-web.glb",
+        "frames": 379,
+        "sha256": "a4debf36953749c8a89257f05a5e46a63afa0e20fdeb28fa6274db80182a08ff",
+        "blend_sha256": "3eccab0c8b80e085c9d8deacdebcbaff24019a9ea19ee0a4f327e69c6c548070",
+        "measured_turns": 4.4999998456178325,
+        "takeoff": 166,
+        "apex": 193,
+        "landing": 219
+      },
+      {
+        "number": 2,
+        "file": "4A-r2-web.glb",
+        "frames": 379,
+        "sha256": "53d3a1de497f3a35648f72eccf1f643fb8687ae173633747942c96868c2b4c55",
+        "blend_sha256": "b46be4bc7f599a1d66dd100f2fa407841cf0d9a3b9c16dfa236963c4f66d1d40",
+        "measured_turns": 4.4999998456178325,
+        "takeoff": 166,
+        "apex": 193,
+        "landing": 219
+      },
+      {
+        "number": 3,
+        "file": "4A-r3-web.glb",
+        "frames": 379,
+        "sha256": "5b7fc442967cf0297391566b9ddf2f512d243bc2059f710b019b53294b245dc7",
+        "blend_sha256": "02e2132e4f679e6c1a5d223887e1e1cd1ad35059977b566d65ad2200394d3e8c",
+        "measured_turns": 4.4999998456178325,
+        "takeoff": 166,
+        "apex": 193,
+        "landing": 219
+      }
+    ],
     "occurrences": 1,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4A-r3-web.glb",
+    "frames": 379,
+    "sha256": "5b7fc442967cf0297391566b9ddf2f512d243bc2059f710b019b53294b245dc7",
+    "blend_sha256": "02e2132e4f679e6c1a5d223887e1e1cd1ad35059977b566d65ad2200394d3e8c",
+    "poster": "4A-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF": 166,
+      "APEX": 193,
+      "LANDING": 219
+    },
+    "note": "Nominal 4.5-turn Axel illustration; Beijing 2022 4A< under-rotation variation remains pending video review. Illustrative / simulated; no athlete capture data.",
+    "motion_label": "illustrative / simulated"
   },
   {
     "id": "4T+3T",
