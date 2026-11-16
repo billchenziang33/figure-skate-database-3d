@@ -838,8 +838,8 @@
         "number": 1,
         "file": "4T+3T-r1-web.glb",
         "frames": 435,
-        "sha256": "7fb0881dbe8b53de2e6ab2dd50cd510d87ddf82da5009fdb6e20cfeb795164ff",
-        "blend_sha256": "a57196a87c7ee5e553c19d1777689ea844b1004f9df5c39e6efef81f249b6329",
+        "sha256": "b1e072c7ecb994c67edaacff32217f43d5f3180fe621d19586fdaba1cb5278db",
+        "blend_sha256": "14cac81f98eceade92f4b6529c38f6dcc6137c4d378e9cd387cb9806195f65fc",
         "segments": {
           "4T": [
             166,
@@ -864,8 +864,8 @@
         "number": 2,
         "file": "4T+3T-r2-web.glb",
         "frames": 435,
-        "sha256": "48efe6babf6d008d4ac0be9793c3b67f31720f58bdd1cf60e8ca467b0bed4392",
-        "blend_sha256": "5937bede4b8e5dff57daf1620cdfb91727668d6bf0dfda1aab778899175b1c95",
+        "sha256": "b52c8a5daf3968585ae27006b92d0271475f63b1447395884d044f10855e1090",
+        "blend_sha256": "726a1818d3588228c1f8c9ed4ff05df3bba680bca88027fa7f5f4016ba879ff3",
         "segments": {
           "4T": [
             166,
@@ -890,8 +890,8 @@
         "number": 3,
         "file": "4T+3T-r3-web.glb",
         "frames": 435,
-        "sha256": "6648cd236df7aadc00fa13a9aa8f0d2fb5ceea86c8dffc4955d02541b45360a6",
-        "blend_sha256": "fdc13ff0648a3295b89bb2cb2fd857ee0bc2b225324a2933ded7cc72509224e4",
+        "sha256": "ba89a726834166d898835ef618f894b25fee2d08115d7449c8e95fe9da7677b7",
+        "blend_sha256": "84f88386bfcab5dd1af03923b05ac10b5f493cc3578662e10d4cab019c1e8ea2",
         "segments": {
           "4T": [
             166,
@@ -915,8 +915,8 @@
     ],
     "file": "4T+3T-r3-web.glb",
     "frames": 435,
-    "sha256": "6648cd236df7aadc00fa13a9aa8f0d2fb5ceea86c8dffc4955d02541b45360a6",
-    "blend_sha256": "fdc13ff0648a3295b89bb2cb2fd857ee0bc2b225324a2933ded7cc72509224e4",
+    "sha256": "ba89a726834166d898835ef618f894b25fee2d08115d7449c8e95fe9da7677b7",
+    "blend_sha256": "84f88386bfcab5dd1af03923b05ac10b5f493cc3578662e10d4cab019c1e8ea2",
     "poster": "4T+3T-r3-landing-3t-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
@@ -1054,13 +1054,120 @@
   },
   {
     "id": "3Lz+3T",
-    "name": "3Lz+3T",
+    "name": "3Lz+3T · 三周 Lutz 接三周 Toe loop",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "3Lz+3T-r1-web.glb",
+        "frames": 444,
+        "sha256": "b07c5551ad8fbbf8c989e07343edf017462338059b5b20a282e9d6e49bc26cde",
+        "blend_sha256": "44ef3f25b1ac4c44ec52ccbf9b1f53eb245b6890506cc2dd8f211acd2ad94a23",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3T": [
+            247,
+            284
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3T": 247,
+          "APEX_3T": 266,
+          "LANDING_3T": 284,
+          "EXIT": 444
+        }
+      },
+      {
+        "number": 2,
+        "file": "3Lz+3T-r2-web.glb",
+        "frames": 444,
+        "sha256": "8c0f7670bee6efd31ba33b956fff21aca57e0e9a7637847e460e39f51e8a7cb7",
+        "blend_sha256": "f4ff9cd73413f9997a446665b6c6a30ea2efac3d0caff776b018e6df7dc9087e",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3T": [
+            247,
+            284
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3T": 247,
+          "APEX_3T": 266,
+          "LANDING_3T": 284,
+          "EXIT": 444
+        }
+      },
+      {
+        "number": 3,
+        "file": "3Lz+3T-r3-web.glb",
+        "frames": 444,
+        "sha256": "a6843b80dd83d019ce6f9515bdea97e206f36f33cdc18255ff787cdba4252283",
+        "blend_sha256": "0e5b03a775dad32e967beb5ddc3d31d3878c9e2e2f8e86a3d852fe8a9d1a7f4f",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "3T": [
+            247,
+            284
+          ]
+        },
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_3T": 247,
+          "APEX_3T": 266,
+          "LANDING_3T": 284,
+          "EXIT": 444
+        }
+      }
+    ],
     "occurrences": 4,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3Lz+3T-r3-web.glb",
+    "frames": 444,
+    "sha256": "a6843b80dd83d019ce6f9515bdea97e206f36f33cdc18255ff787cdba4252283",
+    "blend_sha256": "0e5b03a775dad32e967beb5ddc3d31d3878c9e2e2f8e86a3d852fe8a9d1a7f4f",
+    "poster": "3Lz+3T-r3-landing-3t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3LZ": 166,
+      "APEX_3LZ": 185,
+      "LANDING_3LZ": 203,
+      "TAKEOFF_3T": 247,
+      "APEX_3T": 266,
+      "LANDING_3T": 284,
+      "EXIT": 444
+    },
+    "segment_frames": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "3T": [
+        247,
+        284
+      ]
+    },
+    "note": "两个三周跳之间为短衔接；illustrative / simulated，无北京冬奥比赛捕捉数据。"
   },
   {
     "id": "3A+1Eu+3S",

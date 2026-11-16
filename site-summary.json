@@ -1,24 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 28,
-  "archived_rounds": 84,
-  "blender_reviewed": 28,
+  "modeled_actions": 29,
+  "archived_rounds": 87,
+  "blender_reviewed": 29,
   "public_side_view_passed": 3,
-  "playable_latest_rounds": 28,
+  "playable_latest_rounds": 30,
   "latest_batch": {
     "assets": [
-      "3A+2T"
+      "3Lz+3T"
     ],
     "rounds_archived": 3,
-    "cumulative_rounds_archived": 84,
+    "cumulative_rounds_archived": 87,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 28,
+    "assets_modeled": 29,
     "assets_total": 50,
-    "stage": "3A+2T 三轮 Blender / GLB 已归档；转换段关节重建、两次跳跃段的几何与技术检查通过；公开 Edge 侧视待验收。",
+    "stage": "3Lz+3T 三轮 Blender / GLB 已归档；两跳几何与技术审计、转场腿链回归和侧视落冰鞋间距检查通过；公开 Edge 播放验收待接入。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 28,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender / GLB 全部保存在动作库归档。"
+    "playable_rounds_on_site": 30,
+    "playable_rounds_scope": "每种已建模动作发布最新一轮网页预览；三轮 Blender / GLB 全部归档。"
   },
-  "last_updated": "2026-11-15 23:44 UTC"
+  "last_updated": "2026-11-16 01:07 UTC"
 }
