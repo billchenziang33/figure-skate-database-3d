@@ -1196,5 +1196,60 @@
       ]
     },
     "motion_label": "illustrative / simulated"
+  },
+  {
+    "id": "3F+3T",
+    "name": "3F+3T · 三周 Flip 接三周 Toe loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3F+3T-r3-web.glb",
+        "frames": 444,
+        "sha256": "1c5f736f2890c79532f739e87ffefea62c3fea7aa453866e3b2b1db10a5cde64",
+        "blend_sha256": "ffb6dc1aee9420845b07b3257f2008cbc57d0cd418168ab7c0c711e40a3b616e",
+        "segments": {
+          "3F": [
+            166,
+            203
+          ],
+          "3T": [
+            247,
+            284
+          ]
+        },
+        "events": {
+          "TAKEOFF_3F": 166,
+          "APEX_3F": 185,
+          "LANDING_3F": 203,
+          "TAKEOFF_3T": 247,
+          "APEX_3T": 266,
+          "LANDING_3T": 284,
+          "EXIT": 444
+        }
+      }
+    ],
+    "occurrences": 2,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3F+3T-r3-web.glb",
+    "frames": 444,
+    "sha256": "1c5f736f2890c79532f739e87ffefea62c3fea7aa453866e3b2b1db10a5cde64",
+    "blend_sha256": "ffb6dc1aee9420845b07b3257f2008cbc57d0cd418168ab7c0c711e40a3b616e",
+    "poster": "3F+3T-r3-landing-3f-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3F": 166,
+      "APEX_3F": 185,
+      "LANDING_3F": 203,
+      "TAKEOFF_3T": 247,
+      "APEX_3T": 266,
+      "LANDING_3T": 284,
+      "EXIT": 444
+    },
+    "note": "3F 落冰接 3T 点冰准备增加平滑短弧抬脚以分开鞋靴轮廓；三轮 Blender 几何与技术审计通过，公开 Edge 全段播放待验收。Illustrative / simulated，无北京运动员比赛捕捉数据。"
   }
 ]

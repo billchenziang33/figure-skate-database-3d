@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-11-16 03:20 UTC",
+  "last_updated": "2026-11-16 06:03 UTC",
   "latest_batch": {
     "assets": [
-      "3Lz+3T"
+      "3F+3T"
     ],
-    "rounds_archived": 0,
-    "cumulative_rounds_archived": 90,
+    "rounds_archived": 3,
+    "cumulative_rounds_archived": 93,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 30,
+    "assets_modeled": 31,
     "assets_total": 50,
-    "stage": "3Lz+3T r3 v6 侧视过渡修订已发布为待验收候选；动作数 30/50、制作轮次 90/150 不变，公开 Edge 全段验收待做。",
+    "stage": "3F+3T 三轮 Blender / GLB 已归档并加入网页预览，几何与技术审计通过；公开默认侧视完整播放待 Edge 验收。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
-    "playable_rounds_on_site": 30,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮网页预览；三轮 Blender / GLB 全部归档。",
-    "rounds_updated": 1
+    "playable_rounds_on_site": 31,
+    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
+    "rounds_updated": 0
   }
 }
