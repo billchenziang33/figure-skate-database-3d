@@ -1313,5 +1313,70 @@
       ]
     },
     "note": "Edge 默认 Side profile 已验收：1× 从第 1 帧完整播放至 438/438 并正常结束；在第 260 帧暂停后等待 0.5 秒仍保持该帧；时间轴可定位到 3Lz 最高点/落冰 185/203 与 3Lo 最高点/落冰 260/278。默认画幅下全身和双冰鞋可见，关键帧鞋靴可分辨。Illustrative / simulated，无北京冬奥选手比赛捕捉数据。"
+  },
+  {
+    "id": "4Lz+3T",
+    "name": "4Lz+3T · 四周 Lutz 接三周 Toe loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4Lz+3T-r3-sideclear030-v1-web.glb",
+        "frames": 451,
+        "sha256": "614e4ecd94142b7597b162c714f2d6300ab7d25dadeeb0fe69076cff10766d12",
+        "blend_sha256": "00d61a46238b2d4b667b5c6ea8dbda2d3061f18f235b6f279040c03bb273693a",
+        "segments": {
+          "4Lz": [
+            166,
+            210
+          ],
+          "3T": [
+            254,
+            291
+          ]
+        },
+        "events": {
+          "TAKEOFF_4LZ": 166,
+          "APEX_4LZ": 188,
+          "LANDING_4LZ": 210,
+          "TAKEOFF_3T": 254,
+          "APEX_3T": 273,
+          "LANDING_3T": 291,
+          "EXIT": 451
+        }
+      }
+    ],
+    "file": "4Lz+3T-r3-sideclear030-v1-web.glb",
+    "frames": 451,
+    "sha256": "614e4ecd94142b7597b162c714f2d6300ab7d25dadeeb0fe69076cff10766d12",
+    "blend_sha256": "00d61a46238b2d4b667b5c6ea8dbda2d3061f18f235b6f279040c03bb273693a",
+    "note": "Blender 三轮的几何与技术离散审计通过；公开 Edge 默认侧视和全段播放待验收。4Lz 约四周，接 3T 约三周；illustrative / simulated，无北京冬奥运动员比赛捕捉数据。",
+    "poster": "4Lz+3T-r3-sideclear030-v1-apex-3t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "occurrences": 2,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF_4LZ": 166,
+      "APEX_4LZ": 188,
+      "LANDING_4LZ": 210,
+      "TAKEOFF_3T": 254,
+      "APEX_3T": 273,
+      "LANDING_3T": 291,
+      "EXIT": 451
+    },
+    "segment_frames": {
+      "4Lz": [
+        166,
+        210
+      ],
+      "3T": [
+        254,
+        291
+      ]
+    }
   }
 ]
