@@ -1,25 +1,24 @@
 {
   "base_actions": 50,
-  "modeled_actions": 29,
-  "archived_rounds": 87,
-  "blender_reviewed": 29,
+  "modeled_actions": 30,
+  "archived_rounds": 90,
+  "blender_reviewed": 30,
   "public_side_view_passed": 3,
   "playable_latest_rounds": 30,
   "latest_batch": {
     "assets": [
-      "2T r3"
+      "4T+2T"
     ],
-    "rounds_archived": 0,
-    "cumulative_rounds_archived": 87,
+    "rounds_archived": 3,
+    "cumulative_rounds_archived": 90,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 29,
+    "assets_modeled": 30,
     "assets_total": 50,
-    "stage": "2T r3 侧视相位修订已重归档；Blender 几何与技术复核通过；公开 Edge 验收待做。",
+    "stage": "4T+2T 三轮 Blender / GLB 已归档；两段跳跃的四分之一帧几何与技术检查通过；公开 Edge 默认侧视验收待做。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
     "playable_rounds_on_site": 30,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮网页预览；三轮 Blender / GLB 全部归档。",
-    "rounds_updated": 1
+    "playable_rounds_scope": "每种已建模动作发布最新一轮网页预览；三轮 Blender / GLB 全部归档。"
   },
-  "last_updated": "2026-11-16 02:00 UTC"
+  "last_updated": "2026-11-16 02:39 UTC"
 }

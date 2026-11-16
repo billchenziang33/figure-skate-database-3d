@@ -1211,13 +1211,120 @@
   },
   {
     "id": "4T+2T",
-    "name": "4T+2T",
+    "name": "4T+2T · 四周 Toe loop 接两周 Toe loop",
     "kind": "combination",
-    "status": "pending",
-    "rounds": [],
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 1,
+        "file": "4T+2T-r1-web.glb",
+        "frames": 427,
+        "sha256": "b63324e0ccf0b3d0e4a89866aa4e7bb991dec15bcefd17eed4549cec6550f856",
+        "blend_sha256": "5732879e908bca879d054da98018e3131633d33b991d37d8d7860669f4e2a8f9",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "2T": [
+            238,
+            267
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_2T": 238,
+          "APEX_2T": 253,
+          "LANDING_2T": 267,
+          "EXIT": 427
+        }
+      },
+      {
+        "number": 2,
+        "file": "4T+2T-r2-web.glb",
+        "frames": 427,
+        "sha256": "cb78081990f374938f9516d03ced67410dc057027f127bfea7dc4e98991d76a6",
+        "blend_sha256": "90a3f3e88f4b9d1af76af5d6faf12fab81bdcc2a81006489a676637706d996ae",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "2T": [
+            238,
+            267
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_2T": 238,
+          "APEX_2T": 253,
+          "LANDING_2T": 267,
+          "EXIT": 427
+        }
+      },
+      {
+        "number": 3,
+        "file": "4T+2T-r3-web.glb",
+        "frames": 427,
+        "sha256": "17b88ff6082d75637c1ec14985df6a1dcddc6d008fd3b163007065230b43586d",
+        "blend_sha256": "a7948508dd8168e7492d4a4eb87b6eaa4bb012739762f8956e9902d9d2430c6a",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "2T": [
+            238,
+            267
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_2T": 238,
+          "APEX_2T": 253,
+          "LANDING_2T": 267,
+          "EXIT": 427
+        }
+      }
+    ],
     "occurrences": 2,
-    "archived_rounds": 0,
-    "rounds_total": 3
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4T+2T-r3-web.glb",
+    "frames": 427,
+    "sha256": "17b88ff6082d75637c1ec14985df6a1dcddc6d008fd3b163007065230b43586d",
+    "blend_sha256": "a7948508dd8168e7492d4a4eb87b6eaa4bb012739762f8956e9902d9d2430c6a",
+    "poster": "4T+2T-r3-landing-2t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_2T": 238,
+      "APEX_2T": 253,
+      "LANDING_2T": 267,
+      "EXIT": 427
+    },
+    "segment_frames": {
+      "4T": [
+        166,
+        209
+      ],
+      "2T": [
+        238,
+        267
+      ]
+    },
+    "note": "右脚后向外刃承重、左刀齿辅助起跳；连续完成 4T 后衔接 2T。Illustrative / simulated，无北京冬奥运动员比赛捕捉数据。"
   },
   {
     "id": "2F+1Eu+3S",
