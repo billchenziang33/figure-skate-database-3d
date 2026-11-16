@@ -93,33 +93,33 @@
         "number": 1,
         "file": "3T-r1-web.glb",
         "frames": 363,
-        "sha256": "20f11a132188c1ea5401c7e9dbd2ca27b9a842dcbc59bb3de074adc8c8faed31",
-        "blend_sha256": "b7b76633b16557ab562422e0e02623a2cec4eafa7d653150862ea510941d27b8"
+        "sha256": "c4b358f8b127f5cb6e9622a74030d7b11159792cc83c31a1aefa769b6f38dc29",
+        "blend_sha256": "8258286ff225553b56fde74984b90adb63eef73105e791f78769d544f0ae3a66"
       },
       {
         "number": 2,
         "file": "3T-r2-web.glb",
         "frames": 363,
-        "sha256": "2643e9ddfcdbd5bbd42c09056a49e3b7cce0996b86bb08c92a505c832c1b2152",
-        "blend_sha256": "3e4234a880a1d4582bc27c6aac2c6c47dd08269fbb843e55e83caaccff297fc5"
+        "sha256": "bd54016317579cb6b545675c4cb75f220eb5c02f2f6b293a2aac1a5d88d48989",
+        "blend_sha256": "a95a392c93801c99722b742ae3c34c94d6e438bb8c6ba69c9d8f1595b85deff0"
       },
       {
         "number": 3,
         "file": "3T-r3-web.glb",
         "frames": 363,
-        "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
-        "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d"
+        "sha256": "2754dcde3e2803d03cb35d60097e1e9aa94ecd3b5909774bbe4da2053732827a",
+        "blend_sha256": "f2d4d0e352098081a650a796d3fabca0c13802fb3d745bf8d2c2cf1f9c479348"
       }
     ],
     "file": "3T-r3-web.glb",
     "frames": 363,
-    "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
-    "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d",
+    "sha256": "2754dcde3e2803d03cb35d60097e1e9aa94ecd3b5909774bbe4da2053732827a",
+    "blend_sha256": "f2d4d0e352098081a650a796d3fabca0c13802fb3d745bf8d2c2cf1f9c479348",
     "poster": "3T-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "note": "三轮鞋靴分离修正版已归档；Blender 几何与技术审核通过，公开默认侧视待 Edge 验收。",
     "occurrences": 17,
     "archived_rounds": 3,
     "rounds_total": 3,

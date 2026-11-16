@@ -1,15 +1,15 @@
 {
-  "last_updated": "2026-11-16 01:07 UTC",
+  "last_updated": "2026-11-16 01:17 UTC",
   "latest_batch": {
     "assets": [
-      "3Lz+3T"
+      "3T"
     ],
     "rounds_archived": 3,
     "cumulative_rounds_archived": 87,
     "cumulative_rounds_total": 150,
     "assets_modeled": 29,
     "assets_total": 50,
-    "stage": "3Lz+3T 三轮 Blender / GLB 已归档；两跳几何与技术审计、转场腿链回归和侧视落冰鞋间距检查通过；公开 Edge 播放验收待接入。",
+    "stage": "3T 三轮分离修正版已归档；几何和技术审计通过；公开侧视验收待 Edge。",
     "all_rounds_playable": false,
     "public_side_view_passed": 3,
     "playable_rounds_on_site": 30,
