@@ -1,19 +1,19 @@
 {
-  "last_updated": "2026-11-16 17:06 UTC",
+  "last_updated": "2026-11-19 05:57 UTC",
   "latest_batch": {
     "assets": [
-      "4A"
+      "2A"
     ],
-    "rounds_archived": 3,
+    "rounds_archived": 0,
     "cumulative_rounds_archived": 105,
     "cumulative_rounds_total": 150,
     "assets_modeled": 35,
     "assets_total": 50,
-    "stage": "4A 三轮 4.5 周 Axel 示意已归档；Blender 几何与技术复核通过；4A< 执行变式和公开 Edge 侧视待复核。",
+    "stage": "2A 主入口替换为 FS-Jump3D C07 第三轮。三轮版本已归档，公开 Edge 完播待复核。",
     "all_rounds_playable": false,
     "public_side_view_passed": 6,
     "playable_rounds_on_site": 35,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
-    "rounds_updated": 0
+    "playable_rounds_scope": "每种已建模动作从首页卡片打开最新一轮，2A 的三轮修订另有对照页。",
+    "rounds_updated": 3
   }
 }

@@ -742,36 +742,44 @@
     "rounds": [
       {
         "number": 1,
-        "file": "2A-r1-web.glb",
-        "frames": 361,
-        "sha256": "8ac8b412ab0c20dce973e4057d6e1aea6be887de3e0d52903b4b21bf739a3618"
+        "file": "2A-C07-iteration-1-web.glb",
+        "frames": 300,
+        "sha256": "08803e2e0c49c251f78f806e91db189173ce0776914c750fcac84372c72e4003",
+        "blend_sha256": "03102641d5307d490378a96980cf8849025b5b5d9d6534f0e52aef864ae57243"
       },
       {
         "number": 2,
-        "file": "2A-r2-web.glb",
-        "frames": 361,
-        "sha256": "5ecd28a3bfa6bb33a9cf716ce1697f065fc9a6c486a4305a38a6adc80e5c0e65"
+        "file": "2A-C07-iteration-2-web.glb",
+        "frames": 300,
+        "sha256": "8f8872c94a090812757c990cdd211ea4e38de8531af3d07e2dc7686b7f397747",
+        "blend_sha256": "2ab46a23c59dfbcb4ea01f545a60dc2495343522ac3f3f801acff08ac5e5e8a3"
       },
       {
         "number": 3,
-        "file": "2A-r3-free-leg-v1-web.glb",
-        "frames": 361,
-        "sha256": "51fa3faf8f8a126e762778e97f1490cb594955603a9c410ebb569b9bba532e99",
-        "blend_sha256": "ae43c663f04454919c03e097a18db119630140e5be9d62073b158dba2b793bd5"
+        "file": "2A-C07-iteration-3-web.glb",
+        "frames": 300,
+        "sha256": "18f567dea6408ff739955930caa0eea3a1b8b2cdb9151cbc12ea16e88474e26f",
+        "blend_sha256": "68af48440130f5f86da32be3b11660bb72ba3937b912175987dd54cb7d21fc32"
       }
     ],
-    "file": "2A-r3-free-leg-v1-web.glb",
-    "frames": 361,
-    "sha256": "51fa3faf8f8a126e762778e97f1490cb594955603a9c410ebb569b9bba532e99",
-    "blend_sha256": "ae43c663f04454919c03e097a18db119630140e5be9d62073b158dba2b793bd5",
-    "note": "第 3 轮已调整腾空左腿。第 185 帧双冰鞋更易辨认。左前外刃起跳，2.5 周，右后外刃落冰。Blender 采样检查通过，公开 Edge 播放验收待完成。",
-    "poster": "2A-r3-apex-side.png",
+    "file": "2A-C07-iteration-3-web.glb",
+    "frames": 300,
+    "sha256": "18f567dea6408ff739955930caa0eea3a1b8b2cdb9151cbc12ea16e88474e26f",
+    "blend_sha256": "68af48440130f5f86da32be3b11660bb72ba3937b912175987dd54cb7d21fc32",
+    "note": "FS-Jump3D C07 第三轮。改善头颈比例、收臂过渡和落冰后的双鞋分离。训练场 2A 尝试，人物与轨迹为示意模拟。由 Ryota Takeda 等人的 FS-Jump3D 改编，CC BY-NC-SA 4.0。",
+    "poster": "2A-C07-iteration-3-poster.png",
     "blender_geometry_reviewed": true,
-    "blender_technique_reviewed": true,
+    "blender_technique_reviewed": false,
     "public_side_view": "pending",
     "occurrences": 1,
     "archived_rounds": 3,
-    "rounds_total": 3
+    "rounds_total": 3,
+    "event_frames": {
+      "TAKEOFF": 162,
+      "APEX": 177,
+      "LANDING": 193
+    },
+    "motion_label": "illustrative / simulated"
   },
   {
     "id": "2F",
