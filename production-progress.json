@@ -1,19 +1,33 @@
 {
-  "last_updated": "2026-11-19 05:57 UTC",
+  "last_updated": "2026-11-19 14:46 UTC",
   "latest_batch": {
     "assets": [
-      "2A"
+      "2F+1Eu+3S",
+      "3A+1Eu+1F",
+      "3F+2T",
+      "3F+3Lo",
+      "3Lz+1Eu+2S",
+      "3Lz+1Eu+3S",
+      "3Lz+2T",
+      "4F+3T",
+      "4Lo+1Eu+3S",
+      "4S+2T",
+      "4S+3T",
+      "4T+1Eu+1F",
+      "4T+1Eu+2S",
+      "4T+1Eu+3S",
+      "FCSSp"
     ],
-    "rounds_archived": 0,
-    "cumulative_rounds_archived": 105,
+    "rounds_archived": 45,
+    "cumulative_rounds_archived": 150,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 35,
+    "assets_modeled": 50,
     "assets_total": 50,
-    "stage": "2A 主入口替换为 FS-Jump3D C07 第三轮。三轮版本已归档，公开 Edge 完播待复核。",
+    "stage": "补发已在本地归档的 15 项模型。全部 50 项已有公开预览。",
     "all_rounds_playable": false,
     "public_side_view_passed": 6,
-    "playable_rounds_on_site": 35,
-    "playable_rounds_scope": "每种已建模动作从首页卡片打开最新一轮，2A 的三轮修订另有对照页。",
-    "rounds_updated": 3
+    "playable_rounds_on_site": 50,
+    "playable_rounds_scope": "每个动作的当前版本可预览。",
+    "rounds_updated": 0
   }
 }

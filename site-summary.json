@@ -1,25 +1,39 @@
 {
   "base_actions": 50,
-  "modeled_actions": 31,
-  "archived_rounds": 93,
-  "blender_reviewed": 31,
-  "public_side_view_passed": 4,
-  "playable_latest_rounds": 31,
+  "modeled_actions": 50,
+  "archived_rounds": 150,
+  "blender_reviewed": 49,
+  "public_side_view_passed": 6,
+  "playable_latest_rounds": 50,
+  "last_updated": "2026-11-19 14:46 UTC",
   "latest_batch": {
     "assets": [
-      "3F+3T"
+      "2F+1Eu+3S",
+      "3A+1Eu+1F",
+      "3F+2T",
+      "3F+3Lo",
+      "3Lz+1Eu+2S",
+      "3Lz+1Eu+3S",
+      "3Lz+2T",
+      "4F+3T",
+      "4Lo+1Eu+3S",
+      "4S+2T",
+      "4S+3T",
+      "4T+1Eu+1F",
+      "4T+1Eu+2S",
+      "4T+1Eu+3S",
+      "FCSSp"
     ],
-    "rounds_archived": 0,
-    "cumulative_rounds_archived": 93,
+    "rounds_archived": 45,
+    "cumulative_rounds_archived": 150,
     "cumulative_rounds_total": 150,
-    "assets_modeled": 31,
+    "assets_modeled": 50,
     "assets_total": 50,
-    "stage": "3F+3T 三轮 Blender / GLB 已更新归档；Edge 默认侧视 1× 全程播放、暂停与拖动已验收。",
+    "stage": "补发已在本地归档的 15 项模型。全部 50 项已有公开预览。",
     "all_rounds_playable": false,
-    "public_side_view_passed": 4,
-    "playable_rounds_on_site": 31,
-    "playable_rounds_scope": "每种已建模动作发布最新一轮浏览器预览；三轮 Blender/GLB 全部保存在动作库归档。",
-    "rounds_updated": 3
-  },
-  "last_updated": "2026-11-16 06:35 UTC"
+    "public_side_view_passed": 6,
+    "playable_rounds_on_site": 50,
+    "playable_rounds_scope": "每个动作的当前版本可预览。",
+    "rounds_updated": 0
+  }
 }

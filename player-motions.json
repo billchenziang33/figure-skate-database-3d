@@ -67,14 +67,14 @@
         "number": 3,
         "file": "3T-r3-web.glb",
         "frames": 363,
-        "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
-        "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d"
+        "sha256": "2754dcde3e2803d03cb35d60097e1e9aa94ecd3b5909774bbe4da2053732827a",
+        "blend_sha256": "f2d4d0e352098081a650a796d3fabca0c13802fb3d745bf8d2c2cf1f9c479348"
       }
     ],
     "file": "3T-r3-web.glb",
     "frames": 363,
-    "sha256": "ba8ba00db69457e1ad2ba0f134f1ce9c522f8f6187bb37dadd36b35a0195d2b4",
-    "blend_sha256": "94966c29e10792d44c6887ba17657c3b5cd637f87f1c1f88391f22e8bdceb98d",
+    "sha256": "2754dcde3e2803d03cb35d60097e1e9aa94ecd3b5909774bbe4da2053732827a",
+    "blend_sha256": "f2d4d0e352098081a650a796d3fabca0c13802fb3d745bf8d2c2cf1f9c479348",
     "poster": "3T-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
@@ -1601,5 +1601,1554 @@
       }
     ],
     "note": "FS-Jump3D Skater C Axel 07 · Illustrative / simulated · CC BY-NC-SA 4.0"
+  },
+  {
+    "id": "2F+1Eu+3S",
+    "name": "2F+1Eu+3S · 两周 Flip 接 Euler 再接三周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2F+1Eu+3S-r3-web.glb",
+        "frames": 452,
+        "sha256": "3996c9ff637b5b3d303f00359336a51ee2431688b080478160563022f1976e3c",
+        "blend_sha256": "b7d35d1aac5b5503770866e4f8ab03aa03e90c179427fc94297c9eaaafd010ca",
+        "events": {
+          "TAKEOFF_2F": 166,
+          "APEX_2F": 182,
+          "LANDING_2F": 198,
+          "TAKEOFF_1EU": 211,
+          "APEX_1EU": 224,
+          "LANDING_1EU": 236,
+          "TAKEOFF_3S": 255,
+          "APEX_3S": 273,
+          "LANDING_3S": 292,
+          "EXIT": 452
+        },
+        "segments": {
+          "2F": [
+            166,
+            198
+          ],
+          "1EU": [
+            211,
+            236
+          ],
+          "3S": [
+            255,
+            292
+          ]
+        },
+        "nominal_turns": {
+          "2F": 2.0,
+          "1EU": 1.0,
+          "3S": 3.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "2F+1Eu+3S-r3-web.glb",
+    "frames": 452,
+    "sha256": "3996c9ff637b5b3d303f00359336a51ee2431688b080478160563022f1976e3c",
+    "blend_sha256": "b7d35d1aac5b5503770866e4f8ab03aa03e90c179427fc94297c9eaaafd010ca",
+    "poster": "2F+1Eu+3S-r3-euler-apex-current-1eu-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_2F": 166,
+      "APEX_2F": 182,
+      "LANDING_2F": 198,
+      "TAKEOFF_1EU": 211,
+      "APEX_1EU": 224,
+      "LANDING_1EU": 236,
+      "TAKEOFF_3S": 255,
+      "APEX_3S": 273,
+      "LANDING_3S": 292,
+      "EXIT": 452
+    },
+    "segment_frames": {
+      "2F": [
+        166,
+        198
+      ],
+      "1EU": [
+        211,
+        236
+      ],
+      "3S": [
+        255,
+        292
+      ]
+    },
+    "measured_turns": {
+      "2F": 2.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
+    ],
+    "note": "All three current local Edge default-side routes completed Normal 1x playback through 452/452. Blender geometry and technique audits pass. Public review pending. Illustrative / simulated; no Beijing 2022 athlete capture.",
+    "segments": {
+      "2F": [
+        166,
+        198
+      ],
+      "1EU": [
+        211,
+        236
+      ],
+      "3S": [
+        255,
+        292
+      ]
+    },
+    "events": {
+      "TAKEOFF_2F": 166,
+      "APEX_2F": 182,
+      "LANDING_2F": 198,
+      "TAKEOFF_1EU": 211,
+      "APEX_1EU": 224,
+      "LANDING_1EU": 236,
+      "TAKEOFF_3S": 255,
+      "APEX_3S": 273,
+      "LANDING_3S": 292,
+      "EXIT": 452
+    },
+    "nominal_turns": {
+      "2F": 2.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "minimum_blade_gap_mm": 3.9361,
+    "local_side_view": "all_three_rounds_full_1x_playback_passed",
+    "local_round_playback_review": {
+      "browser": "Microsoft Edge",
+      "view": "default side profile",
+      "speed": "Normal 1x",
+      "rounds": {
+        "1": {
+          "file": "2F+1Eu+3S-r1-web.glb",
+          "sha256": "f7233da57b4d2791ae98ddf6a0cf5caea414ec2899cb67a5b3df67a7a86933c2",
+          "blend_sha256": "5953fc7694de8050e49952a84d514feb228ec55a77997952ff616a82f55d61fd",
+          "frames": 452,
+          "browser": "Microsoft Edge",
+          "view": "default side profile",
+          "speed": "Normal 1x",
+          "ready": true,
+          "started": true,
+          "observed_final_frame": 452,
+          "complete": true,
+          "verified_at_utc": "2026-11-19T01:50:59Z"
+        },
+        "2": {
+          "file": "2F+1Eu+3S-r2-web.glb",
+          "sha256": "616e9c3188353628d45d30604bf8cbe6acaa5f495a3587e6d0056e3b8856906d",
+          "blend_sha256": "f28c71dd8daa77e1b6688b8bca6eda7e08b19f025afc296d8a5e6b94f16cc82d",
+          "frames": 452,
+          "browser": "Microsoft Edge",
+          "view": "default side profile",
+          "speed": "Normal 1x",
+          "ready": true,
+          "started": true,
+          "observed_final_frame": 452,
+          "complete": true,
+          "verified_at_utc": "2026-11-19T01:50:59Z"
+        },
+        "3": {
+          "file": "2F+1Eu+3S-r3-web.glb",
+          "sha256": "3996c9ff637b5b3d303f00359336a51ee2431688b080478160563022f1976e3c",
+          "blend_sha256": "b7d35d1aac5b5503770866e4f8ab03aa03e90c179427fc94297c9eaaafd010ca",
+          "frames": 452,
+          "browser": "Microsoft Edge",
+          "view": "default side profile",
+          "speed": "Normal 1x",
+          "ready": true,
+          "started": true,
+          "observed_final_frame": 452,
+          "complete": true,
+          "verified_at_utc": "2026-11-19T01:50:59Z"
+        }
+      },
+      "verified_at_utc": "2026-11-19T01:50:59Z"
+    }
+  },
+  {
+    "id": "3A+1Eu+1F",
+    "name": "3A+1Eu+1F · 三周 Axel 接 Euler 再接一周 Flip",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3A+1Eu+1F-r3-web.glb",
+        "frames": 453,
+        "sha256": "49992ea16fbd1e668503cff3f8b79e5827c6a797a3f0f654622dea69f5694f44",
+        "blend_sha256": "a89dd6261c65ca1114572245b7ca5bc29a331fcf2a50cdfa77aff7e3c263a2cf",
+        "events": {
+          "TAKEOFF_3A": 166,
+          "APEX_3A": 187,
+          "LANDING_3A": 207,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_1F": 268,
+          "APEX_1F": 281,
+          "LANDING_1F": 293,
+          "EXIT": 453
+        },
+        "segments": {
+          "3A": [
+            166,
+            207
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "1F": [
+            268,
+            293
+          ]
+        },
+        "nominal_turns": {
+          "3A": 3.5,
+          "1EU": 1.0,
+          "1F": 1.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3A+1Eu+1F-r3-web.glb",
+    "frames": 453,
+    "sha256": "49992ea16fbd1e668503cff3f8b79e5827c6a797a3f0f654622dea69f5694f44",
+    "blend_sha256": "a89dd6261c65ca1114572245b7ca5bc29a331fcf2a50cdfa77aff7e3c263a2cf",
+    "poster": "3A+1Eu+1F-r3-apex-1f-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3A": 166,
+      "APEX_3A": 187,
+      "LANDING_3A": 207,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_1F": 268,
+      "APEX_1F": 281,
+      "LANDING_1F": 293,
+      "EXIT": 453
+    },
+    "segment_frames": {
+      "3A": [
+        166,
+        207
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "1F": [
+        268,
+        293
+      ]
+    },
+    "measured_turns": {
+      "3A": 3.5,
+      "1EU": 1.0,
+      "1F": 1.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
+    ],
+    "note": "Rebuilt r1-r3 from the current archived 1Eu. Blender audits pass; Edge default-side r3 completed 1x playback through 453/453 with Euler/Flip take-off and landing poses reviewed. Public review pending. Illustrative / simulated; no Beijing 2022 athlete capture.",
+    "segments": {
+      "3A": [
+        166,
+        207
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "1F": [
+        268,
+        293
+      ]
+    },
+    "max_sampled_joint_step_deg": 19.76632101562102,
+    "minimum_blade_gap_mm": 0.4282,
+    "local_side_view": "r3_full_1x_playback_passed"
+  },
+  {
+    "id": "3F+2T",
+    "name": "3F+2T · 三周 Flip 接两周 Toe loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3F+2T-r3-takeoff-seam-fade-v1-web.glb",
+        "frames": 436,
+        "sha256": "5c7ffa05163be1cb3abdcccb5c79e85220afc5bde5154e8af979228d19f83951",
+        "blend_sha256": "a00d4ff0e8861779b6b43f8a9c5f7041bd996558047e020e7c76f64bfde7d458",
+        "segments": {
+          "3F": [
+            166,
+            203
+          ],
+          "2T": [
+            247,
+            276
+          ]
+        },
+        "events": {
+          "TAKEOFF_3F": 166,
+          "APEX_3F": 185,
+          "LANDING_3F": 203,
+          "TAKEOFF_2T": 247,
+          "APEX_2T": 262,
+          "LANDING_2T": 276,
+          "EXIT": 436
+        },
+        "nominal_turns": {
+          "3F": 3,
+          "2T": 2
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3F+2T-r3-takeoff-seam-fade-v1-web.glb",
+    "frames": 436,
+    "sha256": "5c7ffa05163be1cb3abdcccb5c79e85220afc5bde5154e8af979228d19f83951",
+    "blend_sha256": "a00d4ff0e8861779b6b43f8a9c5f7041bd996558047e020e7c76f64bfde7d458",
+    "poster": "3F+2T-r3-takeoff-seam-fade-v1-f244-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3F": 166,
+      "APEX_3F": 185,
+      "LANDING_3F": 203,
+      "TAKEOFF_2T": 247,
+      "APEX_2T": 262,
+      "LANDING_2T": 276,
+      "EXIT": 436
+    },
+    "segment_frames": {
+      "3F": [
+        166,
+        203
+      ],
+      "2T": [
+        247,
+        276
+      ]
+    },
+    "measured_turns": {
+      "3F": 3,
+      "2T": 2
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
+    ],
+    "note": "takeoff-seam-fade-v1: knee-chain reconstruction fades to the authored 2T pose through source frames 160–166; takeoff/event frames unchanged. Local original-quality preview only; public deployment unchanged. Illustrative / simulated; no Beijing 2022 capture."
+  },
+  {
+    "id": "3F+3Lo",
+    "name": "3F+3Lo · 三周 Flip 接三周 Loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3F+3Lo-r3-transition12-v1-web.glb",
+        "frames": 438,
+        "sha256": "cbd422703523421d139895888aa31b36ba0c4165ca53c11ff441ccafa55cf2a9",
+        "blend_sha256": "2e8dcd4b9b991ad719249eeb3b86690b9dbc1bf2456bd1ab7fc33c8f22818c67",
+        "segments": {
+          "3F": [
+            166,
+            203
+          ],
+          "3Lo": [
+            241,
+            278
+          ]
+        },
+        "events": {
+          "TAKEOFF_3F": 166,
+          "APEX_3F": 185,
+          "LANDING_3F": 203,
+          "TAKEOFF_3LO": 241,
+          "APEX_3LO": 260,
+          "LANDING_3LO": 278,
+          "EXIT": 438
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3F+3Lo-r3-transition12-v1-web.glb",
+    "frames": 438,
+    "sha256": "cbd422703523421d139895888aa31b36ba0c4165ca53c11ff441ccafa55cf2a9",
+    "blend_sha256": "2e8dcd4b9b991ad719249eeb3b86690b9dbc1bf2456bd1ab7fc33c8f22818c67",
+    "poster": "3F+3Lo-r3-landing-3lo-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3F": 166,
+      "APEX_3F": 185,
+      "LANDING_3F": 203,
+      "TAKEOFF_3LO": 241,
+      "APEX_3LO": 260,
+      "LANDING_3LO": 278,
+      "EXIT": 438
+    },
+    "segment_frames": {
+      "3F": [
+        166,
+        203
+      ],
+      "3Lo": [
+        241,
+        278
+      ]
+    },
+    "note": "3F 落冰分离缓冲延至 frame197–205；r1/r3 默认侧视关键帧复核，三轮 Blender 几何与技术审计通过，完整播放待验收。Illustrative / simulated，无北京冬奥捕捉数据。"
+  },
+  {
+    "id": "3Lz+1Eu+2S",
+    "name": "3Lz+1Eu+2S · 三周 Lutz 接 Euler 再接两周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3Lz+1Eu+2S-r3-web.glb",
+        "frames": 447,
+        "sha256": "909dd51e735c1ab3f63492f06980825bf0a668c388b98463de6ed7d14bbca236",
+        "blend_sha256": "c65c48b07ac1f8ab97e51e2f7aa7c42d368d2f88a5670e659b0e23af3d430591",
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_2S": 257,
+          "APEX_2S": 271,
+          "LANDING_2S": 287,
+          "EXIT": 447
+        },
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "2S": [
+            257,
+            287
+          ]
+        },
+        "nominal_turns": {
+          "3Lz": 3.0,
+          "1EU": 1.0,
+          "2S": 2.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3Lz+1Eu+2S-r3-web.glb",
+    "frames": 447,
+    "sha256": "909dd51e735c1ab3f63492f06980825bf0a668c388b98463de6ed7d14bbca236",
+    "blend_sha256": "c65c48b07ac1f8ab97e51e2f7aa7c42d368d2f88a5670e659b0e23af3d430591",
+    "poster": "3Lz+1Eu+2S-r3-apex-2s-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3LZ": 166,
+      "APEX_3LZ": 185,
+      "LANDING_3LZ": 203,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_2S": 257,
+      "APEX_2S": 271,
+      "LANDING_2S": 287,
+      "EXIT": 447
+    },
+    "segment_frames": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "2S": [
+        257,
+        287
+      ]
+    },
+    "note": "Rebuilt r1-r3 from current 1Eu and 2S. Euler connection free-leg separation was iterated from 0.22m to 0.55m after side-view review. Blender audits pass; Edge local r3 1x playback reached 447/447; key poses 216/220/228/257/287 checked. Public review pending. Illustrative/simulated; no Beijing 2022 athlete capture.",
+    "segments": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "2S": [
+        257,
+        287
+      ]
+    },
+    "events": {
+      "TAKEOFF_3LZ": 166,
+      "APEX_3LZ": 185,
+      "LANDING_3LZ": 203,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_2S": 257,
+      "APEX_2S": 271,
+      "LANDING_2S": 287,
+      "EXIT": 447
+    },
+    "nominal_turns": {
+      "3Lz": 3.0,
+      "1EU": 1.0,
+      "2S": 2.0
+    },
+    "measured_turns": {
+      "3Lz": 3.0,
+      "1EU": 1.0,
+      "2S": 2.0
+    },
+    "minimum_blade_gap_mm": 3.9258,
+    "local_side_view": "r3_full_1x_playback_passed",
+    "motion_label": "illustrative / simulated",
+    "capture_data": false
+  },
+  {
+    "id": "3Lz+1Eu+3S",
+    "name": "3Lz+1Eu+3S",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3Lz+1Eu+3S-r3-web.glb",
+        "frames": 454,
+        "sha256": "b4a90ff2796bc3a80a3201b8b8aeff700233d916724148d8d475d42efd8ba36d",
+        "blend_sha256": "8d9bbd8c61106828c374f97e8fd8680b0cea0d03bf8180fe7d6a76138086358b",
+        "events": {
+          "TAKEOFF_3LZ": 166,
+          "APEX_3LZ": 185,
+          "LANDING_3LZ": 203,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 257,
+          "APEX_3S": 275,
+          "LANDING_3S": 294,
+          "EXIT": 454
+        },
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            257,
+            294
+          ]
+        },
+        "nominal_turns": {
+          "3Lz": 3.0,
+          "1EU": 1.0,
+          "3S": 3.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3Lz+1Eu+3S-r3-web.glb",
+    "frames": 454,
+    "sha256": "b4a90ff2796bc3a80a3201b8b8aeff700233d916724148d8d475d42efd8ba36d",
+    "blend_sha256": "8d9bbd8c61106828c374f97e8fd8680b0cea0d03bf8180fe7d6a76138086358b",
+    "poster": "3Lz+1Eu+3S-r3-apex-3s-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3LZ": 166,
+      "APEX_3LZ": 185,
+      "LANDING_3LZ": 203,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 257,
+      "APEX_3S": 275,
+      "LANDING_3S": 294,
+      "EXIT": 454
+    },
+    "measured_turns": {
+      "3Lz": 3.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
+    ],
+    "note": "Rebuilt r1-r3 with Euler free-leg offset 0.44m and window 198/206/221/228. Blender audits and side-frame reviews pass; Edge r3 default-side Normal 1x played 1/454 through 454/454, seeks 203/204/210/211/220 verified, pause stable. Public review pending. Illustrative/simulated; no Beijing 2022 athlete capture.",
+    "segment_frames": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        257,
+        294
+      ]
+    },
+    "minimum_blade_gap_mm": 3.981,
+    "local_side_view": "r3_full_1x_playback_passed"
+  },
+  {
+    "id": "3Lz+2T",
+    "name": "3Lz+2T · 三周 Lutz 接两周 Toe loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "3Lz+2T-rootfade-v5-r3-web.glb",
+        "frames": 430,
+        "sha256": "0572a4223a017e2d4fa056b548e0fd8b963fa181e2b89acb473ea412b29b9345",
+        "blend_sha256": "e828949e15372cfb7320fa07c391c2e5a5dafd6d734147e4cf96853aee62a187",
+        "segments": {
+          "3Lz": [
+            166,
+            203
+          ],
+          "2T": [
+            241,
+            278
+          ]
+        },
+        "events": {
+          "TAKEOFF_3Lz": 166,
+          "APEX_3Lz": 185,
+          "LANDING_3Lz": 203,
+          "TAKEOFF_2T": 241,
+          "APEX_2T": 260,
+          "LANDING_2T": 278,
+          "EXIT": 430
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "3Lz+2T-rootfade-v5-r3-web.glb",
+    "frames": 430,
+    "sha256": "0572a4223a017e2d4fa056b548e0fd8b963fa181e2b89acb473ea412b29b9345",
+    "blend_sha256": "e828949e15372cfb7320fa07c391c2e5a5dafd6d734147e4cf96853aee62a187",
+    "poster": "3Lz+2T-r3-landing-2t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_3Lz": 166,
+      "APEX_3Lz": 185,
+      "LANDING_3Lz": 203,
+      "TAKEOFF_2T": 241,
+      "APEX_2T": 260,
+      "LANDING_2T": 278,
+      "EXIT": 430
+    },
+    "segment_frames": {
+      "3Lz": [
+        166,
+        203
+      ],
+      "2T": [
+        241,
+        278
+      ]
+    },
+    "note": "三轮 Blender 几何与技术审计通过；Edge 本机默认侧视已完成 1× 全片、暂停、时间轴和退出滑行检查。公开站尚未更新，公开验收仍待做。Illustrative / simulated，无北京冬奥选手捕捉数据。"
+  },
+  {
+    "id": "4F+3T",
+    "name": "4F+3T · 四周 Flip 接三周 Toe loop",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4F+3T-r3-web.glb",
+        "frames": 450,
+        "sha256": "e7e3d77f2fb2102c54cbce3f45da4a11e3a06312200f938daf23cf0afb13e958",
+        "blend_sha256": "c1e4be38b52d0df87a387fddae8f461d88a988c57e0eebf554bdde44708450e9",
+        "segments": {
+          "4F": [
+            166,
+            209
+          ],
+          "3T": [
+            253,
+            290
+          ]
+        },
+        "events": {
+          "TAKEOFF_4F": 166,
+          "APEX_4F": 188,
+          "LANDING_4F": 209,
+          "TAKEOFF_3T": 253,
+          "APEX_3T": 272,
+          "LANDING_3T": 290,
+          "EXIT": 450
+        },
+        "nominal_turns": {
+          "4F": 4.0,
+          "3T": 3
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4F+3T-r3-web.glb",
+    "frames": 450,
+    "sha256": "e7e3d77f2fb2102c54cbce3f45da4a11e3a06312200f938daf23cf0afb13e958",
+    "blend_sha256": "c1e4be38b52d0df87a387fddae8f461d88a988c57e0eebf554bdde44708450e9",
+    "poster": "4F+3T-r3-transition-mid-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4F": 166,
+      "APEX_4F": 188,
+      "LANDING_4F": 209,
+      "TAKEOFF_3T": 253,
+      "APEX_3T": 272,
+      "LANDING_3T": 290,
+      "EXIT": 450
+    },
+    "segment_frames": {
+      "4F": [
+        166,
+        209
+      ],
+      "3T": [
+        253,
+        290
+      ]
+    },
+    "measured_turns": {
+      "4F": 4.0,
+      "3T": 3
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_reference": "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/",
+    "note": "Illustrative / simulated. Blender geometry/technique and keyframe checks passed; Edge default-side full playback is pending. No Beijing 2022 athlete motion-capture data."
+  },
+  {
+    "id": "4Lo+1Eu+3S",
+    "name": "4Lo+1Eu+3S · 四周 Loop 接 Euler 再接三周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4Lo+1Eu+3S-r3-web.glb",
+        "frames": 454,
+        "sha256": "9712c74a55203e81b2990caff9170bb00a4d85dee63263d2c3559ee5ffdc18c7",
+        "blend_sha256": "f4720e448c98975c5c216962dc3b2ebe65b835b866b82dcc658fe238181ee631",
+        "events": {
+          "TAKEOFF_4LO": 166,
+          "APEX_4LO": 188,
+          "LANDING_4LO": 209,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 257,
+          "APEX_3S": 275,
+          "LANDING_3S": 294,
+          "EXIT": 454
+        },
+        "segments": {
+          "4Lo": [
+            166,
+            209
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            257,
+            294
+          ]
+        },
+        "nominal_turns": {
+          "4Lo": 4.0,
+          "1EU": 1.0,
+          "3S": 3.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4Lo+1Eu+3S-r3-web.glb",
+    "frames": 454,
+    "sha256": "9712c74a55203e81b2990caff9170bb00a4d85dee63263d2c3559ee5ffdc18c7",
+    "blend_sha256": "f4720e448c98975c5c216962dc3b2ebe65b835b866b82dcc658fe238181ee631",
+    "poster": "4Lo+1Eu+3S-r3-apex-3s-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4LO": 166,
+      "APEX_4LO": 188,
+      "LANDING_4LO": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 257,
+      "APEX_3S": 275,
+      "LANDING_3S": 294,
+      "EXIT": 454
+    },
+    "segment_frames": {
+      "4Lo": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        257,
+        294
+      ]
+    },
+    "measured_turns": {
+      "4Lo": 4.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Press/Media-Accreditation/Figure-Skating-Media-Guide-2024-251741243579-6571.pdf",
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Governance/Isu-Regulations/2026-FS---Pair-Sports-Rules-FINAL-20260513-1778685370-9916.pdf"
+    ],
+    "note": "Current r1-r3 built from 4Lo, 1Eu and 3S sources; Blender audits pass. Edge local r3 default-side 1x playback reached 454/454. Frames 251-254 checked: knee, calf and skate silhouettes remain separate with no visible reversal or single-frame jump. Public review pending. Illustrative/simulated; no Beijing 2022 athlete capture.",
+    "segments": {
+      "4Lo": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        268,
+        305
+      ]
+    },
+    "events": {
+      "TAKEOFF_4LO": 166,
+      "APEX_4LO": 188,
+      "LANDING_4LO": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 268,
+      "APEX_3S": 286,
+      "LANDING_3S": 305,
+      "EXIT": 465
+    },
+    "nominal_turns": {
+      "4Lo": 4.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "takeoff_transition": {
+      "component": "4Lo",
+      "half_width_frames": 8,
+      "window": [
+        158,
+        174
+      ]
+    },
+    "minimum_blade_gap_mm": 3.984,
+    "local_side_view": "r3_full_1x_playback_passed"
+  },
+  {
+    "id": "4S+2T",
+    "name": "4S+2T · 四周 Salchow 接两周 Toe loop",
+    "kind": "combination",
+    "status": "reviewed",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4S+2T-r3-web.glb",
+        "frames": 442,
+        "sha256": "c14bcbd05f4ecc7a079707873c8bb96266525d7e143f10baa7a0a62b16f84fdf",
+        "blend_sha256": "c379eff41094bd32435383e5139baf7db02381900f65a3073e0d74cb2cb6e3e6",
+        "segments": {
+          "4S": [
+            166,
+            209
+          ],
+          "2T": [
+            253,
+            282
+          ]
+        },
+        "events": {
+          "TAKEOFF_4S": 166,
+          "APEX_4S": 187,
+          "LANDING_4S": 209,
+          "TAKEOFF_2T": 253,
+          "APEX_2T": 268,
+          "LANDING_2T": 282,
+          "EXIT": 442
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4S+2T-r3-web.glb",
+    "frames": 442,
+    "sha256": "c14bcbd05f4ecc7a079707873c8bb96266525d7e143f10baa7a0a62b16f84fdf",
+    "blend_sha256": "c379eff41094bd32435383e5139baf7db02381900f65a3073e0d74cb2cb6e3e6",
+    "poster": "4S+2T-r3-takeoff-continuity-v1-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4S": 166,
+      "APEX_4S": 187,
+      "LANDING_4S": 209,
+      "TAKEOFF_2T": 253,
+      "APEX_2T": 268,
+      "LANDING_2T": 282,
+      "EXIT": 442
+    },
+    "segment_frames": {
+      "4S": [
+        166,
+        209
+      ],
+      "2T": [
+        253,
+        282
+      ]
+    },
+    "measured_turns": {
+      "4S": 4.0,
+      "2T": 2
+    },
+    "motion_label": "illustrative / simulated",
+    "note": "Rebuilt from current 4S takeoff-continuity v1; all rounds pass Blender audits; r3 full 1x default-side playback verified in local Edge. Public review pending. Illustrative / simulated; no Beijing 2022 competition capture data.",
+    "local_default_side_review": "r3_full_1x_playback_passed_in_edge"
+  },
+  {
+    "id": "4S+3T",
+    "name": "4S+3T · 四周 Salchow 接三周 Toe loop",
+    "kind": "combination",
+    "status": "reviewed",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4S+3T-r3-web.glb",
+        "frames": 450,
+        "sha256": "9339edc9897dc10fd070a7265951cb9be081d82e259c9c4bf1e58adb7e3e0c9d",
+        "blend_sha256": "b571ffa30aff7592a7171a55217b92104147d9e5a7b1cdc511d43c7a07723943",
+        "segments": {
+          "4S": [
+            166,
+            209
+          ],
+          "3T": [
+            253,
+            290
+          ]
+        },
+        "events": {
+          "TAKEOFF_4S": 166,
+          "APEX_4S": 187,
+          "LANDING_4S": 209,
+          "TAKEOFF_3T": 253,
+          "APEX_3T": 272,
+          "LANDING_3T": 290,
+          "EXIT": 450
+        },
+        "nominal_turns": {
+          "4S": 4.0,
+          "3T": 3
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4S+3T-r3-web.glb",
+    "frames": 450,
+    "sha256": "9339edc9897dc10fd070a7265951cb9be081d82e259c9c4bf1e58adb7e3e0c9d",
+    "blend_sha256": "b571ffa30aff7592a7171a55217b92104147d9e5a7b1cdc511d43c7a07723943",
+    "poster": "4S+3T-r3-takeoff-continuity-v1-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4S": 166,
+      "APEX_4S": 187,
+      "LANDING_4S": 209,
+      "TAKEOFF_3T": 253,
+      "APEX_3T": 272,
+      "LANDING_3T": 290,
+      "EXIT": 450
+    },
+    "segment_frames": {
+      "4S": [
+        166,
+        209
+      ],
+      "3T": [
+        253,
+        290
+      ]
+    },
+    "measured_turns": {
+      "4S": 4.0,
+      "3T": 3
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_reference": "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/",
+    "note": "Rebuilt from current 4S takeoff-continuity v1; all rounds pass Blender audits; r3 full 1x default-side playback verified in local Edge. Public review pending. Illustrative / simulated; no Beijing 2022 competition capture data.",
+    "local_default_side_review": "r3_full_1x_playback_passed_in_edge"
+  },
+  {
+    "id": "4T+1Eu+1F",
+    "name": "4T+1Eu+1F · 四周 Toe loop 接 Euler 再接一周 Flip",
+    "kind": "combination",
+    "status": "locally-accepted",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4T+1Eu+1F-r3-euler-freeleg-v2-web.glb",
+        "frames": 442,
+        "sha256": "16f428064071cc54df25c31fff8e5d852f79384364c7ea411e2186c1d28e8b3d",
+        "blend_sha256": "1f0c261c2cfca9e762f9ddb9dd60039c604009e2273ae5b6c9f031c13e36f820",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "1F": [
+            257,
+            282
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_1F": 257,
+          "APEX_1F": 270,
+          "LANDING_1F": 282,
+          "EXIT": 442
+        },
+        "nominal_turns": {
+          "4T": 4.0,
+          "1EU": 1.0,
+          "1F": 1.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4T+1Eu+1F-r3-euler-freeleg-v2-web.glb",
+    "frames": 442,
+    "sha256": "16f428064071cc54df25c31fff8e5d852f79384364c7ea411e2186c1d28e8b3d",
+    "blend_sha256": "1f0c261c2cfca9e762f9ddb9dd60039c604009e2273ae5b6c9f031c13e36f820",
+    "poster": "4T+1Eu+1F-r3-euler-freeleg-v2-apex-4t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_1F": 257,
+      "APEX_1F": 270,
+      "LANDING_1F": 282,
+      "EXIT": 442
+    },
+    "segment_frames": {
+      "4T": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "1F": [
+        257,
+        282
+      ]
+    },
+    "measured_turns": {
+      "4T": 4.0,
+      "1EU": 1.0,
+      "1F": 1.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Press/Media-Accreditation/Figure-Skating-Media-Guide-2024-251741243579-6571.pdf",
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Governance/Isu-Regulations/2026-FS---Pair-Sports-Rules-FINAL-20260513-1778685370-9916.pdf"
+    ],
+    "note": "本地 Edge 默认侧视三轮 1× 全播、暂停、拖动均通过；Frame 219 双鞋轮廓可分。公开站尚未更新。Illustrative / simulated；没有使用北京冬奥比赛捕捉数据。",
+    "local_edge_side_view": "passed",
+    "latest_revision": {
+      "id": "euler-freeleg-v2",
+      "left_free_leg_offset_m": 0.3,
+      "window_frames": [
+        212,
+        217,
+        220
+      ],
+      "event_frames_unchanged": true,
+      "edge_local_qa": "all three rounds 1x complete; pause and seek verified"
+    },
+    "local_edge_qa": {
+      "scope": "Edge local browser, default Side profile, Normal 1x, all three candidate rounds",
+      "result": "pass",
+      "rounds": {
+        "1": {
+          "ready": true,
+          "frames": 442,
+          "observed_final_frame": 442,
+          "complete": true
+        },
+        "2": {
+          "ready": true,
+          "frames": 442,
+          "observed_final_frame": 442,
+          "complete": true
+        },
+        "3": {
+          "ready": true,
+          "frames": 442,
+          "observed_final_frame": 442,
+          "complete": true
+        }
+      },
+      "pause_verified": true,
+      "paused_frame_held_for_seconds": 1.1,
+      "seek_verified_display_frame": 219,
+      "camera": "Side profile",
+      "revision": "euler-freeleg-v2",
+      "verified_at_utc": "2026-11-18T16:12:05Z",
+      "url_pattern": "http://127.0.0.1:8765/local-candidate-4t1eu1f-euler-v2/player.html?id=4T%2B1Eu%2B1F&round={1,2,3}",
+      "visual_observation": "At frame 219 both white boots remain separately readable in the default side projection; full body remains in frame.",
+      "promoted_player_route": {
+        "scope": "Normal local player route after promotion; default side profile; Normal 1x full playback",
+        "route": "http://127.0.0.1:8765/player.html?id=4T%2B1Eu%2B1F&round={1,2,3}",
+        "rounds": {
+          "1": {
+            "ready": true,
+            "frames": 442,
+            "observed_final_frame": 442,
+            "complete": true
+          },
+          "2": {
+            "ready": true,
+            "frames": 442,
+            "observed_final_frame": 442,
+            "complete": true
+          },
+          "3": {
+            "ready": true,
+            "frames": 442,
+            "observed_final_frame": 442,
+            "complete": true
+          }
+        },
+        "result": "pass",
+        "verified_at_utc": "2026-11-18T16:14:22Z"
+      }
+    }
+  },
+  {
+    "id": "4T+1Eu+2S",
+    "name": "4T+1Eu+2S · 四周 Toe loop 接 Euler 再接两周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4T+1Eu+2S-r3-web.glb",
+        "frames": 458,
+        "sha256": "3186b1c5a980fc470c6f1b62f0f0489a91df3d40256b1c014b8b488c5d61616a",
+        "blend_sha256": "146b92d585d6596fb31e188fb32ca0e1b5ad57d8b386870b6bba5ab0641fab38",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "2S": [
+            268,
+            298
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_2S": 268,
+          "APEX_2S": 282,
+          "LANDING_2S": 298,
+          "EXIT": 458
+        },
+        "nominal_turns": {
+          "4T": 4.0,
+          "1EU": 1.0,
+          "2S": 2.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4T+1Eu+2S-r3-web.glb",
+    "frames": 458,
+    "sha256": "3186b1c5a980fc470c6f1b62f0f0489a91df3d40256b1c014b8b488c5d61616a",
+    "blend_sha256": "146b92d585d6596fb31e188fb32ca0e1b5ad57d8b386870b6bba5ab0641fab38",
+    "poster": "4T+1Eu+2S-r3-apex-4t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_2S": 268,
+      "APEX_2S": 282,
+      "LANDING_2S": 298,
+      "EXIT": 458
+    },
+    "segment_frames": {
+      "4T": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "2S": [
+        268,
+        298
+      ]
+    },
+    "measured_turns": {
+      "4T": 4.0,
+      "1EU": 1.0,
+      "2S": 2.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
+    ],
+    "note": "Local candidate Edge default-side 1x playback passed for all three rounds; formal local route verification and public deployment remain pending. Illustrative / simulated; no Beijing Olympic athlete motion-capture data.",
+    "segments": {
+      "4T": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "2S": [
+        268,
+        298
+      ]
+    },
+    "events": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_2S": 268,
+      "APEX_2S": 282,
+      "LANDING_2S": 298,
+      "EXIT": 458
+    },
+    "nominal_turns": {
+      "4T": 4.0,
+      "1EU": 1.0,
+      "2S": 2.0
+    },
+    "local_edge_candidate_side_view": "passed"
+  },
+  {
+    "id": "4T+1Eu+3S",
+    "name": "4T+1Eu+3S · 四周 Toe loop 接 Euler 再接三周 Salchow",
+    "kind": "combination",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "4T+1Eu+3S-r3-web.glb",
+        "frames": 454,
+        "sha256": "47b1c800914b2b56d727cf5de83d01af05f2eb4223cc764c9e7c3058a206512e",
+        "blend_sha256": "35797f41aad22fda6b3c9c8700fdedba6fa70e539b8b73f6d08acb504d2a95fb",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "1EU": [
+            220,
+            245
+          ],
+          "3S": [
+            257,
+            294
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_1EU": 220,
+          "APEX_1EU": 233,
+          "LANDING_1EU": 245,
+          "TAKEOFF_3S": 257,
+          "APEX_3S": 275,
+          "LANDING_3S": 294,
+          "EXIT": 454
+        },
+        "nominal_turns": {
+          "4T": 4.0,
+          "1EU": 1.0,
+          "3S": 3.0
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "4T+1Eu+3S-r3-web.glb",
+    "frames": 454,
+    "sha256": "47b1c800914b2b56d727cf5de83d01af05f2eb4223cc764c9e7c3058a206512e",
+    "blend_sha256": "35797f41aad22fda6b3c9c8700fdedba6fa70e539b8b73f6d08acb504d2a95fb",
+    "poster": "4T+1Eu+3S-r3-apex-4t-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 257,
+      "APEX_3S": 275,
+      "LANDING_3S": 294,
+      "EXIT": 454
+    },
+    "segment_frames": {
+      "4T": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        257,
+        294
+      ]
+    },
+    "measured_turns": {
+      "4T": 4.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    },
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Press/Media-Accreditation/Figure-Skating-Media-Guide-2024-251741243579-6571.pdf",
+      "https://isu-d8g8b4b7ece7aphs.a03.azurefd.net/isudamcontainer/CMS/Corporate-Site/Governance/Isu-Regulations/2026-FS---Pair-Sports-Rules-FINAL-20260513-1778685370-9916.pdf"
+    ],
+    "note": "Local Edge default-side v6 review passed on r1-r3; 1x playback reached 454/454 on all rounds. Public review pending. Illustrative / simulated; no Beijing athlete capture data.",
+    "segments": {
+      "4T": [
+        166,
+        209
+      ],
+      "1EU": [
+        220,
+        245
+      ],
+      "3S": [
+        268,
+        305
+      ]
+    },
+    "events": {
+      "TAKEOFF_4T": 166,
+      "APEX_4T": 188,
+      "LANDING_4T": 209,
+      "TAKEOFF_1EU": 220,
+      "APEX_1EU": 233,
+      "LANDING_1EU": 245,
+      "TAKEOFF_3S": 268,
+      "APEX_3S": 286,
+      "LANDING_3S": 305,
+      "EXIT": 465
+    },
+    "nominal_turns": {
+      "4T": 4.0,
+      "1EU": 1.0,
+      "3S": 3.0
+    }
+  },
+  {
+    "id": "FCSSp",
+    "name": "FCSSp · 跳接换足蹲踞旋转",
+    "kind": "spin",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "FCSSp-r3-web.glb",
+        "frames": 401,
+        "sha256": "39ce5d2b9923dc2c96a21a9a456dc5e1db88e9369c7cb0fb86155be5c6ef4fcc",
+        "blend_sha256": "486f8cfd842135d2c2a874ca7d758fb301e5e2561e5e9ab2e0f5813d4dfa7b01",
+        "events": {
+          "TAKEOFF": 42,
+          "FLIGHT_APEX": 51,
+          "LANDING": 60,
+          "SIT": 72,
+          "FOOT_CHANGE": 201,
+          "EXIT": 370
+        },
+        "measured_turns": 8.000000161335818,
+        "turns_by_support_foot": {
+          "Right": 3.999999889712275,
+          "Left": 3.9928610167487846
+        }
+      }
+    ],
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3,
+    "file": "FCSSp-r3-web.glb",
+    "frames": 401,
+    "sha256": "39ce5d2b9923dc2c96a21a9a456dc5e1db88e9369c7cb0fb86155be5c6ef4fcc",
+    "blend_sha256": "486f8cfd842135d2c2a874ca7d758fb301e5e2561e5e9ab2e0f5813d4dfa7b01",
+    "poster": "FCSSp-r3-flight_apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "event_frames": {
+      "TAKEOFF": 42,
+      "FLIGHT_APEX": 51,
+      "LANDING": 60,
+      "SIT": 72,
+      "FOOT_CHANGE": 201,
+      "EXIT": 370
+    },
+    "measured_turns": 8.000000161335818,
+    "turns_per_foot": 4,
+    "foot_change_forward_offset_m": -0.12,
+    "motion_label": "illustrative / simulated",
+    "capture_data": false,
+    "technique_references": [
+      "https://www.isu.org/en/isu-sports-rules/figure-skating-rule/handbooks-single-and-pair-skating"
+    ],
+    "note": "本地原始未压缩 GLB。三轮 Blender 几何与技术审计通过；飞入蹲踞换足旋转 8 周、每脚约 4 周。换足 frame 201 侧视双鞋可辨、膝部仍有少量投影重叠；Edge 完整播放待验收。Illustrative / simulated；无北京比赛捕捉数据。"
   }
 ]
