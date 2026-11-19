@@ -1546,5 +1546,24 @@
     "occurrences": 1,
     "archived_rounds": 3,
     "rounds_total": 3
+  },
+  {
+    "id": "2A-FS",
+    "name": "2A · FS-Jump3D 重建预览",
+    "kind": "baseline",
+    "file": "2A-fs-jump3d-rebuild-web.glb",
+    "frames": 300,
+    "sha256": "9a01a361561451da778995ce617163944aae3eaf57328add949f64bc86bace2e",
+    "blend_sha256": "e28261996e5de12345dd66d84b0a98fc4c04a3d5663d815aff643cd580460086",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2A-fs-jump3d-rebuild-web.glb",
+        "frames": 300,
+        "sha256": "9a01a361561451da778995ce617163944aae3eaf57328add949f64bc86bace2e",
+        "blend_sha256": "e28261996e5de12345dd66d84b0a98fc4c04a3d5663d815aff643cd580460086"
+      }
+    ],
+    "note": "FS-Jump3D Skater C Axel 07。Blender 从训练场标记重新生成。300 帧，采样几何通过，公开 Edge 完整交互验收待完成。Illustrative / simulated · CC BY-NC-SA 4.0。"
   }
 ]
