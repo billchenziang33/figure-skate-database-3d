@@ -487,30 +487,32 @@
     "status": "draft",
     "rounds": [
       {
-        "number": 3,
-        "file": "1S-r3-web.glb",
-        "frames": 351,
-        "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
-        "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4"
+        "number": 10,
+        "file": "1S-new-v10.glb",
+        "frames": 271,
+        "sha256": "c243d1ac34a9332ca91981a57874445a945ef59aed0d9a4da474e56f596e45f7",
+        "blend_sha256": "51803c3339c44a696cfa44b0e454d97a0affb954e63272a43b7a0794526cfded"
       }
     ],
-    "file": "1S-r3-web.glb",
-    "frames": 351,
-    "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
-    "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4",
-    "poster": "1S-r3-apex-side.png",
+    "file": "1S-new-v10.glb",
+    "frames": 271,
+    "sha256": "c243d1ac34a9332ca91981a57874445a945ef59aed0d9a4da474e56f596e45f7",
+    "blend_sha256": "51803c3339c44a696cfa44b0e454d97a0affb954e63272a43b7a0794526cfded",
+    "poster": "1S-new-v10-poster-final.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "note": "Illustrative / simulated standard Salchow. No Beijing 2022 motion-capture data was used.",
     "occurrences": 1,
-    "archived_rounds": 3,
-    "rounds_total": 3,
+    "archived_rounds": 10,
+    "rounds_total": 10,
     "event_frames": {
-      "TAKEOFF": 166,
-      "APEX": 178,
-      "LANDING": 191
-    }
+      "TAKEOFF": 117,
+      "APEX": 131,
+      "LANDING": 145
+    },
+    "motion_label": "illustrative / simulated",
+    "trajectory": "1S-new-v10-trajectory.json"
   },
   {
     "id": "2A",
