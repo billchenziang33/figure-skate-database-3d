@@ -520,16 +520,17 @@
     "rounds": [
       {
         "number": 3,
-        "file": "2A-r3-web.glb",
+        "file": "2A-r3-free-leg-v1-web.glb",
         "frames": 361,
-        "sha256": "0c23e0474fd7178bf17d8bde98c0a1d339e18d7ccf99a4ce11fc55e67246b35d"
+        "sha256": "51fa3faf8f8a126e762778e97f1490cb594955603a9c410ebb569b9bba532e99",
+        "blend_sha256": "ae43c663f04454919c03e097a18db119630140e5be9d62073b158dba2b793bd5"
       }
     ],
-    "file": "2A-r3-web.glb",
+    "file": "2A-r3-free-leg-v1-web.glb",
     "frames": 361,
-    "sha256": "0c23e0474fd7178bf17d8bde98c0a1d339e18d7ccf99a4ce11fc55e67246b35d",
-    "blend_sha256": null,
-    "note": "三轮 Blender 几何与技术审计通过；公开默认侧视和全段播放仍待验收。",
+    "sha256": "51fa3faf8f8a126e762778e97f1490cb594955603a9c410ebb569b9bba532e99",
+    "blend_sha256": "ae43c663f04454919c03e097a18db119630140e5be9d62073b158dba2b793bd5",
+    "note": "第 3 轮已调整腾空左腿。第 185 帧双冰鞋更易辨认。左前外刃起跳，2.5 周，右后外刃落冰。Blender 采样检查通过，公开 Edge 播放验收待完成。",
     "poster": "2A-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
@@ -1518,5 +1519,32 @@
     },
     "note": "Nominal 4.5-turn Axel illustration; Beijing 2022 4A< under-rotation variation remains pending video review. Illustrative / simulated; no athlete capture data.",
     "motion_label": "illustrative / simulated"
+  },
+  {
+    "id": "2A-before",
+    "name": "2A · 优化前版本",
+    "kind": "jump",
+    "status": "draft",
+    "rounds": [
+      {
+        "number": 3,
+        "file": "2A-r3-free-leg-v1-web.glb",
+        "frames": 361,
+        "sha256": "51fa3faf8f8a126e762778e97f1490cb594955603a9c410ebb569b9bba532e99",
+        "blend_sha256": "ae43c663f04454919c03e097a18db119630140e5be9d62073b158dba2b793bd5"
+      }
+    ],
+    "file": "2A-r3-web.glb",
+    "frames": 361,
+    "sha256": "0c23e0474fd7178bf17d8bde98c0a1d339e18d7ccf99a4ce11fc55e67246b35d",
+    "blend_sha256": null,
+    "note": "保留的 2A 第三轮，供第 185 帧侧视对照。",
+    "poster": "2A-r3-apex-side.png",
+    "blender_geometry_reviewed": true,
+    "blender_technique_reviewed": true,
+    "public_side_view": "pending",
+    "occurrences": 1,
+    "archived_rounds": 3,
+    "rounds_total": 3
   }
 ]
