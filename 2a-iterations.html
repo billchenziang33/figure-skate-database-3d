@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2A 三轮迭代 · Figure Skate Database 3D</title>
+  <link rel="stylesheet" href="./library.css">
+  <style>
+    .clip,.plate { display:block; width:100%; height:auto; border-radius:10px; background:#102233; }
+    .clip { max-width:860px; }
+    .links { display:flex; gap:18px; flex-wrap:wrap; margin:24px 0; }
+    figure { margin:24px 0; }
+    figcaption { margin-top:10px; }
+  </style>
+</head>
+<body>
+  <header class="topbar"><a class="brand" href="./">← Figure Skate Database 3D</a></header>
+  <main>
+    <h1>2A · 三轮人物与动作迭代</h1>
+    <p>第三轮完整侧视。进场、起跳、收紧、落冰、滑出，约 5 秒。</p>
+    <video class="clip" controls playsinline preload="metadata" poster="./2A-C07-iteration-3-poster.png">
+      <source src="./2A-C07-iteration-3-side.webm" type="video/webm">
+    </video>
+    <nav class="links" aria-label="可拖动的 3D 版本">
+      <a href="./player.html?id=2A-FS&amp;round=3">原数据库版</a>
+      <a href="./player.html?id=2A-FS-I1&amp;round=1">第一轮：人物轮廓</a>
+      <a href="./player.html?id=2A-FS-I2&amp;round=2">第二轮：收臂过渡</a>
+      <a href="./player.html?id=2A-FS-I3&amp;round=3">第三轮：滑出与头颈比例</a>
+    </nav>
+    <figure>
+      <img class="plate" src="./2A-C07-iterations-comparison.jpg"
+           alt="同机位截图对照，四列依次为原数据库版、第一轮、第二轮、第三轮">
+      <figcaption>从上到下是第 162 帧起跳、第 177 帧最高点和第 203 帧落冰滑出。第三轮的头颈比例和双鞋分离在最后一行最明显。</figcaption>
+    </figure>
+    <p>Illustrative / simulated。源自 <a href="https://github.com/ryota-skating/FS-Jump3D">FS-Jump3D</a> 的 Skater C · Axel 07。衍生动画采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>。<a href="./THIRD_PARTY_NOTICES.md">来源与许可</a></p>
+  </main>
+</body>
+</html>
