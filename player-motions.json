@@ -1469,7 +1469,7 @@
   },
   {
     "id": "4A",
-    "name": "4A · Axel（阿克塞尔）",
+    "name": "4A · Standard quadruple Axel",
     "kind": "jump",
     "status": "draft",
     "rounds": [
@@ -1497,11 +1497,11 @@
       },
       {
         "number": 3,
-        "file": "4A-r3-web.glb",
+        "file": "4A-STD-r3-web.glb",
         "frames": 379,
-        "sha256": "5b7fc442967cf0297391566b9ddf2f512d243bc2059f710b019b53294b245dc7",
-        "blend_sha256": "02e2132e4f679e6c1a5d223887e1e1cd1ad35059977b566d65ad2200394d3e8c",
-        "measured_turns": 4.4999998456178325,
+        "sha256": "be172c95a86f294e21a5c22f09e3a8b731875e9ceb5406aafd2e16ffd18c778e",
+        "blend_sha256": "e341ddccb5be8d2bef5c20b76c4066d3595d9a4c5c736b0a83b0d1528889098c",
+        "measured_turns": 4.49999984561783,
         "takeoff": 166,
         "apex": 193,
         "landing": 219
@@ -1510,11 +1510,11 @@
     "occurrences": 1,
     "archived_rounds": 3,
     "rounds_total": 3,
-    "file": "4A-r3-web.glb",
+    "file": "4A-STD-r3-web.glb",
     "frames": 379,
-    "sha256": "5b7fc442967cf0297391566b9ddf2f512d243bc2059f710b019b53294b245dc7",
-    "blend_sha256": "02e2132e4f679e6c1a5d223887e1e1cd1ad35059977b566d65ad2200394d3e8c",
-    "poster": "4A-r3-apex-side.png",
+    "sha256": "be172c95a86f294e21a5c22f09e3a8b731875e9ceb5406aafd2e16ffd18c778e",
+    "blend_sha256": "e341ddccb5be8d2bef5c20b76c4066d3595d9a4c5c736b0a83b0d1528889098c",
+    "poster": "4A-STD-r3-apex-side.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
@@ -1523,8 +1523,10 @@
       "APEX": 193,
       "LANDING": 219
     },
-    "note": "Nominal 4.5-turn Axel illustration; Beijing 2022 4A< under-rotation variation remains pending video review. Illustrative / simulated; no athlete capture data.",
-    "motion_label": "illustrative / simulated"
+    "note": "Standard 4A technique demonstration. Left forward outside-edge takeoff, compact air position, 4½ simulated turns, right backward outside-edge one-foot landing and controlled exit. The animation illustrates technique; official competition marks are kept in the protocol.",
+    "motion_label": "illustrative / simulated",
+    "measured_turns": 4.49999984561783,
+    "source": "https://www.isu-skating.com/en/figure-skating/news/figure-skating-jumps-explained/"
   },
   {
     "id": "2A-FS",

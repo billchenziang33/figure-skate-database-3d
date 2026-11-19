@@ -1,33 +1,19 @@
 {
-  "last_updated": "2026-11-19 14:46 UTC",
+  "last_updated": "2026-11-19 17:34 UTC",
   "latest_batch": {
     "assets": [
-      "2F+1Eu+3S",
-      "3A+1Eu+1F",
-      "3F+2T",
-      "3F+3Lo",
-      "3Lz+1Eu+2S",
-      "3Lz+1Eu+3S",
-      "3Lz+2T",
-      "4F+3T",
-      "4Lo+1Eu+3S",
-      "4S+2T",
-      "4S+3T",
-      "4T+1Eu+1F",
-      "4T+1Eu+2S",
-      "4T+1Eu+3S",
-      "FCSSp"
+      "4A"
     ],
-    "rounds_archived": 45,
+    "rounds_archived": 0,
     "cumulative_rounds_archived": 150,
     "cumulative_rounds_total": 150,
     "assets_modeled": 50,
     "assets_total": 50,
-    "stage": "补发已在本地归档的 15 项模型。全部 50 项已有公开预览。",
+    "stage": "4A 标准技术示范已更新，展示完整 4.5 周旋转与一脚落冰滑出。",
     "all_rounds_playable": false,
     "public_side_view_passed": 6,
     "playable_rounds_on_site": 50,
     "playable_rounds_scope": "每个动作的当前版本可预览。",
-    "rounds_updated": 0
+    "rounds_updated": 1
   }
 }
