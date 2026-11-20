@@ -707,25 +707,34 @@
         "sha256": "d3a67dcb987658edf9d3a6fbc9a7f37284f8cfb1697393695e3457cebc24c07a",
         "blend_sha256": "843033cfd53af2e4295be6ac7ab741a9057f78ece793aac3a8b010d0e35b9388",
         "frames": 351
+      },
+      {
+        "number": 6,
+        "file": "1S-edge-study-r6.glb",
+        "shadow_mode": "blade-clearance",
+        "sha256": "3d172a33d2e68425fc7137afb36948024c9b33c839fe50c465ae5512d7f26e0b",
+        "blend_sha256": "4fb7853da51f346f5a443f20a9658a2ca141162a410513abbebca9d62f2c63da",
+        "frames": 351
       }
     ],
-    "file": "1S-edge-study.glb",
+    "file": "1S-edge-study-r6.glb",
     "frames": 351,
-    "sha256": "d3a67dcb987658edf9d3a6fbc9a7f37284f8cfb1697393695e3457cebc24c07a",
-    "blend_sha256": "843033cfd53af2e4295be6ac7ab741a9057f78ece793aac3a8b010d0e35b9388",
-    "poster": "1S-edge-study-takeoff.png",
+    "sha256": "3d172a33d2e68425fc7137afb36948024c9b33c839fe50c465ae5512d7f26e0b",
+    "blend_sha256": "4fb7853da51f346f5a443f20a9658a2ca141162a410513abbebca9d62f2c63da",
+    "poster": "1S-edge-study-r6-takeoff.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "New single Salchow demonstration: backward inside-edge takeoff, one rotation and an opposite-foot outside-edge landing. Illustrative / simulated; no Beijing 2022 motion capture.",
+    "note": "Single Salchow: follow the left back inside edge through takeoff, then the right knee as it absorbs the landing. Illustrative / simulated; no Beijing 2022 motion capture.",
     "occurrences": 1,
-    "archived_rounds": 5,
-    "rounds_total": 5,
+    "archived_rounds": 6,
+    "rounds_total": 6,
     "event_frames": {
       "TAKEOFF": 166,
       "APEX": 178,
       "LANDING": 191
-    }
+    },
+    "shadow_mode": "blade-clearance"
   },
   {
     "id": "2A",
