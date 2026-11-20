@@ -624,20 +624,74 @@
           "LANDING_3T": 275,
           "EXIT": 435
         }
+      },
+      {
+        "number": 4,
+        "file": "4T3T-r4.glb",
+        "frames": 435,
+        "sha256": "569f6faf79f85def93edcb19b7d173449cad8ed652cb72632b309b3c6bbe3e66",
+        "blend_sha256": "da16caf25ad15e208ae0d1a2152bab7a509db5e42a3a07dda3711fb179a59864",
+        "shadow_mode": "blade-clearance",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
+      },
+      {
+        "number": 5,
+        "file": "4T3T-r5.glb",
+        "frames": 435,
+        "sha256": "76f85655937b2698c05928fc0f6dddd1d73619bbab84caf8cea28fcb68381284",
+        "blend_sha256": "a7560ae3d439c3e792f73499ecd8cae0e9797ef38a819c854c5fd732b692a592",
+        "shadow_mode": "blade-clearance",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
       }
     ],
-    "file": "4T+3T-r3-web.glb",
+    "file": "4T3T-r5.glb",
     "frames": 435,
-    "sha256": "ba89a726834166d898835ef618f894b25fee2d08115d7449c8e95fe9da7677b7",
-    "blend_sha256": "84f88386bfcab5dd1af03923b05ac10b5f493cc3578662e10d4cab019c1e8ea2",
-    "poster": "4T+3T-r3-landing-3t-side.png",
+    "sha256": "76f85655937b2698c05928fc0f6dddd1d73619bbab84caf8cea28fcb68381284",
+    "blend_sha256": "a7560ae3d439c3e792f73499ecd8cae0e9797ef38a819c854c5fd732b692a592",
+    "poster": "4T3T-r5-landing.jpg",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
     "occurrences": 7,
-    "archived_rounds": 3,
-    "rounds_total": 3,
-    "note": "4T 落冰后 29 帧内接右脚 3T Toe loop；两个跳跃段分别完成 4 周和 3 周。Illustrative / simulated，无运动员比赛捕捉数据。",
+    "archived_rounds": 5,
+    "rounds_total": 5,
+    "note": "Two toe-assisted jumps. Follow the right back outside landing edge into the triple, with a left toe pick for each takeoff. Illustrative / simulated; no Beijing 2022 motion capture.",
     "event_frames": {
       "TAKEOFF_4T": 166,
       "APEX_4T": 188,
@@ -646,7 +700,8 @@
       "APEX_3T": 257,
       "LANDING_3T": 275,
       "EXIT": 435
-    }
+    },
+    "shadow_mode": "blade-clearance"
   },
   {
     "id": "CCoSp",
