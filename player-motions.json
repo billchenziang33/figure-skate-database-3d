@@ -487,25 +487,25 @@
     "status": "draft",
     "rounds": [
       {
-        "number": 3,
-        "file": "1S-r3-web.glb",
+        "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
         "frames": 351,
-        "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
-        "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4"
+        "blend_sha256": "",
+        "number": 4,
+        "file": "1S-r3-local-v1-web.glb"
       }
     ],
-    "file": "1S-r3-web.glb",
+    "file": "1S-r3-local-v1-web.glb",
     "frames": 351,
-    "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
+    "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
     "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4",
-    "poster": "1S-r3-apex-side.png",
+    "poster": "1S-r3-local-v1-landing.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "note": "本地 R3 精修版，调整落冰展臂节奏。Illustrative / simulated.",
     "occurrences": 1,
-    "archived_rounds": 3,
-    "rounds_total": 3,
+    "archived_rounds": 4,
+    "rounds_total": 4,
     "event_frames": {
       "TAKEOFF": 166,
       "APEX": 178,

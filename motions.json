@@ -695,39 +695,25 @@
     "status": "draft",
     "rounds": [
       {
-        "number": 1,
-        "file": "1S-r1-web.glb",
+        "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
         "frames": 351,
-        "sha256": "bca9f71b5cd6f93ff99a31fbf0603171e382c64a8a6b74527c3436ada71a7d44",
-        "blend_sha256": "de66f62ea5e5f0cf9168e8566ffd8b998b658d74524e9f2e5c2d54fd62a95979"
-      },
-      {
-        "number": 2,
-        "file": "1S-r2-web.glb",
-        "frames": 351,
-        "sha256": "6eba6775413307145a77a433d12fa2ccf555504081f206742856d897e330a5c0",
-        "blend_sha256": "f673b81e7c117dc392966385209f0ffc8c93e868f2b131c842b17a334c3c1257"
-      },
-      {
-        "number": 3,
-        "file": "1S-r3-web.glb",
-        "frames": 351,
-        "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
-        "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4"
+        "blend_sha256": "",
+        "number": 4,
+        "file": "1S-r3-local-v1-web.glb"
       }
     ],
-    "file": "1S-r3-web.glb",
+    "file": "1S-r3-local-v1-web.glb",
     "frames": 351,
-    "sha256": "1516fd661e9846b02252ccce344a1fc32e02745ae9293ace642eb26d1cee63aa",
+    "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
     "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4",
-    "poster": "1S-r3-apex-side.png",
+    "poster": "1S-r3-local-v1-landing.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "三轮 Blender / GLB 已归档；采样几何与技术检查通过，公开默认侧视和全段播放待验收。",
+    "note": "本地 R3 精修版，调整落冰展臂节奏。Illustrative / simulated.",
     "occurrences": 1,
-    "archived_rounds": 3,
-    "rounds_total": 3,
+    "archived_rounds": 4,
+    "rounds_total": 4,
     "event_frames": {
       "TAKEOFF": 166,
       "APEX": 178,
