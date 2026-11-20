@@ -697,23 +697,30 @@
       {
         "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
         "frames": 351,
-        "blend_sha256": "",
+        "blend_sha256": "4177bac80d391d4fd155d14c9a194612547b3c6f3fcfdff6fd345077027ada76",
         "number": 4,
         "file": "1S-r3-local-v1-web.glb"
+      },
+      {
+        "number": 5,
+        "file": "1S-edge-study.glb",
+        "sha256": "d3a67dcb987658edf9d3a6fbc9a7f37284f8cfb1697393695e3457cebc24c07a",
+        "blend_sha256": "843033cfd53af2e4295be6ac7ab741a9057f78ece793aac3a8b010d0e35b9388",
+        "frames": 351
       }
     ],
-    "file": "1S-r3-local-v1-web.glb",
+    "file": "1S-edge-study.glb",
     "frames": 351,
-    "sha256": "77f3377b01d23e02459306f982c0fdc707c38fde12d04fa7aaa822332b8e4e92",
-    "blend_sha256": "3cb4dd96bce8273d9a6442e92976bb69d8197dd0830fafe18df8105098697aa4",
-    "poster": "1S-r3-local-v1-landing.png",
+    "sha256": "d3a67dcb987658edf9d3a6fbc9a7f37284f8cfb1697393695e3457cebc24c07a",
+    "blend_sha256": "843033cfd53af2e4295be6ac7ab741a9057f78ece793aac3a8b010d0e35b9388",
+    "poster": "1S-edge-study-takeoff.png",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
-    "note": "本地 R3 精修版，调整落冰展臂节奏。Illustrative / simulated.",
+    "note": "New single Salchow demonstration: backward inside-edge takeoff, one rotation and an opposite-foot outside-edge landing. Illustrative / simulated; no Beijing 2022 motion capture.",
     "occurrences": 1,
-    "archived_rounds": 4,
-    "rounds_total": 4,
+    "archived_rounds": 5,
+    "rounds_total": 5,
     "event_frames": {
       "TAKEOFF": 166,
       "APEX": 178,
