@@ -1027,19 +1027,46 @@
           "LANDING_3T": 275,
           "EXIT": 435
         }
+      },
+      {
+        "number": 6,
+        "file": "4T3T-r6.glb",
+        "frames": 435,
+        "sha256": "a98d76f79458545b7e9a94ec387aa4f340632d23782c5a606bf4044b40a27e60",
+        "blend_sha256": "964541adf46b1d6ee340d6ab43caed6fab0eec48fa788fd03ad082ce68c7a3b5",
+        "shadow_mode": "blade-clearance",
+        "segments": {
+          "4T": [
+            166,
+            209
+          ],
+          "3T": [
+            238,
+            275
+          ]
+        },
+        "events": {
+          "TAKEOFF_4T": 166,
+          "APEX_4T": 188,
+          "LANDING_4T": 209,
+          "TAKEOFF_3T": 238,
+          "APEX_3T": 257,
+          "LANDING_3T": 275,
+          "EXIT": 435
+        }
       }
     ],
-    "file": "4T3T-r5.glb",
+    "file": "4T3T-r6.glb",
     "frames": 435,
-    "sha256": "76f85655937b2698c05928fc0f6dddd1d73619bbab84caf8cea28fcb68381284",
-    "blend_sha256": "a7560ae3d439c3e792f73499ecd8cae0e9797ef38a819c854c5fd732b692a592",
+    "sha256": "a98d76f79458545b7e9a94ec387aa4f340632d23782c5a606bf4044b40a27e60",
+    "blend_sha256": "964541adf46b1d6ee340d6ab43caed6fab0eec48fa788fd03ad082ce68c7a3b5",
     "poster": "4T3T-r5-landing.jpg",
     "blender_geometry_reviewed": true,
     "blender_technique_reviewed": true,
     "public_side_view": "pending",
     "occurrences": 7,
-    "archived_rounds": 5,
-    "rounds_total": 5,
+    "archived_rounds": 6,
+    "rounds_total": 6,
     "note": "Two toe-assisted jumps. Follow the right back outside landing edge into the triple, with a left toe pick for each takeoff. Illustrative / simulated; no Beijing 2022 motion capture.",
     "event_frames": {
       "TAKEOFF_4T": 166,
