@@ -2,7 +2,7 @@ import { findExportedNameMatch, findExportedNamesByPrefix } from './camera-name.
 import { fitBoundingSphereDistance, fitOrbitCameraDistance } from './camera-fit.mjs';
 import { toggleFullscreen } from './fullscreen-control.js';
 import { advancePlaybackTime, elapsedPlaybackSeconds, playbackSpeedFromControl, seekAnimationActions } from './playback-clock.mjs?v=100';
-import { formatMeters, measureFlightMetrics, phaseAt, readAxelEventFrames, readEventSegments, selectEventSegment, timeAtAnimationFrame } from './trajectory-hud.mjs?v=105';
+import { cumulativeTurns, formatMeters, formatTurns, measureFlightMetrics, phaseAt, readAxelEventFrames, readEventSegments, selectEventSegment, timeAtAnimationFrame, turnsAt } from './trajectory-hud.mjs?v=106';
 
 import { createBodyShadow, updateBodyShadow } from './blade-shadow.mjs';
 const THREE = globalThis.THREE;
@@ -55,6 +55,7 @@ const heightHud = document.querySelector('#flight-height');
 const distanceHud = document.querySelector('#flight-distance');
 const peakHud = document.querySelector('#flight-peak');
 const totalHud = document.querySelector('#flight-total');
+const turnsHud = document.querySelector('#flight-turns');
 
 let renderer;
 let modelScene;
@@ -298,6 +299,7 @@ function updateFlightHud(frame) {
 	distanceHud.textContent = formatMeters(metrics.horizontalDistanceFromTakeoff);
 	peakHud.textContent = formatMeters(metrics.peakRise);
 	totalHud.textContent = formatMeters(metrics.totalHorizontalTravel);
+	if (turnsHud) turnsHud.textContent = (points.turns?.at(-1) ?? 0) < 0.25 ? '—' : formatTurns(turnsAt(frame, eventSegment, points.turns), points.turns?.at(-1) ?? 0);
 }
 
 function sampleTrajectoryEvents() {
@@ -310,12 +312,29 @@ function sampleTrajectoryEvents() {
 		return { x: trajectoryPosition.x, y: trajectoryPosition.y, z: trajectoryPosition.z };
 	};
 	const eventSegments = trajectoryEventFrames.segments ?? [trajectoryEventFrames];
-	trajectoryPointSegments = eventSegments.map((segment) => ({
-		takeoffFrame: segment.takeoff,
-		takeoff: sample(segment.takeoff),
-		apex: sample(segment.apex),
-		landing: sample(segment.landing),
-	}));
+	// Body yaw from the hip line of the skinned rig (thigh bones); falls back to the root for older models.
+	const thighs = ['thigh.l', 'thigh.r'].map((name) => sceneObjects.find((object) =>
+		object.name === name || object.name === name.replace('.', '')));
+	const yawAt = (frame) => {
+		seekAnimationActions(mixer, clipActions,
+			animationStartTime + timeAtAnimationFrame(frame, duration, frameCount));
+		modelScene.updateMatrixWorld(true);
+		const axis = thighs.every(Boolean)
+			? thighs[1].getWorldPosition(new THREE.Vector3()).sub(thighs[0].getWorldPosition(new THREE.Vector3()))
+			: new THREE.Vector3(0, 0, 1).applyQuaternion(trajectoryRoot.getWorldQuaternion(new THREE.Quaternion()));
+		return Math.atan2(axis.x, axis.z);
+	};
+	trajectoryPointSegments = eventSegments.map((segment) => {
+		const yaws = [];
+		for (let frame = segment.takeoff; frame <= segment.landing; frame++) yaws.push(yawAt(frame));
+		return {
+			takeoffFrame: segment.takeoff,
+			takeoff: sample(segment.takeoff),
+			apex: sample(segment.apex),
+			landing: sample(segment.landing),
+			turns: cumulativeTurns(yaws),
+		};
+	});
 	seekAnimationActions(mixer, clipActions, animationStartTime + restoreTime);
 	modelScene.updateMatrixWorld(true);
 }

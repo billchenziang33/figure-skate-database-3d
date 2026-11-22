@@ -55,3 +55,16 @@ test('keeps the single-jump phase labels unchanged', () => {
 	assert.equal(phaseAt(31, events), 'Apex · simulated');
 	assert.equal(phaseAt(48, events), 'Exit glide · simulated');
 });
+
+import { cumulativeTurns, formatTurns, turnsAt } from './trajectory-hud.mjs';
+
+test('counts air turns across the ±π wrap without losing a revolution', () => {
+	const yaws = Array.from({ length: 41 }, (_, i) => ((i * Math.PI * 2 * 4) / 40 + Math.PI) % (2 * Math.PI) - Math.PI);
+	const turns = cumulativeTurns(yaws);
+	assert.ok(Math.abs(turns.at(-1) - 4) < 1e-9);
+	const segment = { takeoff: 166, apex: 186, landing: 206 };
+	assert.equal(turnsAt(160, segment, turns), 0);
+	assert.ok(Math.abs(turnsAt(185, segment, turns) - 2) < 1e-9);
+	assert.equal(turnsAt(300, segment, turns), turns.at(-1));
+	assert.equal(formatTurns(2, 4), '2.0 / 4.0');
+});
