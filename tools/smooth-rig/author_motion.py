@@ -26,6 +26,12 @@ L = dict(hip_w=0.19, thigh=0.44, shin=0.38, spine=0.50, waist=0.22, clav_up=0.06
 HW = L['hip_w'] / 2
 LEG = L['thigh'] + L['shin']
 UP = np.array([0, 1.0, 0])
+# torso cross-sections used to keep the arms outside the body: height above the hip centre, side radius, front/back radius
+# (the same sections as SKIN in build_blender.py)
+TORSO_H = (-0.02, 0.22, 0.38, 0.48, 0.57, 0.63)
+TORSO_A = (0.165, 0.140, 0.158, 0.150, 0.056, 0.052)
+TORSO_B = (0.120, 0.100, 0.118, 0.104, 0.058, 0.054)
+HEAD_R = 0.105
 VEC = ('lean', 'head', 'l_toe', 'r_toe', 'l_knee', 'r_knee', 'l_ua', 'l_fa', 'r_ua', 'r_fa')
 
 
@@ -471,11 +477,34 @@ def solve(ch, org, psi, dy, blade_q, ankle_h, align=None):
     J['neck'] = shc + u * L['clav_up']
     J['head_top'] = J['neck'] + nrm(Bv(ch['head'])) * L['head']
     Bt = lambda v: v[:, :1] * r_t + v[:, 1:2] * UP + v[:, 2:3] * f_t
+    head_c = J['neck'] + nrm(J['head_top'] - J['neck']) * 0.155
+
+    def clear(p, rad):
+        """Move points out of the torso and head, so a limb of radius rad rests on the surface instead of passing through it."""
+        push = []
+        for base, ax, rt, fw, h0 in ((hipc, u_low, r_low, f_low, 0.0), (J['waist'], u, r_up, f_up, L['waist'])):
+            q = p - base
+            t = (q * ax).sum(1); x = (q * rt).sum(1); z = (q * fw).sum(1)
+            a = np.interp(t + h0, TORSO_H, TORSO_A) + rad; b = np.interp(t + h0, TORSO_H, TORSO_B) + rad
+            k = np.maximum(np.sqrt((x / a) ** 2 + (z / b) ** 2), 0.15)
+            gain = np.where(k < 1, 1 / k - 1, 0) * smoothstep((t + h0 + 0.16) / 0.12)   # fades out below the hips: the legs are not modelled here
+            push.append((x * gain)[:, None] * rt + (z * gain)[:, None] * fw)
+        wc = smoothstep(((p - J['waist']) * u).sum(1) / 0.06 + 0.5)[:, None]
+        p = p + wc * push[1] + (1 - wc) * push[0]
+        q = p - head_c; d = np.linalg.norm(q, axis=1)
+        return p + q * (np.maximum(HEAD_R + rad - d, 0) / np.maximum(d, 1e-6))[:, None]
+
     for s, sg in (('l', -1), ('r', 1)):
         J[s + '_hip'], J[s + '_kn'], J[s + '_an'] = ft[s]['H'], ft[s]['K'], ft[s]['A']
-        J[s + '_sh'] = shc + r_up * sg * L['sh_w'] / 2
-        J[s + '_el'] = J[s + '_sh'] + nrm(Bt(ch[s + '_ua'])) * L['uarm']
-        fa = nrm(Bt(ch[s + '_fa']))
+        sh = J[s + '_sh'] = shc + r_up * sg * L['sh_w'] / 2
+        ua = nrm(Bt(ch[s + '_ua'])); fa = nrm(Bt(ch[s + '_fa']))
+        for it in range(3):
+            for k, rad in ((0.55, 0.058), (1.0, 0.052)):
+                ua = nrm(clear(sh + ua * L['uarm'] * k, rad) - sh)
+            el = sh + ua * L['uarm']
+            for d, rad in ((0.13, 0.048), (L['farm'], 0.036), (L['farm'] + 0.10, 0.030), (L['farm'] + L['hand'], 0.022)):
+                fa = nrm(clear(el + fa * d, rad) - el)
+        J[s + '_el'] = el
         J[s + '_wr'] = J[s + '_el'] + fa * L['farm']
         J[s + '_tip'] = J[s + '_wr'] + fa * L['hand']
         J[s + '_toe'] = ft[s]['A'] + ft[s]['Rf'][:, :, 2] * 0.17 - ft[s]['Rf'][:, :, 1] * ankle_h * 0.8   # preview only

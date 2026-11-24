@@ -76,13 +76,17 @@ for s, sg in (('l', 1), ('r', -1)):
     REST[s + '_el'] = list(np.array(REST[s + '_sh']) + d * 0.30)
     REST[s + '_wr'] = list(np.array(REST[s + '_el']) + d * 0.26)
     REST[s + '_tip'] = list(np.array(REST[s + '_wr']) + d * 0.17)
+    REST[s + '_shh'] = list(np.array(REST[s + '_sh']) + d * 0.08)    # tails of the half-rotation helper bones
+    REST[s + '_elh'] = list(np.array(REST[s + '_el']) + d * 0.06)
 REST = {k: np.array(v, float) for k, v in REST.items()}
 
 BONES = [('hips', 'hipc', 'waist', 'low'), ('chest', 'waist', 'neck', 'up'), ('head', 'neck', 'head_top', 'up')]
 for s in 'lr':
     BONES += [(f'thigh.{s}', f'{s}_hip', f'{s}_kn', 'low'), (f'shin.{s}', f'{s}_kn', f'{s}_an', 'low'),
               (f'upperarm.{s}', f'{s}_sh', f'{s}_el', 'up'), (f'forearm.{s}', f'{s}_el', f'{s}_wr', 'up'),
-              (f'hand.{s}', f'{s}_wr', f'{s}_tip', 'up')]
+              (f'hand.{s}', f'{s}_wr', f'{s}_tip', 'up'),
+              # helper bones that take half of the shoulder / elbow rotation, so the skin bends in two steps and keeps its volume
+              (f'shoulder.{s}', f'{s}_sh', f'{s}_shh', 'up'), (f'elbow.{s}', f'{s}_el', f'{s}_elh', 'up')]
 
 # ------------------------------------------------------------------ armature
 arm_data = bpy.data.armatures.new('Skater rig v200')
@@ -100,8 +104,8 @@ bpy.ops.object.mode_set(mode='OBJECT')
 SKIN = [  # name, position, (side radius, front/back radius)
     ('hipc', REST['hipc'] + [0, -0.02, 0], (0.165, 0.120)),
     ('waist', REST['waist'], (0.140, 0.100)),
-    ('chest', np.array([0, 1.38, 0.005]), (0.182, 0.126)),
-    ('upper', np.array([0, 1.48, 0.0]), (0.178, 0.106)),
+    ('chest', np.array([0, 1.38, 0.005]), (0.158, 0.118)),
+    ('upper', np.array([0, 1.48, 0.0]), (0.150, 0.104)),
     ('neck', np.array([0, 1.57, 0.0]), (0.056, 0.058)),
     ('neck_top', np.array([0, 1.63, 0.0]), (0.052, 0.054)),
 ]
@@ -112,8 +116,8 @@ for s in 'lr':
              (s + '_kn', REST[s + '_kn'], (0.065, 0.067)),
              (s + '_calf', REST[s + '_kn'] * 0.6 + REST[s + '_an'] * 0.4, (0.062, 0.071)),
              (s + '_an', REST[s + '_an'] + [0, 0.02, 0], (0.047, 0.049)),
-             (s + '_sh', REST[s + '_sh'], (0.074, 0.074)),
-             (s + '_uarm_mid', REST[s + '_sh'] * 0.5 + REST[s + '_el'] * 0.5, (0.061, 0.063)),
+             (s + '_sh', REST[s + '_sh'], (0.068, 0.068)),
+             (s + '_uarm_mid', REST[s + '_sh'] * 0.5 + REST[s + '_el'] * 0.5, (0.058, 0.058)),
              (s + '_el', REST[s + '_el'], (0.049, 0.050)),
              (s + '_farm_mid', REST[s + '_el'] * 0.45 + REST[s + '_wr'] * 0.55, (0.048, 0.044)),
              (s + '_wr', REST[s + '_wr'], (0.033, 0.026)),
@@ -138,6 +142,14 @@ for o in bpy.context.selected_objects: o.select_set(False)
 body.select_set(True)
 bpy.ops.object.modifier_apply(modifier='skin')
 bpy.ops.object.modifier_apply(modifier='subd')
+# cut an edge loop at the jacket hem, so the jacket/trousers boundary is a straight line
+import bmesh
+HEM = 1.08
+bm = bmesh.new(); bm.from_mesh(me)
+near = lambda el: all(abs(v.co.x) < 0.35 for v in (el.verts if hasattr(el, 'verts') else [el]))
+bmesh.ops.bisect_plane(bm, geom=[el for el in list(bm.verts) + list(bm.edges) + list(bm.faces) if near(el)],
+                       plane_co=(0, 0, HEM), plane_no=(0, 0, 1), clear_inner=False, clear_outer=False)
+bm.to_mesh(me); bm.free()
 bpy.ops.object.shade_smooth()
 
 
@@ -194,16 +206,58 @@ for o in bpy.context.selected_objects: o.select_set(False)
 body.select_set(True); arm.select_set(True); bpy.context.view_layer.objects.active = arm
 bpy.ops.object.parent_set(type='ARMATURE_AUTO')
 vg = {g.index: g.name for g in body.vertex_groups}
+
+# Arms: analytic weights. Automatic weights let the chest follow the upper arm, which crushes the shoulder when the arm swings.
+# The rest arm is a straight line, so a vertex is described by t (metres along the arm from the shoulder) and rho (distance from that line).
+smooth01 = lambda x: (lambda c: c * c * (3 - 2 * c))(np.clip(x, 0, 1))
+P = np.array([C3.T @ np.array(v.co) for v in me.vertices])
+ARM_R = ([-0.05, 0.0, 0.15, 0.30, 0.43, 0.56, 0.75], [0.068, 0.068, 0.058, 0.050, 0.047, 0.034, 0.034])
+arm_w = {}
+for s, sg in (('l', 1), ('r', -1)):
+    d = dn * np.array([sg, 1, 1]); q = P - REST[s + '_sh']
+    t = q @ d; rho = np.linalg.norm(q - np.outer(t, d), axis=1)
+    m = 1 - smooth01((rho - (np.interp(t, *ARM_R) + 0.006)) / 0.026)       # 1 on the arm, 0 on the torso
+    s1 = (t - 0.02) / 0.07; h1 = np.where(np.abs(s1) < 1, 1 - smooth01(np.abs(s1)), 0)   # shoulder band
+    s2 = (t - 0.30) / 0.055; h2 = np.where(np.abs(s2) < 1, 1 - smooth01(np.abs(s2)), 0)  # elbow band
+    wv = smooth01((t - 0.53) / 0.06)                                                    # wrist
+    up = np.where(s1 <= 0, 0, np.where(s1 < 1, 1 - h1, 1)) * np.where(s2 <= -1, 1, np.where(s2 < 0, 1 - h2, 0))
+    fo = np.where(s2 <= 0, 0, np.where(s2 < 1, 1 - h2, 1)) * (1 - wv)
+    ha = np.where(s2 >= 1, wv, 0)
+    arm_w[s] = {f'shoulder.{s}': m * h1, f'upperarm.{s}': m * up, f'elbow.{s}': m * h2, f'forearm.{s}': m * fo, f'hand.{s}': m * ha}
+ARM_GROUPS = {n for s in 'lr' for n in arm_w[s]}
+groups = {g.name: g for g in body.vertex_groups}
+gnames = sorted(groups); gi = {n: k for k, n in enumerate(gnames)}
+Wt = np.zeros((len(me.vertices), len(gnames)))
+for i, v in enumerate(me.vertices):
+    for g in v.groups:
+        if vg[g.group] not in ARM_GROUPS: Wt[i, gi[vg[g.group]]] = g.weight
+tot = Wt.sum(1); Wt[tot < 1e-4, gi['chest']] = 1.0; Wt /= Wt.sum(1, keepdims=True)
+arm_sum = np.zeros(len(me.vertices))
+for s in 'lr':
+    for n, w in arm_w[s].items(): arm_sum += w
+Wt *= np.clip(1 - arm_sum, 0, 1)[:, None]
+for s in 'lr':
+    for n, w in arm_w[s].items(): Wt[:, gi[n]] += w
+# soften the weights round both shoulders, so the transition leaves no ridge in the shading
+E = np.array([e.vertices[:] for e in me.edges])
+near_sh = np.minimum(np.linalg.norm(P - REST['l_sh'], axis=1), np.linalg.norm(P - REST['r_sh'], axis=1)) < 0.17
+deg = np.bincount(E.ravel(), minlength=len(P)).astype(float)
+for it in range(4):
+    acc = np.zeros_like(Wt); np.add.at(acc, E[:, 0], Wt[E[:, 1]]); np.add.at(acc, E[:, 1], Wt[E[:, 0]])
+    Wt[near_sh] = 0.5 * Wt[near_sh] + 0.5 * (acc / np.maximum(deg, 1)[:, None])[near_sh]
+Wt[Wt < 2e-3] = 0; Wt /= Wt.sum(1, keepdims=True)
+for i, v in enumerate(me.vertices):
+    for n in [vg[g.group] for g in v.groups]: groups[n].remove([i])
+    for k in np.nonzero(Wt[i])[0]: groups[gnames[k]].add([i], float(Wt[i, k]), 'REPLACE')
 for poly in me.polygons:
     best = {}
     for vi in poly.vertices:
         for g in me.vertices[vi].groups:
             best[vg[g.group]] = best.get(vg[g.group], 0) + g.weight
     top = max(best, key=best.get) if best else 'chest'
-    poly.material_index = 1 if top.startswith(('thigh', 'shin')) else 2 if top.startswith('hand') else 0
-    # waist band below the hips bone midpoint belongs to the trousers
     c = poly.center
-    if top == 'hips' and c.z < 1.08: poly.material_index = 1
+    # everything below the waistline on the torso and legs is trousers: a straight hem, not one that follows the weights
+    poly.material_index = 2 if top.startswith('hand') else 1 if (c.z < HEM and abs(c.x) < 0.30) else 0
 
 # ------------------------------------------------------------------ pose keys
 ref_dir = {'low': J['f_low'] - J['hipc'], 'up': J['f_up'] - J['neck']}
@@ -214,6 +268,7 @@ bpy.ops.object.mode_set(mode='POSE')
 rest_inv = {b.name: b.matrix_local.inverted() for b in arm_data.bones}
 frames = {}
 for name, h, t, ref in BONES:
+    if name.startswith(('shoulder', 'elbow')): continue
     y = nrm(J[t] - J[h]); zr = nrm(ref_dir[ref])
     z = np.zeros_like(y)
     for f in range(F):
@@ -230,6 +285,28 @@ for name, h, t, ref in BONES:
             z[f] = zz / np.linalg.norm(zz)
     x = np.cross(y, z)
     frames[name] = (x, y, z, J[h])
+
+
+def swing(a, b, v, frac=1.0):
+    """Rotate v by frac of the shortest rotation that takes unit a to unit b (per frame)."""
+    ax = np.cross(a, b); sn = np.linalg.norm(ax, axis=1); ang = np.arctan2(sn, (a * b).sum(1)) * frac
+    k = ax / np.maximum(sn, 1e-9)[:, None]; co, si = np.cos(ang)[:, None], np.sin(ang)[:, None]
+    out = v * co + np.cross(k, v) * si + k * (k * v).sum(1, keepdims=True) * (1 - co)
+    return np.where(sn[:, None] < 1e-6, v, out)
+
+
+# Arms carry no twist of their own: the upper arm swings from the chest and the forearm from the upper arm,
+# and each helper bone sits halfway through that swing.
+xc, yc, zc, _ = frames['chest']
+for s, sg in (('l', 1), ('r', -1)):
+    d0 = nrm(dn[0] * sg * xc + dn[1] * yc)                 # rest arm direction carried by the chest
+    ya = nrm(J[s + '_el'] - J[s + '_sh']); yf = nrm(J[s + '_wr'] - J[s + '_el'])
+    za = swing(d0, ya, zc); zf = swing(ya, yf, za)
+    for name, y, z, p in ((f'upperarm.{s}', ya, za, J[s + '_sh']), (f'forearm.{s}', yf, zf, J[s + '_el']),
+                          (f'shoulder.{s}', swing(d0, ya, d0, 0.5), swing(d0, ya, zc, 0.5), J[s + '_sh']),
+                          (f'elbow.{s}', swing(ya, yf, ya, 0.5), swing(ya, yf, za, 0.5), J[s + '_el'])):
+        y = nrm(y); z = nrm(z - (z * y).sum(1, keepdims=True) * y)
+        frames[name] = (np.cross(y, z), y, z, p)
 
 # the rig rides on the animated skater root, so three.js culling bounds travel with the skater
 root_obj = bpy.data.objects['Skater root · simulated travel and 1.5-turn yaw v8']
